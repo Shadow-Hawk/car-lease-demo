@@ -1,0 +1,36 @@
+Home:
+     医院
+     患者
+
+
+
+
+
+
+
+
+
+Patient {
+    ID:string,
+    EncounterIDs [
+    ]
+
+}
+Doctor {
+    ID:string,
+    EncounterIDs [
+    ]
+
+}
+
+Encounter {
+    EncounterID,
+    Date,
+    Status,
+    HospitalName,
+    Department,
+    DoctorName,
+    Diagnosis, //Hash
+    Rx // Hash
+}
+    
