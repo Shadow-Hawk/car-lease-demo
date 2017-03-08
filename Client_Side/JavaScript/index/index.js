@@ -66,7 +66,7 @@ function checkChainHeight()
             if (data.success) {
                 $('a').removeClass('greyOutLink');
                 $('.prematureMsg').hide();
-                $('.welcomeMsg').show();
+                $('.welcomeMsg').hide();
             } else if (data.error) {
                 $('.prematureMsg').hide();
                 $('.welcomeHeader').css({'background-color': '#A91024', 'border-color': '#A91024'}).html('');

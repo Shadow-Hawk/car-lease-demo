@@ -303,7 +303,7 @@ app.use(function (err, req, res, next) {        // = development error handler, 
 });
 
 // Track the application deployments
-require('cf-deployment-tracker-client').track();
+//require('cf-deployment-tracker-client').track();
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 process.env.NODE_ENV = 'production';
 process.env.GOPATH = path.resolve(__dirname, 'Chaincode');
