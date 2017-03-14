@@ -1,0 +1,13 @@
+docker attach --sig-proxy=true fabric_membersrvc_1 2>&1 | tee membersrvc.log
+
+docker attach --sig-proxy=true fabric_vp0_1 2>&1 | tee vp0.log
+
+docker attach --sig-proxy=true fabric_vp1_1 2>&1 | tee vp1.log
+
+docker attach --sig-proxy=true fabric_vp2_1 2>&1 | tee vp2.log
+
+docker attach --sig-proxy=true fabric_vp3_1 2>&1 | tee vp3.log
+
+
+GRPC_TRACE=all DEBUG=hfc node app.js 2>&1 | tee tracing.log
+
