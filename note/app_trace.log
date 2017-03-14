@@ -1,0 +1,982 @@
+	14/03/2017 19:27:26	INFO	Startup complete on port	8080
+	14/03/2017 19:27:26	INFO	Startup	Enrolled registrar
+	14/03/2017 19:27:26	INFO	Startup	Set registrar
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 19:27:29	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 19:27:29	INFO	Startup	All users registered
+	14/03/2017 19:27:29	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 19:27:29	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+	14/03/2017 19:28:12	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 19:28:12	INFO	Startup	Chaincode successfully deployed
+14/03/2017 19:28:25	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:28:25	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:28:25	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:28:25	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 19:28:25	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 19:28:30	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:28:30	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:28:30	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+	14/03/2017 19:28:35	INFO	POST blockchain/assets/vehicles	Created vehicle
+14/03/2017 19:28:38	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 19:28:38	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 19:28:40	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:28:40	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:28:40	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:28:40	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:28:40	INFO	GET blockchain/assets/vehicles	{"make":"UNDEFINED","model":"UNDEFINED","reg":"UNDEFINED","VIN":0,"owner":"DVLA","scrapped":false,"status":0,"colour":"UNDEFINED","v5cID":"NG7737419","leaseContractID":"UNDEFINED"}
+14/03/2017 19:28:40	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:28:44	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:28:44	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 19:28:47	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:28:47	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:28:47	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:28:47	ENTER	PUT blockchain/assets/vehicles/NG7737419/owner	INPUT: {"function_name":"authority_to_manufacturer","value":"Alfa_Romeo","v5cID":"NG7737419"}
+	14/03/2017 19:28:47	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Formatting request
+undefined	14/03/2017 19:28:52	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Updating owner value
+	14/03/2017 19:28:52	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Achieving Consensus
+14/03/2017 19:28:52	EXIT	PUT blockchain/assets/vehicles/NG7737419/owner	OUTPUT: "Tx 91f87885-7033-45d5-b04f-87353dde9e89 complete"
+14/03/2017 19:28:56	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 19:28:56	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 19:29:01	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:29:01	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:29:01	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:29:01	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+14/03/2017 19:29:01	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:29:01	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+	14/03/2017 19:29:03	INFO	GET blockchain/assets/vehicles	{"make":"UNDEFINED","model":"UNDEFINED","reg":"UNDEFINED","VIN":0,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"UNDEFINED","v5cID":"NG7737419","leaseContractID":"UNDEFINED"}
+14/03/2017 19:29:03	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:29:21	ENTER	PUT blockchain/assets/vehicles/NG7737419/VIN	INPUT: {"value":"123456789012345"}
+	14/03/2017 19:29:21	INFO	PUT blockchain/assets/vehicles/NG7737419/VIN	Formatting request
+undefined	14/03/2017 19:29:26	INFO	PUT blockchain/assets/vehicles/NG7737419/VIN	Updating VIN value
+	14/03/2017 19:29:26	INFO	PUT blockchain/assets/vehicles/NG7737419/VIN	Achieving Consensus
+14/03/2017 19:29:26	EXIT	PUT blockchain/assets/vehicles/NG7737419/VIN	OUTPUT: "Tx 5880908a-7e50-4625-8992-40a63549e1cd complete"
+14/03/2017 19:29:26	ENTER	PUT blockchain/assets/vehicles/NG7737419/make	INPUT: {"value":"a"}
+	14/03/2017 19:29:26	INFO	PUT blockchain/assets/vehicles/NG7737419/make	Formatting request
+undefined	14/03/2017 19:29:31	INFO	PUT blockchain/assets/vehicles/NG7737419/make	Updating make value
+	14/03/2017 19:29:31	INFO	PUT blockchain/assets/vehicles/NG7737419/make	Achieving Consensus
+14/03/2017 19:29:31	EXIT	PUT blockchain/assets/vehicles/NG7737419/make	OUTPUT: "Tx 25056b30-8161-43c5-b855-787f6cdfd7ff complete"
+14/03/2017 19:29:32	ENTER	PUT blockchain/assets/vehicles/NG7737419/model	INPUT: {"value":"m"}
+	14/03/2017 19:29:32	INFO	PUT blockchain/assets/vehicles/NG7737419/model	Formatting request
+undefined	14/03/2017 19:29:37	INFO	PUT blockchain/assets/vehicles/NG7737419/model	Updating model value
+	14/03/2017 19:29:37	INFO	PUT blockchain/assets/vehicles/NG7737419/model	Achieving Consensus
+14/03/2017 19:29:37	EXIT	PUT blockchain/assets/vehicles/NG7737419/model	OUTPUT: "Tx 0e87d12c-e776-4bde-b79a-7a6dc84585ae complete"
+14/03/2017 19:29:37	ENTER	PUT blockchain/assets/vehicles/NG7737419/colour	INPUT: {"value":"red"}
+	14/03/2017 19:29:37	INFO	PUT blockchain/assets/vehicles/NG7737419/colour	Formatting request
+undefined	14/03/2017 19:29:42	INFO	PUT blockchain/assets/vehicles/NG7737419/colour	Updating colour value
+	14/03/2017 19:29:42	INFO	PUT blockchain/assets/vehicles/NG7737419/colour	Achieving Consensus
+14/03/2017 19:29:42	EXIT	PUT blockchain/assets/vehicles/NG7737419/colour	OUTPUT: "Tx 9bfe0690-5076-4231-8aff-e9a336c6cd9e complete"
+14/03/2017 19:29:43	ENTER	PUT blockchain/assets/vehicles/NG7737419/reg	INPUT: {"value":"REG"}
+	14/03/2017 19:29:43	INFO	PUT blockchain/assets/vehicles/NG7737419/reg	Formatting request
+undefined	14/03/2017 19:29:48	INFO	PUT blockchain/assets/vehicles/NG7737419/reg	Updating reg value
+	14/03/2017 19:29:48	INFO	PUT blockchain/assets/vehicles/NG7737419/reg	Achieving Consensus
+14/03/2017 19:29:48	EXIT	PUT blockchain/assets/vehicles/NG7737419/reg	OUTPUT: "Tx 19bf9ae6-c680-4457-b38f-af490582b667 complete"
+14/03/2017 19:29:50	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+14/03/2017 19:29:50	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:29:50	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+	14/03/2017 19:29:50	INFO	GET blockchain/assets/vehicles	{"make":"a","model":"m","reg":"REG","VIN":123456789012345,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"red","v5cID":"NG7737419","leaseContractID":"UNDEFINED"}
+14/03/2017 19:29:50	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:29:54	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:29:54	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:29:54	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:29:54	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:29:54	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 19:29:55	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:29:55	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:29:55	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:29:55	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:29:55	INFO	GET blockchain/assets/vehicles	{"make":"a","model":"m","reg":"REG","VIN":123456789012345,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"red","v5cID":"NG7737419","leaseContractID":"UNDEFINED"}
+14/03/2017 19:29:55	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:29:59	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 19:29:59	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 19:30:04	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:30:04	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:30:04	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:30:04	ENTER	PUT blockchain/assets/vehicles/NG7737419/owner	INPUT: {"function_name":"manufacturer_to_private","value":"Beechvale_Group","v5cID":"NG7737419"}
+	14/03/2017 19:30:04	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Formatting request
+undefined	14/03/2017 19:30:09	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Updating owner value
+	14/03/2017 19:30:09	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Achieving Consensus
+14/03/2017 19:30:09	EXIT	PUT blockchain/assets/vehicles/NG7737419/owner	OUTPUT: "Tx 143bbf75-771c-42e9-bea4-d5c08217c0e5 complete"
+14/03/2017 19:30:12	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:30:12	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 19:30:15	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 19:30:15	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:30:15	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:30:15	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 19:30:15	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 19:30:17	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 19:30:17	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:30:17	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:30:17	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:30:19	INFO	GET blockchain/assets/vehicles	{"make":"a","model":"m","reg":"REG","VIN":123456789012345,"owner":"Beechvale_Group","scrapped":false,"status":2,"colour":"red","v5cID":"NG7737419","leaseContractID":"UNDEFINED"}
+14/03/2017 19:30:19	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:30:23	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 19:30:23	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+14/03/2017 19:30:28	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 19:30:28	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:30:28	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:30:28	ENTER	PUT blockchain/assets/vehicles/NG7737419/owner	INPUT: {"function_name":"private_to_lease_company","value":"LeaseCan","v5cID":"NG7737419"}
+	14/03/2017 19:30:28	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Formatting request
+undefined	14/03/2017 19:30:33	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Updating owner value
+	14/03/2017 19:30:33	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Achieving Consensus
+14/03/2017 19:30:33	EXIT	PUT blockchain/assets/vehicles/NG7737419/owner	OUTPUT: "Tx 240bc469-4a6f-47f6-9f7e-a19323280cb4 complete"
+14/03/2017 19:30:36	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 19:30:36	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 19:30:39	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+	14/03/2017 19:30:39	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:30:39	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:30:39	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 19:30:39	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+14/03/2017 19:30:40	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+	14/03/2017 19:30:40	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:30:40	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:30:40	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:30:43	INFO	GET blockchain/assets/vehicles	{"make":"a","model":"m","reg":"REG","VIN":123456789012345,"owner":"LeaseCan","scrapped":false,"status":2,"colour":"red","v5cID":"NG7737419","leaseContractID":"UNDEFINED"}
+14/03/2017 19:30:43	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:30:45	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 19:30:45	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+14/03/2017 19:30:49	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+	14/03/2017 19:30:49	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:30:49	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:30:49	ENTER	PUT blockchain/assets/vehicles/NG7737419/owner	INPUT: {"function_name":"lease_company_to_private","value":"Joe_Payne","v5cID":"NG7737419"}
+	14/03/2017 19:30:49	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Formatting request
+undefined	14/03/2017 19:30:54	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Updating owner value
+	14/03/2017 19:30:54	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Achieving Consensus
+14/03/2017 19:30:54	EXIT	PUT blockchain/assets/vehicles/NG7737419/owner	OUTPUT: "Tx 028a4e88-4541-4f14-af7d-21f23fb75244 complete"
+14/03/2017 19:30:57	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 19:30:57	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+14/03/2017 19:31:01	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+	14/03/2017 19:31:01	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:31:01	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:31:01	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 19:31:01	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+14/03/2017 19:31:02	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+	14/03/2017 19:31:02	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:31:02	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:31:02	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:31:04	INFO	GET blockchain/assets/vehicles	{"make":"a","model":"m","reg":"REG","VIN":123456789012345,"owner":"Joe_Payne","scrapped":false,"status":2,"colour":"red","v5cID":"NG7737419","leaseContractID":"UNDEFINED"}
+14/03/2017 19:31:04	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:31:07	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 19:31:07	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 19:31:10	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+	14/03/2017 19:31:10	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:31:10	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:31:10	ENTER	PUT blockchain/assets/vehicles/NG7737419/owner	INPUT: {"function_name":"private_to_scrap_merchant","value":"Cray_Bros_London_Ltd","v5cID":"NG7737419"}
+	14/03/2017 19:31:10	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Formatting request
+undefined	14/03/2017 19:31:15	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Updating owner value
+	14/03/2017 19:31:15	INFO	PUT blockchain/assets/vehicles/NG7737419/owner	Achieving Consensus
+14/03/2017 19:31:15	EXIT	PUT blockchain/assets/vehicles/NG7737419/owner	OUTPUT: "Tx 6c558a3c-4912-4f4e-b8ff-d906f4392776 complete"
+14/03/2017 19:31:18	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 19:31:18	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+14/03/2017 19:31:21	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+	14/03/2017 19:31:21	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:31:21	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:31:21	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 19:31:21	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 19:31:22	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+	14/03/2017 19:31:22	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:31:22	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:31:22	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:31:25	INFO	GET blockchain/assets/vehicles	{"make":"a","model":"m","reg":"REG","VIN":123456789012345,"owner":"Cray_Bros_London_Ltd","scrapped":false,"status":4,"colour":"red","v5cID":"NG7737419","leaseContractID":"UNDEFINED"}
+14/03/2017 19:31:25	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:31:32	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+	14/03/2017 19:31:32	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:31:32	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:31:32	ENTER	DELETE blockchain/assets/vehicles/vehicle/NG7737419/scrap	INPUT: {}
+	14/03/2017 19:31:37	INFO	DELETE blockchain/assets/vehicles/vehicle/NG7737419/scrap	Achieving consensus
+14/03/2017 19:31:37	EXIT	DELETE blockchain/assets/vehicles/vehicle/NG7737419/scrap	OUTPUT: {"message":"Scrap updated"}
+14/03/2017 19:31:41	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 19:31:41	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 19:31:45	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:31:45	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:31:45	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:31:45	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:31:45	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 19:31:48	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:31:48	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:31:48	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:31:48	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 19:31:48	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 19:31:48	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 19:31:49	ERROR	GET blockchain/transactions	OUTPUT: {"message":"Unable to get chain length","error":true}
+14/03/2017 19:32:20	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:32:20	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:32:20	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:32:20	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 19:32:20	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 19:32:20	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 19:32:20	ERROR	GET blockchain/transactions	OUTPUT: {"message":"Unable to get chain length","error":true}
+14/03/2017 19:32:33	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 19:32:34	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 19:33:13	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 19:33:13	ERROR	GET blockchain/blocks	OUTPUT: null
+	14/03/2017 19:45:53	INFO	Startup complete on port	8080
+	14/03/2017 19:45:53	INFO	Startup	Enrolled registrar
+	14/03/2017 19:45:53	INFO	Startup	Set registrar
+	14/03/2017 19:45:55	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 19:45:55	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 19:45:55	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 19:45:55	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 19:45:56	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 19:45:56	INFO	Startup	All users registered
+	14/03/2017 19:45:56	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 19:45:56	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+	14/03/2017 19:46:37	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 19:46:37	INFO	Startup	Chaincode successfully deployed
+14/03/2017 19:46:46	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:46:46	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:46:46	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:46:46	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 19:46:46	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 19:46:47	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:46:47	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:46:47	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+	14/03/2017 19:46:52	INFO	POST blockchain/assets/vehicles	Created vehicle
+14/03/2017 19:46:56	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 19:46:56	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 19:47:00	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:47:00	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:47:00	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:47:00	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:47:00	INFO	GET blockchain/assets/vehicles	{"make":"UNDEFINED","model":"UNDEFINED","reg":"UNDEFINED","VIN":0,"owner":"DVLA","scrapped":false,"status":0,"colour":"UNDEFINED","v5cID":"QE7676661","leaseContractID":"UNDEFINED"}
+14/03/2017 19:47:00	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:47:03	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:47:03	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 19:47:06	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:47:06	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:47:06	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:47:06	ENTER	PUT blockchain/assets/vehicles/QE7676661/owner	INPUT: {"function_name":"authority_to_manufacturer","value":"Alfa_Romeo","v5cID":"QE7676661"}
+	14/03/2017 19:47:06	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Formatting request
+undefined	14/03/2017 19:47:11	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Updating owner value
+	14/03/2017 19:47:11	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Achieving Consensus
+14/03/2017 19:47:11	EXIT	PUT blockchain/assets/vehicles/QE7676661/owner	OUTPUT: "Tx 3c42e9ac-891c-434a-9bef-7a8bfeed0954 complete"
+14/03/2017 19:47:14	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 19:47:14	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 19:47:17	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:47:17	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:47:17	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:47:17	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+14/03/2017 19:47:17	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:47:17	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+	14/03/2017 19:47:20	INFO	GET blockchain/assets/vehicles	{"make":"UNDEFINED","model":"UNDEFINED","reg":"UNDEFINED","VIN":0,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"UNDEFINED","v5cID":"QE7676661","leaseContractID":"UNDEFINED"}
+14/03/2017 19:47:20	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:47:38	ENTER	PUT blockchain/assets/vehicles/QE7676661/VIN	INPUT: {"value":"123456789012345"}
+	14/03/2017 19:47:38	INFO	PUT blockchain/assets/vehicles/QE7676661/VIN	Formatting request
+undefined	14/03/2017 19:47:43	INFO	PUT blockchain/assets/vehicles/QE7676661/VIN	Updating VIN value
+	14/03/2017 19:47:43	INFO	PUT blockchain/assets/vehicles/QE7676661/VIN	Achieving Consensus
+14/03/2017 19:47:43	EXIT	PUT blockchain/assets/vehicles/QE7676661/VIN	OUTPUT: "Tx 835f5888-9ec2-4ee0-9164-2435023c920c complete"
+14/03/2017 19:47:44	ENTER	PUT blockchain/assets/vehicles/QE7676661/make	INPUT: {"value":"m"}
+	14/03/2017 19:47:44	INFO	PUT blockchain/assets/vehicles/QE7676661/make	Formatting request
+undefined	14/03/2017 19:47:49	INFO	PUT blockchain/assets/vehicles/QE7676661/make	Updating make value
+	14/03/2017 19:47:49	INFO	PUT blockchain/assets/vehicles/QE7676661/make	Achieving Consensus
+14/03/2017 19:47:49	EXIT	PUT blockchain/assets/vehicles/QE7676661/make	OUTPUT: "Tx 87dc7fb6-d82b-429d-a6d6-3194c260b883 complete"
+14/03/2017 19:47:49	ENTER	PUT blockchain/assets/vehicles/QE7676661/model	INPUT: {"value":"mm"}
+	14/03/2017 19:47:49	INFO	PUT blockchain/assets/vehicles/QE7676661/model	Formatting request
+undefined	14/03/2017 19:47:54	INFO	PUT blockchain/assets/vehicles/QE7676661/model	Updating model value
+	14/03/2017 19:47:54	INFO	PUT blockchain/assets/vehicles/QE7676661/model	Achieving Consensus
+14/03/2017 19:47:54	EXIT	PUT blockchain/assets/vehicles/QE7676661/model	OUTPUT: "Tx 16ee1d69-4df1-4394-bc91-a7cd67167d41 complete"
+14/03/2017 19:47:55	ENTER	PUT blockchain/assets/vehicles/QE7676661/colour	INPUT: {"value":"red"}
+	14/03/2017 19:47:55	INFO	PUT blockchain/assets/vehicles/QE7676661/colour	Formatting request
+undefined	14/03/2017 19:48:00	INFO	PUT blockchain/assets/vehicles/QE7676661/colour	Updating colour value
+	14/03/2017 19:48:00	INFO	PUT blockchain/assets/vehicles/QE7676661/colour	Achieving Consensus
+14/03/2017 19:48:00	EXIT	PUT blockchain/assets/vehicles/QE7676661/colour	OUTPUT: "Tx e8f01ca8-3249-4e95-afb5-d0edda5d4956 complete"
+14/03/2017 19:48:00	ENTER	PUT blockchain/assets/vehicles/QE7676661/reg	INPUT: {"value":"REG"}
+	14/03/2017 19:48:00	INFO	PUT blockchain/assets/vehicles/QE7676661/reg	Formatting request
+undefined	14/03/2017 19:48:05	INFO	PUT blockchain/assets/vehicles/QE7676661/reg	Updating reg value
+	14/03/2017 19:48:05	INFO	PUT blockchain/assets/vehicles/QE7676661/reg	Achieving Consensus
+14/03/2017 19:48:05	EXIT	PUT blockchain/assets/vehicles/QE7676661/reg	OUTPUT: "Tx f35d662b-d805-4c98-9e79-98bf2d891ca7 complete"
+14/03/2017 19:48:10	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+14/03/2017 19:48:10	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:48:10	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+	14/03/2017 19:48:10	INFO	GET blockchain/assets/vehicles	{"make":"m","model":"mm","reg":"REG","VIN":123456789012345,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"red","v5cID":"QE7676661","leaseContractID":"UNDEFINED"}
+14/03/2017 19:48:10	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:48:13	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:48:13	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:48:13	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:48:13	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:48:13	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 19:48:15	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:48:15	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:48:15	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:48:15	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:48:15	INFO	GET blockchain/assets/vehicles	{"make":"m","model":"mm","reg":"REG","VIN":123456789012345,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"red","v5cID":"QE7676661","leaseContractID":"UNDEFINED"}
+14/03/2017 19:48:15	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:48:18	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 19:48:18	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 19:48:21	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 19:48:21	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:48:21	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:48:21	ENTER	PUT blockchain/assets/vehicles/QE7676661/owner	INPUT: {"function_name":"manufacturer_to_private","value":"Beechvale_Group","v5cID":"QE7676661"}
+	14/03/2017 19:48:21	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Formatting request
+undefined	14/03/2017 19:48:26	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Updating owner value
+	14/03/2017 19:48:26	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Achieving Consensus
+14/03/2017 19:48:26	EXIT	PUT blockchain/assets/vehicles/QE7676661/owner	OUTPUT: "Tx 57463065-b0b7-4850-b052-45aa2e297e50 complete"
+14/03/2017 19:48:29	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 19:48:29	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 19:48:31	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 19:48:31	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:48:31	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:48:31	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 19:48:31	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 19:48:32	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 19:48:32	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:48:32	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:48:32	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:48:35	INFO	GET blockchain/assets/vehicles	{"make":"m","model":"mm","reg":"REG","VIN":123456789012345,"owner":"Beechvale_Group","scrapped":false,"status":2,"colour":"red","v5cID":"QE7676661","leaseContractID":"UNDEFINED"}
+14/03/2017 19:48:35	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:48:38	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 19:48:38	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+14/03/2017 19:48:40	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 19:48:40	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:48:40	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:48:40	ENTER	PUT blockchain/assets/vehicles/QE7676661/owner	INPUT: {"function_name":"private_to_lease_company","value":"LeaseCan","v5cID":"QE7676661"}
+	14/03/2017 19:48:40	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Formatting request
+undefined	14/03/2017 19:48:46	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Updating owner value
+	14/03/2017 19:48:46	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Achieving Consensus
+14/03/2017 19:48:46	EXIT	PUT blockchain/assets/vehicles/QE7676661/owner	OUTPUT: "Tx 501e0f14-5bd0-44ab-ad78-4ec1b45e12ce complete"
+14/03/2017 19:48:48	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 19:48:48	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 19:48:51	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+	14/03/2017 19:48:51	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:48:51	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:48:51	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 19:48:51	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+14/03/2017 19:48:53	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+	14/03/2017 19:48:53	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:48:53	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:48:53	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:48:56	INFO	GET blockchain/assets/vehicles	{"make":"m","model":"mm","reg":"REG","VIN":123456789012345,"owner":"LeaseCan","scrapped":false,"status":2,"colour":"red","v5cID":"QE7676661","leaseContractID":"UNDEFINED"}
+14/03/2017 19:48:56	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:48:59	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 19:48:59	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+14/03/2017 19:49:03	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+	14/03/2017 19:49:03	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:49:03	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:49:03	ENTER	PUT blockchain/assets/vehicles/QE7676661/owner	INPUT: {"function_name":"lease_company_to_private","value":"Joe_Payne","v5cID":"QE7676661"}
+	14/03/2017 19:49:03	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Formatting request
+undefined	14/03/2017 19:49:08	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Updating owner value
+	14/03/2017 19:49:08	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Achieving Consensus
+14/03/2017 19:49:08	EXIT	PUT blockchain/assets/vehicles/QE7676661/owner	OUTPUT: "Tx 335d620e-9a6d-4836-b048-6d2b1d230c7e complete"
+14/03/2017 19:49:11	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 19:49:11	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+14/03/2017 19:49:13	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+14/03/2017 19:49:13	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+	14/03/2017 19:49:13	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:49:13	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 19:49:13	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+14/03/2017 19:49:14	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+	14/03/2017 19:49:14	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:49:14	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:49:14	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:49:17	INFO	GET blockchain/assets/vehicles	{"make":"m","model":"mm","reg":"REG","VIN":123456789012345,"owner":"Joe_Payne","scrapped":false,"status":2,"colour":"red","v5cID":"QE7676661","leaseContractID":"UNDEFINED"}
+14/03/2017 19:49:17	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:49:20	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 19:49:20	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 19:49:23	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+	14/03/2017 19:49:23	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:49:23	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:49:23	ENTER	PUT blockchain/assets/vehicles/QE7676661/owner	INPUT: {"function_name":"private_to_scrap_merchant","value":"Cray_Bros_London_Ltd","v5cID":"QE7676661"}
+	14/03/2017 19:49:23	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Formatting request
+undefined	14/03/2017 19:49:28	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Updating owner value
+	14/03/2017 19:49:28	INFO	PUT blockchain/assets/vehicles/QE7676661/owner	Achieving Consensus
+14/03/2017 19:49:28	EXIT	PUT blockchain/assets/vehicles/QE7676661/owner	OUTPUT: "Tx eeddc174-abf6-4cf1-83a7-e92a120e5c39 complete"
+14/03/2017 19:49:30	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 19:49:30	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+14/03/2017 19:49:32	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+	14/03/2017 19:49:32	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:49:32	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:49:33	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 19:49:33	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 19:49:34	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+	14/03/2017 19:49:34	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:49:34	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:49:34	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 19:49:37	INFO	GET blockchain/assets/vehicles	{"make":"m","model":"mm","reg":"REG","VIN":123456789012345,"owner":"Cray_Bros_London_Ltd","scrapped":false,"status":4,"colour":"red","v5cID":"QE7676661","leaseContractID":"UNDEFINED"}
+14/03/2017 19:49:37	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 19:49:40	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+	14/03/2017 19:49:40	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:49:40	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:49:40	ENTER	DELETE blockchain/assets/vehicles/vehicle/QE7676661/scrap	INPUT: {}
+	14/03/2017 19:49:45	INFO	DELETE blockchain/assets/vehicles/vehicle/QE7676661/scrap	Achieving consensus
+14/03/2017 19:49:45	EXIT	DELETE blockchain/assets/vehicles/vehicle/QE7676661/scrap	OUTPUT: {"message":"Scrap updated"}
+14/03/2017 19:49:47	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 19:49:47	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 19:49:51	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 19:49:52	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 19:50:42	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:50:42	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:50:42	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:50:42	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 19:50:42	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 19:50:42	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 19:50:43	ERROR	GET blockchain/transactions	OUTPUT: {"message":"Unable to get chain length","error":true}
+14/03/2017 19:55:02	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 19:55:02	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 19:55:02	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 19:55:02	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 19:55:02	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 19:55:02	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 19:55:03	ERROR	GET blockchain/transactions	OUTPUT: {"message":"Unable to get chain length","error":true}
+	14/03/2017 20:01:15	INFO	Startup complete on port	8080
+	14/03/2017 20:01:15	INFO	Startup	Enrolled registrar
+	14/03/2017 20:01:15	INFO	Startup	Set registrar
+	14/03/2017 20:01:17	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 20:01:18	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 20:01:18	INFO	Startup	All users registered
+	14/03/2017 20:01:18	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 20:01:18	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+	14/03/2017 20:01:58	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 20:01:58	INFO	Startup	Chaincode successfully deployed
+	14/03/2017 20:08:02	INFO	Startup complete on port	8080
+	14/03/2017 20:08:02	ERROR	Startup	OUTPUT: "Failed to enroll registrar with WebAppAdmin DJY27pEnl16d"
+	14/03/2017 20:08:02	ERROR	Startup	OUTPUT: {"code":2,"metadata":{"_internal_repr":{}}}
+	14/03/2017 20:09:00	INFO	Startup complete on port	8080
+	14/03/2017 20:09:01	INFO	Startup	Enrolled registrar
+	14/03/2017 20:09:01	INFO	Startup	Set registrar
+	14/03/2017 20:09:03	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 20:09:04	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 20:09:04	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 20:09:04	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 20:09:04	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 20:09:04	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 20:09:04	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 20:09:05	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 20:09:05	INFO	Startup	All users registered
+	14/03/2017 20:09:05	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 20:09:05	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+	14/03/2017 20:09:46	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 20:09:46	INFO	Startup	Chaincode successfully deployed
+14/03/2017 20:10:24	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:10:24	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 20:11:55	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:11:55	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 20:12:08	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:12:08	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 20:13:01	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 20:13:01	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 20:13:01	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 20:13:01	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 20:13:01	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 20:13:01	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 20:13:02	ERROR	GET blockchain/transactions	OUTPUT: {"message":"Unable to get chain length","error":true}
+	14/03/2017 20:38:52	INFO	Startup complete on port	8080
+	14/03/2017 20:38:53	INFO	Startup	Enrolled registrar
+	14/03/2017 20:38:53	INFO	Startup	Set registrar
+	14/03/2017 20:38:55	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 20:38:55	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 20:38:55	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 20:38:55	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 20:38:56	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 20:38:56	INFO	Startup	All users registered
+	14/03/2017 20:38:56	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 20:38:56	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+	14/03/2017 20:39:38	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 20:39:38	INFO	Startup	Chaincode successfully deployed
+14/03/2017 20:40:28	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:40:29	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 20:40:52	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:40:52	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 20:51:03	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:51:04	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 20:51:12	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 20:51:12	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 20:51:12	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 20:51:12	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 20:51:12	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 20:51:12	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 20:51:12	ERROR	GET blockchain/transactions	OUTPUT: {"message":"Unable to get chain length","error":true}
+14/03/2017 20:52:43	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:52:44	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 20:52:52	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:52:53	ERROR	GET blockchain/blocks	OUTPUT: null
+14/03/2017 20:54:15	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 20:54:15	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 20:54:15	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 20:54:15	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 20:54:15	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 20:54:15	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 20:54:15	ERROR	GET blockchain/transactions	OUTPUT: {"message":"Unable to get chain length","error":true}
+14/03/2017 20:54:18	ENTER	GET blockchain/blocks	INPUT: ""
+	14/03/2017 20:54:19	ERROR	GET blockchain/blocks	OUTPUT: null
+	14/03/2017 20:59:14	INFO	Startup complete on port	8080
+	14/03/2017 20:59:15	INFO	Startup	Enrolled registrar
+	14/03/2017 20:59:15	INFO	Startup	Set registrar
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 20:59:17	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 20:59:17	INFO	Startup	All users registered
+	14/03/2017 20:59:17	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 20:59:17	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+14/03/2017 20:59:39	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 20:59:39	EXIT	GET blockchain/blocks	OUTPUT: {"height":1,"currentBlockHash":"RrndKwuojRMjOz/rdD7rJD/NUupiuBuCtQwnZG7Vdi/XXcTd2MDyAMsFAZ1ntZL2/IIcSUeatIZAKS6ss7fEvg=="}
+14/03/2017 20:59:39	ENTER	GET blockchain/blocks/0	INPUT: {}
+14/03/2017 20:59:39	EXIT	GET blockchain/blocks/0	OUTPUT: ""
+14/03/2017 20:59:49	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 20:59:49	EXIT	GET blockchain/blocks	OUTPUT: {"height":1,"currentBlockHash":"RrndKwuojRMjOz/rdD7rJD/NUupiuBuCtQwnZG7Vdi/XXcTd2MDyAMsFAZ1ntZL2/IIcSUeatIZAKS6ss7fEvg=="}
+	14/03/2017 20:59:58	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 20:59:58	INFO	Startup	Chaincode successfully deployed
+14/03/2017 20:59:59	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 20:59:59	EXIT	GET blockchain/blocks	OUTPUT: {"height":1,"currentBlockHash":"RrndKwuojRMjOz/rdD7rJD/NUupiuBuCtQwnZG7Vdi/XXcTd2MDyAMsFAZ1ntZL2/IIcSUeatIZAKS6ss7fEvg=="}
+14/03/2017 21:00:09	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:00:09	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:00:09	ENTER	GET blockchain/blocks/1	INPUT: {}
+14/03/2017 21:00:09	EXIT	GET blockchain/blocks/1	OUTPUT: ""
+14/03/2017 21:00:19	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:00:19	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:00:29	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:00:29	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:00:39	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:00:39	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:00:49	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:00:49	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:00:59	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:00:59	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:01:09	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:01:09	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:01:19	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:01:19	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:01:29	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:01:29	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:01:39	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:01:39	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:01:49	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:01:49	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:01:59	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:01:59	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:02:09	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:02:09	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:02:19	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:02:19	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:02:29	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:02:29	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:02:39	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:02:39	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:02:49	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:02:49	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:02:59	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:02:59	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:03:09	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:03:09	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:03:19	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:03:19	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:03:29	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:03:29	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:03:39	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:03:39	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+14/03/2017 21:03:49	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:03:49	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"DM4ez1vRYZ7DZXywVqTgPXOzbJZfbou44fTAHzeWhHePYtJ8Nc7s5+pbZBK/DqXFOONkSdBKn+p9edDJkuzPhA=="}
+	14/03/2017 21:06:37	INFO	Startup complete on port	8080
+	14/03/2017 21:06:37	INFO	Startup	Enrolled registrar
+	14/03/2017 21:06:37	INFO	Startup	Set registrar
+	14/03/2017 21:06:39	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 21:06:40	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 21:06:40	INFO	Startup	All users registered
+	14/03/2017 21:06:40	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 21:06:40	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+14/03/2017 21:07:20	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:07:20	EXIT	GET blockchain/blocks	OUTPUT: {"height":1,"currentBlockHash":"RrndKwuojRMjOz/rdD7rJD/NUupiuBuCtQwnZG7Vdi/XXcTd2MDyAMsFAZ1ntZL2/IIcSUeatIZAKS6ss7fEvg=="}
+14/03/2017 21:07:20	ENTER	GET blockchain/blocks/0	INPUT: {}
+14/03/2017 21:07:20	EXIT	GET blockchain/blocks/0	OUTPUT: ""
+	14/03/2017 21:07:21	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 21:07:21	INFO	Startup	Chaincode successfully deployed
+14/03/2017 21:07:24	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:07:24	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:07:24	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:07:24	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 21:07:24	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 21:07:25	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:07:25	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:07:25	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+	14/03/2017 21:07:25	ERROR	POST blockchain/assets/vehicles	OUTPUT: "Error: Error:Failed to launch chaincode spec(Could not get deployment transaction for d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4 - LedgerError - ResourceNotFound: ledger: resource not found)\n    at TransactionContext.<anonymous> (/workspace/Fabric/demo/car-lease-demo/Server_Side/tools/utils/util.js:47:32)\n    at emitOne (events.js:77:13)\n    at TransactionContext.emit (events.js:169:7)\n    at Object.callback (/workspace/Fabric/demo/car-lease-demo/node_modules/hfc/lib/hfc.js:1807:42)\n    at /workspace/Fabric/demo/car-lease-demo/node_modules/hfc/node_modules/grpc/src/node/src/client.js:422:14"
+14/03/2017 21:07:30	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 21:07:30	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+	14/03/2017 21:09:36	INFO	Startup complete on port	8080
+	14/03/2017 21:09:36	INFO	Startup	Enrolled registrar
+	14/03/2017 21:09:36	INFO	Startup	Set registrar
+	14/03/2017 21:09:39	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 21:09:39	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 21:09:39	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 21:09:40	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 21:09:40	INFO	Startup	All users registered
+	14/03/2017 21:09:40	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 21:09:40	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+	14/03/2017 21:10:20	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 21:10:20	INFO	Startup	Chaincode successfully deployed
+14/03/2017 21:10:31	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:10:31	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:10:31	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:10:31	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 21:10:31	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 21:10:31	ENTER	GET blockchain/transactions	INPUT: {}
+14/03/2017 21:10:31	EXIT	GET blockchain/transactions	OUTPUT: {"transactions":[]}
+14/03/2017 21:10:35	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:10:35	EXIT	GET blockchain/blocks	OUTPUT: {"height":1,"currentBlockHash":"RrndKwuojRMjOz/rdD7rJD/NUupiuBuCtQwnZG7Vdi/XXcTd2MDyAMsFAZ1ntZL2/IIcSUeatIZAKS6ss7fEvg=="}
+14/03/2017 21:10:35	ENTER	GET blockchain/blocks/0	INPUT: {}
+14/03/2017 21:10:35	EXIT	GET blockchain/blocks/0	OUTPUT: ""
+14/03/2017 21:10:39	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:10:39	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:10:39	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:10:39	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 21:10:39	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 21:10:40	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:10:40	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:10:40	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:10:40	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+14/03/2017 21:10:40	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:10:45	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:10:45	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:10:45	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+	14/03/2017 21:10:50	INFO	POST blockchain/assets/vehicles	Created vehicle
+14/03/2017 21:10:56	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 21:10:56	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+	14/03/2017 21:13:34	INFO	Startup complete on port	8080
+	14/03/2017 21:13:34	INFO	Startup	Enrolled registrar
+	14/03/2017 21:13:34	INFO	Startup	Set registrar
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Toyota
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user LeaseCan
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user DVLA
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Milescape
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Beechvale_Group
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Joe_Payne
+	14/03/2017 21:13:38	INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+	14/03/2017 21:13:38	INFO	Startup	All users registered
+	14/03/2017 21:13:38	INFO	Startup	Checking if chaincode is deployed
+	14/03/2017 21:13:38	INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+	14/03/2017 21:14:18	INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+	14/03/2017 21:14:18	INFO	Startup	Chaincode successfully deployed
+14/03/2017 21:14:26	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:14:26	EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"NqCmZcxInfx4+bRoPb4/3ibpSmxdewrvZO4iXIXV9CYTiKV7S/EWfW5oqbK1WAWxoShL1vM1++d03Y/WMGZBWg=="}
+14/03/2017 21:14:26	ENTER	GET blockchain/blocks/1	INPUT: {}
+14/03/2017 21:14:26	EXIT	GET blockchain/blocks/1	OUTPUT: ""
+14/03/2017 21:14:26	ENTER	GET blockchain/blocks/0	INPUT: {}
+14/03/2017 21:14:26	EXIT	GET blockchain/blocks/0	OUTPUT: ""
+14/03/2017 21:14:29	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:14:29	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:14:29	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:14:29	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 21:14:29	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 21:14:32	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:14:32	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:14:32	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+	14/03/2017 21:14:37	INFO	POST blockchain/assets/vehicles	Created vehicle
+14/03/2017 21:14:39	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 21:14:39	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 21:14:40	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:14:40	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:14:40	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:14:40	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 21:14:40	INFO	GET blockchain/assets/vehicles	{"make":"UNDEFINED","model":"UNDEFINED","reg":"UNDEFINED","VIN":0,"owner":"DVLA","scrapped":false,"status":0,"colour":"UNDEFINED","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+14/03/2017 21:14:40	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:14:43	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 21:14:43	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 21:14:46	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:14:46	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:14:46	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:14:46	ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"authority_to_manufacturer","value":"Alfa_Romeo","v5cID":"ON4772466"}
+	14/03/2017 21:14:46	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+undefined	14/03/2017 21:14:51	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+	14/03/2017 21:14:51	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+14/03/2017 21:14:51	EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx cd0a2e86-5683-4de5-a517-6931558e9c8d complete"
+14/03/2017 21:14:53	ENTER	GET blockchain/participants/regulators	INPUT: {}
+14/03/2017 21:14:53	EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+14/03/2017 21:14:56	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 21:14:56	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:14:56	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:14:56	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+14/03/2017 21:14:56	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 21:14:56	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+	14/03/2017 21:14:59	INFO	GET blockchain/assets/vehicles	{"make":"UNDEFINED","model":"UNDEFINED","reg":"UNDEFINED","VIN":0,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"UNDEFINED","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+14/03/2017 21:14:59	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:15:16	ENTER	PUT blockchain/assets/vehicles/ON4772466/VIN	INPUT: {"value":"123456789012345"}
+	14/03/2017 21:15:16	INFO	PUT blockchain/assets/vehicles/ON4772466/VIN	Formatting request
+undefined	14/03/2017 21:15:21	INFO	PUT blockchain/assets/vehicles/ON4772466/VIN	Updating VIN value
+	14/03/2017 21:15:21	INFO	PUT blockchain/assets/vehicles/ON4772466/VIN	Achieving Consensus
+14/03/2017 21:15:21	EXIT	PUT blockchain/assets/vehicles/ON4772466/VIN	OUTPUT: "Tx 953dd422-2902-4594-8e4e-b5062942f134 complete"
+14/03/2017 21:15:22	ENTER	PUT blockchain/assets/vehicles/ON4772466/make	INPUT: {"value":"mak"}
+	14/03/2017 21:15:22	INFO	PUT blockchain/assets/vehicles/ON4772466/make	Formatting request
+undefined	14/03/2017 21:15:27	INFO	PUT blockchain/assets/vehicles/ON4772466/make	Updating make value
+	14/03/2017 21:15:27	INFO	PUT blockchain/assets/vehicles/ON4772466/make	Achieving Consensus
+14/03/2017 21:15:27	EXIT	PUT blockchain/assets/vehicles/ON4772466/make	OUTPUT: "Tx 75c510ac-2a10-4dec-8291-c70c58b04cac complete"
+14/03/2017 21:15:27	ENTER	PUT blockchain/assets/vehicles/ON4772466/model	INPUT: {"value":"mo"}
+	14/03/2017 21:15:27	INFO	PUT blockchain/assets/vehicles/ON4772466/model	Formatting request
+undefined	14/03/2017 21:15:32	INFO	PUT blockchain/assets/vehicles/ON4772466/model	Updating model value
+14/03/2017 21:15:32	EXIT	PUT blockchain/assets/vehicles/ON4772466/model	OUTPUT: "Tx 66777282-693d-45af-b226-f1f8877cc84c complete"
+	14/03/2017 21:15:32	INFO	PUT blockchain/assets/vehicles/ON4772466/model	Achieving Consensus
+14/03/2017 21:15:33	ENTER	PUT blockchain/assets/vehicles/ON4772466/colour	INPUT: {"value":"red"}
+	14/03/2017 21:15:33	INFO	PUT blockchain/assets/vehicles/ON4772466/colour	Formatting request
+undefined	14/03/2017 21:15:38	INFO	PUT blockchain/assets/vehicles/ON4772466/colour	Updating colour value
+	14/03/2017 21:15:38	INFO	PUT blockchain/assets/vehicles/ON4772466/colour	Achieving Consensus
+14/03/2017 21:15:38	EXIT	PUT blockchain/assets/vehicles/ON4772466/colour	OUTPUT: "Tx e4bebe40-1702-4387-971b-99bd4a04f4cc complete"
+14/03/2017 21:15:39	ENTER	PUT blockchain/assets/vehicles/ON4772466/reg	INPUT: {"value":"REG"}
+	14/03/2017 21:15:39	INFO	PUT blockchain/assets/vehicles/ON4772466/reg	Formatting request
+undefined	14/03/2017 21:15:44	INFO	PUT blockchain/assets/vehicles/ON4772466/reg	Achieving Consensus
+	14/03/2017 21:15:44	INFO	PUT blockchain/assets/vehicles/ON4772466/reg	Updating reg value
+14/03/2017 21:15:44	EXIT	PUT blockchain/assets/vehicles/ON4772466/reg	OUTPUT: "Tx b2ac4c6c-3e49-4ec8-bd56-d429af5e2764 complete"
+14/03/2017 21:15:48	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+14/03/2017 21:15:48	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 21:15:48	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+	14/03/2017 21:15:48	INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+14/03/2017 21:15:48	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:15:53	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 21:15:53	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:15:53	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:15:53	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 21:15:53	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 21:15:54	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 21:15:54	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:15:54	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:15:54	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 21:15:54	INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+14/03/2017 21:15:54	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:15:57	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 21:15:57	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 21:16:01	ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+	14/03/2017 21:16:01	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:01	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:01	ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"manufacturer_to_private","value":"Beechvale_Group","v5cID":"ON4772466"}
+	14/03/2017 21:16:01	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+undefined	14/03/2017 21:16:06	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+	14/03/2017 21:16:06	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+14/03/2017 21:16:06	EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx 0978723e-14a1-4612-9347-b5354c444e2d complete"
+14/03/2017 21:16:08	ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+14/03/2017 21:16:08	EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+14/03/2017 21:16:11	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 21:16:11	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:11	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:11	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 21:16:11	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 21:16:12	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 21:16:12	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:12	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:12	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 21:16:15	INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Beechvale_Group","scrapped":false,"status":2,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+14/03/2017 21:16:15	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:16:17	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 21:16:17	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+14/03/2017 21:16:20	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 21:16:20	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:20	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:20	ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"private_to_lease_company","value":"LeaseCan","v5cID":"ON4772466"}
+	14/03/2017 21:16:20	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+undefined	14/03/2017 21:16:25	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+	14/03/2017 21:16:25	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+14/03/2017 21:16:25	EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx 94af7a2c-6419-451c-92f6-c9d05d98f1e7 complete"
+14/03/2017 21:16:27	ENTER	GET blockchain/participants/dealerships	INPUT: {}
+14/03/2017 21:16:27	EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+14/03/2017 21:16:30	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+	14/03/2017 21:16:30	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:30	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:30	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 21:16:30	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+	14/03/2017 21:16:31	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:31	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+14/03/2017 21:16:31	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:31	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 21:16:34	INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"LeaseCan","scrapped":false,"status":2,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+14/03/2017 21:16:34	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:16:36	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 21:16:36	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+	14/03/2017 21:16:39	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:39	ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+14/03/2017 21:16:39	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:39	ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"lease_company_to_private","value":"Joe_Payne","v5cID":"ON4772466"}
+	14/03/2017 21:16:39	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+undefined	14/03/2017 21:16:44	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+	14/03/2017 21:16:44	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+14/03/2017 21:16:44	EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx 4ca77f3f-1014-4599-9136-4f78a37926a9 complete"
+14/03/2017 21:16:47	ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+14/03/2017 21:16:47	EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+14/03/2017 21:16:54	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+	14/03/2017 21:16:54	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:54	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:54	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 21:16:54	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+14/03/2017 21:16:55	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+	14/03/2017 21:16:55	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:16:55	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:16:55	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 21:16:58	INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Joe_Payne","scrapped":false,"status":2,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+14/03/2017 21:16:58	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:17:00	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 21:17:00	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 21:17:03	ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+	14/03/2017 21:17:03	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:17:03	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:17:03	ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"private_to_scrap_merchant","value":"Cray_Bros_London_Ltd","v5cID":"ON4772466"}
+	14/03/2017 21:17:03	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+undefined	14/03/2017 21:17:08	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+	14/03/2017 21:17:08	INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+14/03/2017 21:17:08	EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx f984d0e8-4274-45f3-bb7f-d1b416507efa complete"
+14/03/2017 21:17:10	ENTER	GET blockchain/participants/leasees	INPUT: {}
+14/03/2017 21:17:10	EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+14/03/2017 21:17:13	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+	14/03/2017 21:17:13	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:17:13	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:17:13	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 21:17:13	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 21:17:14	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+14/03/2017 21:17:14	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+	14/03/2017 21:17:14	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:17:14	ENTER	GET blockchain/assets/vehicles	INPUT: {}
+	14/03/2017 21:17:17	INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Cray_Bros_London_Ltd","scrapped":false,"status":4,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+14/03/2017 21:17:17	EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+14/03/2017 21:17:21	ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+	14/03/2017 21:17:21	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:17:21	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:17:21	ENTER	DELETE blockchain/assets/vehicles/vehicle/ON4772466/scrap	INPUT: {}
+	14/03/2017 21:17:26	INFO	DELETE blockchain/assets/vehicles/vehicle/ON4772466/scrap	Achieving consensus
+14/03/2017 21:17:26	EXIT	DELETE blockchain/assets/vehicles/vehicle/ON4772466/scrap	OUTPUT: {"message":"Scrap updated"}
+14/03/2017 21:17:28	ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+14/03/2017 21:17:28	EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+14/03/2017 21:17:32	ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+	14/03/2017 21:17:32	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:17:32	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:17:32	ENTER	GET blockchain/participants/	INPUT: {}
+14/03/2017 21:17:32	EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+14/03/2017 21:17:32	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 21:17:32	INFO	GET blockchain/transactions	Retrieved height: 14
+14/03/2017 21:17:32	EXIT	GET blockchain/transactions	OUTPUT: "result"
+14/03/2017 21:17:37	ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+	14/03/2017 21:17:37	INFO	POST admin/identity	Calling /registrar endpoint
+14/03/2017 21:17:37	EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+14/03/2017 21:17:37	ENTER	GET blockchain/transactions	INPUT: {}
+	14/03/2017 21:17:37	INFO	GET blockchain/transactions	Retrieved height: 14
+	14/03/2017 21:17:37	INFO	GET blockchain/transactions	Evaluating transactions
+14/03/2017 21:17:37	EXIT	GET blockchain/transactions	OUTPUT: {"transactions":[{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\nw\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a/\n\u0018private_to_lease_company\n\bLeaseCan\n\tON4772466","txid":"94af7a2c-6419-451c-92f6-c9d05d98f1e7","timestamp":{"seconds":1489497380},"nonce":"3rsw8RNjDE++T12Ldhw8NeqdNISegOT/","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"39DF3285499F483782B1AD848062DF3E","notBefore":"2017-03-14T13:15:12.000Z","notAfter":"2017-06-12T13:15:12.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"2B:28:2F:46:E9:60:2C:8B:C8:E3:E4:7D:01:10:B8:35:E7:80:C8:83","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Beechvale_Group","1.2.3.4.5.6.11":"private","1.2.3.4.5.6.7":".9....&a...............5[...9oS.`d ...,.....|..w...f...P....O...","1.2.3.4.5.6.8":"........'...\".\\.L..Wo..^L..(..I.M...a.X......<G....9......B...rA","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIQCOvzvzPXjBMgIz7Enr8dRqRoYsq9nZz84rSAGZ/JWXPwIgSSUZxjGftrviZHV4XGW5sqt/n6W4F27FFWyWP4lTAUI=","caller":"Beechvale_Group","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\n}\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a5\n\u0017manufacturer_to_private\n\u000fBeechvale_Group\n\tON4772466","txid":"0978723e-14a1-4612-9347-b5354c444e2d","timestamp":{"seconds":1489497361},"nonce":"n/fmI4I4AyRLYxNEbnA/jJfp6maTSoF/","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"CCF21C5355094223990508AFE8CE8EB7","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"39:DB:E9:17:5C:2F:5F:A2:16:65:2B:B7:3B:6E:3C:FA:50:11:6F:F4","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":".F.0.H....Le)......&TA..L2+.oG..@......~.O.&...XI..Mh<.+...yG..`","1.2.3.4.5.6.8":"%Y.1...0..=.HrwY..S.L.nm..J.>....d..^.i....{...6.Z....>m......,.","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEQCIEMDF5GZuv7t0UHYO760BjbfJ5Bt15teLwVEjg3MhMHCAiA7EjJ4PWmyRBf1Bz8ZOPGhJ5uI9oFL8ZbcCPSqp+UVwg==","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\nd\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001c\n\nupdate_reg\n\u0003REG\n\tON4772466","txid":"b2ac4c6c-3e49-4ec8-bd56-d429af5e2764","timestamp":{"seconds":1489497339},"nonce":"l6TlIYf1e3an+Cs1JJV2usptyIacBttm","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"BB8B1708E9A441FCB2F6D29C811DD5D2","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"4B:D9:3A:13:34:F0:1A:99:72:62:A3:FC:56:98:B0:D0:57:B1:25:D0","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":".EGh.Y%.kw..J^./b9...ET........1.bM.MG...Q.y..\"...d.9../........","1.2.3.4.5.6.8":".E.4.....:+..\\ny.,.P.}....O;:..5.fk..v;..eI'3..3..,..].......B..","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIGseEe8g+lHz15O/5jYTdroPNp+XLmv4UHQfiIZ5N7vSAiEAnt3ofvYr3/v3eVB4c/61IJd7s6maeQx6WU/+J5tjlHw=","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\ng\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001f\n\rupdate_colour\n\u0003red\n\tON4772466","txid":"e4bebe40-1702-4387-971b-99bd4a04f4cc","timestamp":{"seconds":1489497333},"nonce":"AdrnbUjdQnIzwdXVzjk82YeYxD4ogz4S","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"EC9CF6AFBFDD430082393ABC46D83D77","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"24:67:A0:42:96:92:91:15:BD:FC:63:E6:E3:31:58:74:C7:7D:0C:C1","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":"z...z.......n.!............U.2...8p[...,....gC...~.G.({.........","1.2.3.4.5.6.8":"-....L)..9.f..E..*..u....<...F.9......mG.).t..v2..v..&:..&.....8","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIQC4h/32DNsRApaW3pAuzEWUmlGG13kFKO1tdHjThFSN5wIgLMbPlE5EmVR9iQI+7q7+dbyUq9eHIylLi4SlY8o9JwM=","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\ne\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001d\n\fupdate_model\n\u0002mo\n\tON4772466","txid":"66777282-693d-45af-b226-f1f8877cc84c","timestamp":{"seconds":1489497327},"nonce":"HkGqr9E3PG5Ho3WouY2IiaOgYxM5q5wi","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"27DB2CCB510B40EFAF4574162789A880","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"72:E1:FF:BE:83:4F:12:21:2D:FA:99:9D:F9:4E:DA:E7:EC:91:DF:54","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":"S0uf.O..P....M...MK*j....8&+cy......8OA!..D.Q..z.m.M..-.....7*.1","1.2.3.4.5.6.8":"s..,r..:...F....2.o...W.3.F..q..\\?..,.[.G....~..*,..M..Y.K.&\r.._","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEQCIBaEmE6XEVyomyOw9D11HV5W8QRSbJK0r34TBQ1/J/CZAiBV63SscWxcwBmpF3BUzuUB95rrWcLUvW3NcnTOKAHnlg==","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\ne\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001d\n\u000bupdate_make\n\u0003mak\n\tON4772466","txid":"75c510ac-2a10-4dec-8291-c70c58b04cac","timestamp":{"seconds":1489497322},"nonce":"JLyUjAPTgQuhj9fh3+TdzyQqrG2DQAw1","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"34365246C23C4D23AB12923DF754AC3E","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"DF:6B:FB:11:AE:36:3C:73:B7:93:8D:75:5A:01:0E:AD:5E:DB:E9:3C","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":"Md.\\.........kFN.pA%..x.....K..T..%...jOK......y........+|W.BV.Y","1.2.3.4.5.6.8":".`m.bs......|.....+.9...aG.%..x...e...-..-{I7.....,x.v?...K.q...","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCICOmzjthbbtj+NTtZZrMk2Is8FVCnXbX5Eh7lGILpjQgAiEAwx8nU6PAX25nEtjyH9mSMTnROxQrxokMnnKHXSAQLAw=","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\np\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a(\n\nupdate_vin\n\u000f123456789012345\n\tON4772466","txid":"953dd422-2902-4594-8e4e-b5062942f134","timestamp":{"seconds":1489497316},"nonce":"t/YJ3SLLrc5JiHs5kEVK7Cbk48paz2cR","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"63D796465C0B4D689F618135949A9321","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"B8:C6:37:8B:06:71:C7:86:77:45:39:E3:7B:E0:4D:52:68:6D:F7:3E","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":"`2............!..LS...t.........!...Fh....+...C......B.ec0..3...","1.2.3.4.5.6.8":"..\r.>..O..A.n..Xn..0.B&%...u..[D..).......G.}^f{..|h..y.....dF..","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIQC/puk7Sr5ZgkOZj2W3+OOR9ePOFy1bQD5fu0YdP4+7OQIgNAgnVoOE4A/2MCwSvdBKNCVMtaHG5r3UbB3OmI1lcFM=","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\nz\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a2\n\u0019authority_to_manufacturer\n\nAlfa_Romeo\n\tON4772466","txid":"cd0a2e86-5683-4de5-a517-6931558e9c8d","timestamp":{"seconds":1489497286},"nonce":"2fAcqnrxcZv+bbTiBDsoatf5TTc+yAD/","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"4D1D22820F644EDF9028C9C444E815A3","notBefore":"2017-03-14T13:12:38.000Z","notAfter":"2017-06-12T13:12:38.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"D7:BC:A9:C1:5B:9B:5B:55:69:1C:DD:07:B3:73:0D:A2:CE:DE:BB:91","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"DVLA","1.2.3.4.5.6.11":"regulator","1.2.3.4.5.6.7":"[...c..kv...?.aC.o.....M.y.............L...y....k.K.:CA..DU...!k","1.2.3.4.5.6.8":"....%$v...F.... ..JAjF.Y....8kt|....\"+..4.rP....^....m.nb.d.T.g.","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEYCIQCsv/xJTo3popzfuNlruX9cV+zCv4/eqF1Dvwa0DAU0fwIhANrZwUUZOz3wTUuj3JsOXncv7u6/rSH/BGWMZrjZqkXX","caller":"DVLA","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\nc\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001b\n\u000ecreate_vehicle\n\tON4772466","txid":"7a516b8e-a4f6-403a-80ef-3015807d5799","timestamp":{"seconds":1489497272},"nonce":"KBQChR2gIC40w1Ai0y6Mj5abpiAavdvy","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"C8B69B6B2C39400CB6963CCE387CE03D","notBefore":"2017-03-14T13:12:38.000Z","notAfter":"2017-06-12T13:12:38.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"B6:DD:4D:33:6B:B3:50:1D:5D:1A:3A:35:9E:15:AA:81:84:39:51:A1","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"DVLA","1.2.3.4.5.6.11":"regulator","1.2.3.4.5.6.7":"..9g...g.....`UH.EQ.*..P..f...p.....FQ......c.p.WfRi.@.m....s1..","1.2.3.4.5.6.8":"Y.X..n\\..>.D.b?/.S.k.5..RrQ....P..|...eG.S.\n....4.8[.Z8.k.)bg)`.","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIDCjB71URyv0Q6Srm1xzzfBMqrcptNLtrO3E+n0iDFFAAiEAgR6oP1RFIhEJnKpnDpj+v3evXO9zdkg6vayX4P0cJZU=","caller":"DVLA","failed":false}]}
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks	OUTPUT: {"height":14,"currentBlockHash":"ovAgaKdxd9uHpASyAj6P8mH63Nk+J1x2xON5pcFZN0V30HROfAd0mkJtUcaPpf3+2/sHknLWxnsMmbsv050KJA=="}
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/13	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/13	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/12	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/12	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/11	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/11	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/10	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/10	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/9	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/9	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/8	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/8	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/7	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/7	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/6	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/6	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/5	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/5	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/4	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/4	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/3	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/3	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/2	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/2	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/1	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/1	OUTPUT: ""
+14/03/2017 21:17:44	ENTER	GET blockchain/blocks/0	INPUT: {}
+14/03/2017 21:17:44	EXIT	GET blockchain/blocks/0	OUTPUT: ""
+14/03/2017 21:17:54	ENTER	GET blockchain/blocks	INPUT: ""
+14/03/2017 21:17:54	EXIT	GET blockchain/blocks	OUTPUT: {"height":14,"currentBlockHash":"ovAgaKdxd9uHpASyAj6P8mH63Nk+J1x2xON5pcFZN0V30HROfAd0mkJtUcaPpf3+2/sHknLWxnsMmbsv050KJA=="}

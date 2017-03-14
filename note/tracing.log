@@ -1,0 +1,1316 @@
+peer0: grpc://172.18.0.3:7051
+membersrvc: grpc://172.18.0.2:7054
+Server Up
+INFO	Startup complete on port	8080
+
+Tue, 14 Mar 2017 13:13:34 GMT hfc Enrolling [req={"enrollmentID":"WebAppAdmin","enrollmentSecret":"DJY27pEnl16d"}]
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"WebAppAdmin","enrollmentSecret":"DJY27pEnl16d"}]
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d0301070342000430b1313e25baf7b0277095581c54b0316e0905ec9b70c953d206684052e743890b985dafeb5f69f8736be594780808e09a06fcfa7512470a1a16395f797139d1"
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497214,"high":0,"unsigned":false},"nanos":0},"id":{"id":"WebAppAdmin"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[68,74,89,50,55,112,69,110,108,49,54,100]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,48,177,49,62,37,186,247,176,39,112,149,88,28,84,176,49,110,9,5,236,155,112,201,83,210,6,104,64,82,231,67,137,11,152,93,175,235,95,105,248,115,107,229,148,120,8,8,224,154,6,252,250,117,18,71,10,26,22,57,95,121,113,57,209]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,171,179,55,222,163,201,1,164,84,43,251,194,139,62,133,185,70,218,233,175,96,96,151,253,83,137,78,127,248,37,99,208,185,165,10,126,126,105,98,180,10,131,207,168,193,217,199,74,125,199,0,19,62,9,211,100,215,240,18,172,211,229,59,44]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:34 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"8bd6186f153fbfeb2409d0e2d2f8b558adce858c672df34aeaa64d7045636057","cert":"308201b73082015da003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233345a170d3137303631323133313233345a3047310b300906035504061302555331143012060355040a130b48797065726c65646765723122302006035504030c1957656241707041646d696e5c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d0301070342000430b1313e25baf7b0277095581c54b0316e0905ec9b70c953d206684052e743890b985dafeb5f69f8736be594780808e09a06fcfa7512470a1a16395f797139d1a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d040303034800304502202e123c6358af25824aaf67a73d559f4efd46c475768a6302cf7d2679e9a575a4022100a0bdb7de88d5ce769208eea8fe756f40fd0ae4b9f2d8171db0c651783e60bdd9","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:34 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Enrolled registrar
+
+INFO	Startup	Set registrar
+
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc MemberServicesImpl.register: req=[Circular]
+Tue, 14 Mar 2017 13:13:34 GMT hfc register {"id":{"id":"DVLA"},"role":1,"attributes":[{"name":"role","value":"regulator","notBefore":"","notAfter":""},{"name":"username","value":"DVLA","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[57,55,54,53,52,57,51,57,50,54,49,48,48,53,48,57,53,54,50,55,57,49,52,52,57,49,56,51,48,48,52,55,57,57,54,50,48,51,49,54,57,50,51,52,55,57,51,48,54,51,54,49,55,51,54,56,54,53,53,56,54,48,53,55,51,51,51,48,57,55,53,55,54,52,51,55,56]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[53,57,56,54,54,50,51,52,57,49,53,48,55,56,57,48,57,52,48,53,50,50,55,54,56,50,50,51,55,55,57,54,53,57,55,49,50,51,52,53,48,51,49,50,49,52,49,56,51,52,51,48,51,57,51,52,51,53,50,48,55,53,51,54,55,53,50,54,54,48,57,57,50,51,54,50,56]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:34 GMT hfc memberServices.register err=null, secret=kuoiethzwrIE
+Tue, 14 Mar 2017 13:13:34 GMT hfc register {"id":{"id":"Alfa_Romeo"},"role":1,"attributes":[{"name":"role","value":"manufacturer","notBefore":"","notAfter":""},{"name":"username","value":"Alfa_Romeo","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[52,48,53,54,48,53,55,56,57,54,50,53,53,51,51,51,49,56,49,57,55,53,49,55,51,55,55,50,53,54,55,51,57,56,50,49,56,49,48,54,53,48,56,52,48,49,57,55,49,48,50,48,54,50,54,52,56,50,54,50,48,49,53,49,55,50,56,53,54,56,55,52,50,57,50,49,48]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[52,48,57,51,50,55,51,55,54,55,48,55,57,56,52,57,54,54,51,48,48,52,48,57,56,57,50,49,55,54,55,51,50,54,52,50,51,57,48,52,53,50,52,49,52,52,55,53,52,52,49,51,55,52,51,50,49,53,53,49,49,57,51,56,50,55,56,50,48,57,55,48,50,56,48,53,50]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:34 GMT hfc memberServices.register err=null, secret=jTxnePVEFCzk
+Tue, 14 Mar 2017 13:13:34 GMT hfc register {"id":{"id":"Toyota"},"role":1,"attributes":[{"name":"role","value":"manufacturer","notBefore":"","notAfter":""},{"name":"username","value":"Toyota","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[56,55,51,57,51,50,49,52,53,50,52,52,49,52,53,53,51,56,51,48,57,50,53,49,51,53,51,50,55,48,49,51,55,55,56,55,51,57,50,51,51,48,57,51,49,50,52,52,53,48,49,52,49,52,51,51,50,50,55,48,55,51,57,51,51,48,50,53,57,48,53,51,50,53,56,49,52]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[49,49,48,53,49,53,53,56,53,49,53,56,50,56,48,53,52,50,56,53,49,50,50,49,54,54,50,53,52,51,52,53,49,53,54,54,50,48,52,57,49,55,57,50,55,56,50,52,49,50,50,50,57,53,51,53,49,57,48,56,53,56,52,53,54,54,53,49,56,56,51,48,49,50,57,54,51,56]},"offset":0,"markedOffset":-1,"limit":78,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:34 GMT hfc memberServices.register err=null, secret=xZbKCKQwqhtz
+Tue, 14 Mar 2017 13:13:34 GMT hfc register {"id":{"id":"Beechvale_Group"},"role":1,"attributes":[{"name":"role","value":"private","notBefore":"","notAfter":""},{"name":"username","value":"Beechvale_Group","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[49,48,52,48,53,52,55,49,49,48,50,52,57,51,51,52,49,52,53,49,49,57,49,54,51,48,56,53,56,51,53,57,56,57,49,48,57,54,52,51,48,57,56,53,48,54,57,56,50,57,50,49,57,53,51,55,53,55,48,49,53,54,54,49,52,56,57,57,49,54,52,54,48,51,55,57,54,56]},"offset":0,"markedOffset":-1,"limit":78,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[51,52,52,48,51,51,56,54,49,49,48,51,55,50,48,55,52,55,53,53,54,53,52,49,53,57,50,53,52,50,56,55,56,50,54,48,53,48,55,48,54,55,49,57,56,52,50,55,56,54,55,55,51,55,56,54,56,49,51,50,55,53,56,48,53,53,51,49,52,55,50,55,52,55,57,57,57]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:34 GMT hfc memberServices.register err=null, secret=dgYrgxqjMSIN
+Tue, 14 Mar 2017 13:13:34 GMT hfc register {"id":{"id":"Milescape"},"role":1,"attributes":[{"name":"role","value":"private","notBefore":"","notAfter":""},{"name":"username","value":"Milescape","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[57,54,54,57,54,52,51,48,53,50,56,48,53,56,48,52,53,50,57,48,57,57,53,56,57,54,51,50,55,55,54,52,49,49,57,53,49,55,51,55,54,48,52,49,52,55,53,49,56,49,50,51,55,49,56,48,57,54,48,55,55,53,53,57,53,54,51,50,51,50,53,51,55,48,50,53,49]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[55,51,57,52,52,56,55,57,48,49,48,56,54,57,57,52,49,56,56,56,52,51,48,54,56,54,49,55,49,51,56,56,57,51,48,57,53,48,57,49,55,49,49,49,56,52,54,52,56,50,57,51,48,52,48,55,53,52,51,53,52,48,48,56,48,48,57,57,54,49,53,55,53,53,48,56,52]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:34 GMT hfc memberServices.register err=null, secret=OZrSNUXTgQPA
+Tue, 14 Mar 2017 13:13:34 GMT hfc register {"id":{"id":"Jaguar_Land_Rover"},"role":1,"attributes":[{"name":"role","value":"manufacturer","notBefore":"","notAfter":""},{"name":"username","value":"Jaguar_Land_Rover","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[57,49,50,57,53,49,49,53,57,49,57,53,54,57,56,52,48,53,50,56,56,52,48,52,49,52,56,56,51,49,50,48,54,51,53,51,50,53,50,48,57,54,52,51,50,54,53,57,54,52,51,54,52,52,54,50,50,49,52,48,55,49,53,51,51,56,55,48,56,53,54,57,52,52,57,52,51]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[57,54,51,53,52,50,51,49,57,51,56,56,55,57,56,50,53,50,51,49,52,52,53,56,56,50,56,48,55,52,50,52,54,57,51,51,53,53,56,57,57,48,51,52,50,55,51,53,48,52,48,56,52,48,53,53,57,48,48,56,50,48,51,55,55,53,48,55,56,57,52,57,51,53,50,49,55]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:34 GMT hfc memberServices.register err=null, secret=GXxfetwmMkad
+Tue, 14 Mar 2017 13:13:34 GMT hfc Enrolling [req={"enrollmentID":"DVLA","enrollmentSecret":"kuoiethzwrIE"}]
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"DVLA","enrollmentSecret":"kuoiethzwrIE"}]
+Tue, 14 Mar 2017 13:13:34 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d030107034200046b9c202eb5f310373d05193086c0cb66f733f377456eee218ca96292780f55fc6b7c1a786ec949a6d68184ac04b2ab26b7ae002c7cb0ea5c75db475c9dbf78aa"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"DVLA"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[107,117,111,105,101,116,104,122,119,114,73,69]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,107,156,32,46,181,243,16,55,61,5,25,48,134,192,203,102,247,51,243,119,69,110,238,33,140,169,98,146,120,15,85,252,107,124,26,120,110,201,73,166,214,129,132,172,4,178,171,38,183,174,0,44,124,176,234,92,117,219,71,92,157,191,120,170]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,235,224,229,249,207,85,47,177,144,8,152,232,249,85,53,4,225,82,97,109,77,113,4,139,173,220,117,240,33,182,53,180,179,25,4,89,25,95,229,200,142,88,179,206,146,209,181,251,19,161,30,25,131,22,113,39,83,99,202,203,138,83,161,0]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Alfa_Romeo","enrollmentSecret":"jTxnePVEFCzk"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Alfa_Romeo","enrollmentSecret":"jTxnePVEFCzk"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d0301070342000486e13ff10f84c1991fe56f49cb168d702dfe8c277578381d83cf2a06f5f291f06ef776fb6a2ef88df71bf79d8b1c3dca05818673c56dedd673217601d60e0bf2"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Alfa_Romeo"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[106,84,120,110,101,80,86,69,70,67,122,107]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,134,225,63,241,15,132,193,153,31,229,111,73,203,22,141,112,45,254,140,39,117,120,56,29,131,207,42,6,245,242,145,240,110,247,118,251,106,46,248,141,247,27,247,157,139,28,61,202,5,129,134,115,197,109,237,214,115,33,118,1,214,14,11,242]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,79,24,72,178,127,17,178,148,216,235,146,226,174,68,188,27,23,116,137,236,124,60,30,21,176,30,193,12,106,146,97,39,255,86,90,140,31,36,192,21,61,217,36,168,145,33,125,222,172,82,149,178,44,183,254,199,156,247,190,244,137,102,54,243]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Toyota","enrollmentSecret":"xZbKCKQwqhtz"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Toyota","enrollmentSecret":"xZbKCKQwqhtz"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004bc98854e2c8f4306410ebe5eca9fed1c277a949b21f639af321adfc2bffc328574e298d9ce0d1da40415d3771e8b6327a0123f01405a641def0beb2fd023b115"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Toyota"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[120,90,98,75,67,75,81,119,113,104,116,122]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,188,152,133,78,44,143,67,6,65,14,190,94,202,159,237,28,39,122,148,155,33,246,57,175,50,26,223,194,191,252,50,133,116,226,152,217,206,13,29,164,4,21,211,119,30,139,99,39,160,18,63,1,64,90,100,29,239,11,235,47,208,35,177,21]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,70,238,96,25,1,211,93,137,191,222,79,194,119,225,145,11,55,223,25,181,97,58,223,215,63,197,137,51,185,18,247,242,141,50,131,242,121,129,99,240,62,202,19,220,172,46,47,231,61,47,204,214,171,71,118,245,46,53,3,250,131,245,138,17]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"ScrapIt_UK"},"role":1,"attributes":[{"name":"role","value":"scrap_merchant","notBefore":"","notAfter":""},{"name":"username","value":"ScrapIt_UK","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[53,52,49,49,56,51,49,51,52,52,50,49,56,52,53,48,56,51,51,49,48,55,55,51,56,53,48,54,55,53,52,57,51,48,51,51,54,53,51,52,57,50,54,48,57,48,53,56,56,56,49,48,57,55,50,51,50,53,50,54,48,52,48,57,55,57,51,55,48,55,51,56,54,54,52,48,48]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[55,48,49,56,54,52,51,56,50,50,52,49,48,56,49,55,55,49,53,57,50,48,57,56,49,48,53,54,57,53,49,53,51,54,51,52,49,56,52,48,56,51,53,53,51,48,50,53,53,51,49,57,49,50,54,56,48,51,54,49,55,53,53,57,55,56,50,50,48,57,57,56,49,56,54,55,55]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=UQKWjHIgGpvD
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"Joe_Payne"},"role":1,"attributes":[{"name":"role","value":"private","notBefore":"","notAfter":""},{"name":"username","value":"Joe_Payne","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[56,51,54,49,53,51,50,52,52,49,53,54,55,53,48,54,49,50,54,53,55,57,51,54,53,48,56,48,48,53,53,53,51,49,52,54,55,57,52,49,49,50,56,51,51,57,50,52,55,57,50,51,55,56,55,53,52,49,55,50,53,51,54,55,54,57,54,57,54,56,48,51,57,53,49,52]},"offset":0,"markedOffset":-1,"limit":76,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[55,55,54,56,54,53,48,56,51,53,52,49,54,49,55,51,55,57,57,54,49,55,57,57,54,50,48,56,51,51,50,49,55,54,51,52,53,52,48,53,52,57,55,50,51,56,49,52,50,51,56,56,50,57,50,53,51,48,56,52,50,55,51,50,54,56,50,57,57,50,56,50,57,54,54,57,53]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=QySzfaPlAoNv
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Beechvale_Group","enrollmentSecret":"dgYrgxqjMSIN"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Beechvale_Group","enrollmentSecret":"dgYrgxqjMSIN"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004cf1227616c448029f04c8f9127507b98f31cd9256b4eb2174dafe5642d50ed4bda92098c5408dfad17b2e5054530bc7bfee48bd5de894606873a1930c912429f"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Beechvale_Group"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[100,103,89,114,103,120,113,106,77,83,73,78]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,207,18,39,97,108,68,128,41,240,76,143,145,39,80,123,152,243,28,217,37,107,78,178,23,77,175,229,100,45,80,237,75,218,146,9,140,84,8,223,173,23,178,229,5,69,48,188,123,254,228,139,213,222,137,70,6,135,58,25,48,201,18,66,159]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,217,242,131,106,164,184,155,227,156,109,214,245,180,111,169,30,114,108,163,92,173,213,237,239,9,189,131,163,40,171,30,225,167,205,26,52,78,173,151,201,213,80,57,80,65,112,25,59,141,172,189,95,147,10,54,223,92,240,238,145,43,147,190,107]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Milescape","enrollmentSecret":"OZrSNUXTgQPA"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Milescape","enrollmentSecret":"OZrSNUXTgQPA"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004c85201f815c71c8f6e73e7db3b094bed1889d5394737f11c6cac7f6385058195882f4888e363ab095208b87d2eb21a49912f463d323bcaf6776b12b8ba4116cd"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Milescape"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[79,90,114,83,78,85,88,84,103,81,80,65]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,200,82,1,248,21,199,28,143,110,115,231,219,59,9,75,237,24,137,213,57,71,55,241,28,108,172,127,99,133,5,129,149,136,47,72,136,227,99,171,9,82,8,184,125,46,178,26,73,145,47,70,61,50,59,202,246,119,107,18,184,186,65,22,205]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,65,83,143,234,2,81,235,70,88,149,249,79,205,37,179,114,70,205,249,109,16,227,147,49,60,57,215,13,220,75,217,70,226,220,6,102,129,220,96,97,214,171,89,197,34,120,221,90,215,25,101,160,195,12,14,250,160,124,19,35,83,213,209,243]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"Every_Car_Leasing"},"role":1,"attributes":[{"name":"role","value":"lease_company","notBefore":"","notAfter":""},{"name":"username","value":"Every_Car_Leasing","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[49,48,56,50,52,50,48,57,56,49,57,51,52,48,51,56,51,50,55,49,50,53,52,53,53,57,57,56,53,48,56,51,53,55,49,55,57,49,54,52,55,48,57,48,49,52,55,54,51,54,48,53,56,54,54,56,52,52,52,51,56,56,51,57,48,50,57,55,56,53,51,52,52,52,50,56,50,48]},"offset":0,"markedOffset":-1,"limit":78,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[55,49,50,49,51,55,54,53,49,52,50,48,53,56,50,57,49,50,49,48,53,49,49,53,51,49,57,52,49,56,52,57,52,57,49,50,51,57,53,54,51,51,49,50,51,48,52,51,54,56,55,49,53,53,55,51,56,54,54,53,52,50,56,50,56,56,51,50,52,50,49,51,55,54,55,57,55]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=tRZIwWTqlpxc
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"Andrew_Hurt"},"role":1,"attributes":[{"name":"role","value":"private","notBefore":"","notAfter":""},{"name":"username","value":"Andrew_Hurt","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[52,49,48,55,52,51,56,53,54,52,50,55,53,56,50,52,52,52,50,57,54,56,53,54,53,56,53,53,53,55,53,52,50,52,54,57,57,54,53,53,57,53,54,51,56,50,50,57,57,49,56,51,53,49,50,51,54,57,50,52,52,49,50,53,54,49,52,53,56,55,54,55,53,57,52,49]},"offset":0,"markedOffset":-1,"limit":76,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[55,55,51,50,54,55,54,53,52,51,54,54,56,52,50,48,51,53,48,49,50,52,53,55,50,49,52,52,57,49,50,49,53,51,55,49,51,56,54,52,50,51,53,51,51,48,49,54,51,52,49,56,56,55,52,51,49,57,55,52,57,55,54,48,54,49,57,54,51,51,52,57,53,54,51,56,50]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=ThVhlkRpAqmb
+connected
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Jaguar_Land_Rover","enrollmentSecret":"GXxfetwmMkad"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Jaguar_Land_Rover","enrollmentSecret":"GXxfetwmMkad"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d0301070342000410e6efff45f0288cc79bdada716b126bdf13538a2d341dfaaf203738aa7676f3608a070b00caa8a81a2a763c21546897bed0adf739bd4d548d9eff4a4de4e430"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Jaguar_Land_Rover"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[71,88,120,102,101,116,119,109,77,107,97,100]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,16,230,239,255,69,240,40,140,199,155,218,218,113,107,18,107,223,19,83,138,45,52,29,250,175,32,55,56,170,118,118,243,96,138,7,11,0,202,168,168,26,42,118,60,33,84,104,151,190,208,173,247,57,189,77,84,141,158,255,74,77,228,228,48]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,116,162,169,114,92,42,183,7,252,115,235,86,121,52,202,41,9,79,25,194,136,113,38,196,97,208,149,63,117,91,197,161,138,210,26,32,131,110,241,37,170,235,117,187,109,233,212,101,60,49,228,102,69,201,185,77,122,158,235,173,30,228,113,210]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"Anthony_O_Dowd"},"role":1,"attributes":[{"name":"role","value":"private","notBefore":"","notAfter":""},{"name":"username","value":"Anthony_O_Dowd","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[54,54,53,57,54,55,57,48,54,52,55,49,48,55,57,49,50,55,55,57,55,54,52,56,57,52,55,55,51,54,52,54,56,55,55,51,48,55,48,56,53,57,51,56,53,52,54,53,54,55,52,56,52,56,55,52,55,56,57,54,49,49,49,53,48,50,50,54,54,55,52,56,49,51,56,55]},"offset":0,"markedOffset":-1,"limit":76,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[57,53,57,52,55,56,56,56,49,52,50,51,50,48,57,55,56,49,48,53,56,50,54,51,55,51,49,49,53,57,48,48,56,55,50,48,56,54,55,50,50,48,55,56,52,57,54,56,50,51,55,53,53,52,53,57,50,57,51,53,52,53,49,49,55,51,56,56,53,49,52,55,48,54,57,52,52]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=fDSVUuDBuXtt
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"Aston_Scrap_Centre"},"role":1,"attributes":[{"name":"role","value":"scrap_merchant","notBefore":"","notAfter":""},{"name":"username","value":"Aston_Scrap_Centre","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[50,53,52,52,52,55,50,55,52,54,52,49,50,52,52,49,50,51,53,50,48,53,57,52,55,52,50,54,56,48,56,54,55,55,52,57,57,52,55,56,52,57,49,56,53,55,55,53,56,54,55,48,48,49,53,49,50,55,53,57,50,56,53,50,49,57,52,57,52,52,52,55,49,54,48,54,51]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[52,52,57,57,56,51,49,50,48,55,51,53,56,56,54,57,57,52,56,53,49,52,51,55,55,52,50,55,48,49,48,51,49,50,50,53,56,57,54,57,49,48,54,50,49,50,57,57,54,49,49,52,50,53,48,51,54,53,56,53,57,48,53,57,55,56,49,53,53,57,50,52,53,55,56,53,52]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=bMdKzpmlZOLZ
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"LeaseCan"},"role":1,"attributes":[{"name":"role","value":"lease_company","notBefore":"","notAfter":""},{"name":"username","value":"LeaseCan","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[49,48,51,57,56,51,49,54,53,49,53,52,48,57,57,55,49,53,53,56,54,48,50,53,54,56,57,49,55,53,53,54,55,51,55,54,48,50,48,53,51,57,53,51,49,49,57,57,52,53,50,55,48,52,57,51,50,52,55,52,48,54,48,55,50,52,49,50,49,56,54,53,51,57,54,53,48,50]},"offset":0,"markedOffset":-1,"limit":78,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[53,52,57,57,49,52,53,52,51,55,48,52,54,50,51,51,56,55,48,55,52,51,51,51,51,52,50,54,57,53,53,49,54,50,56,49,57,54,49,54,52,51,48,51,52,49,52,53,48,51,51,48,57,48,55,53,57,55,56,50,57,50,57,50,53,55,49,57,57,51,50,49,52,49,55,51,55]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=BVJLpKeZJXUp
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"ScrapIt_UK","enrollmentSecret":"UQKWjHIgGpvD"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"ScrapIt_UK","enrollmentSecret":"UQKWjHIgGpvD"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004e4cb2288d9a40b6c28fc07b9ac6f5407747e0614c90b0fb4c135d49c74e2f8f93aecb41082a2d35e0ee6a685b81bd434787acc17a4c8e340ab2bc4884630935e"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"ScrapIt_UK"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[85,81,75,87,106,72,73,103,71,112,118,68]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,228,203,34,136,217,164,11,108,40,252,7,185,172,111,84,7,116,126,6,20,201,11,15,180,193,53,212,156,116,226,248,249,58,236,180,16,130,162,211,94,14,230,166,133,184,27,212,52,120,122,204,23,164,200,227,64,171,43,196,136,70,48,147,94]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,117,215,124,229,53,194,187,23,55,221,168,165,15,26,141,73,132,95,45,226,227,45,106,17,134,38,57,193,235,73,195,45,84,141,158,231,31,196,130,134,113,88,114,241,103,201,123,118,31,215,233,245,225,65,9,161,139,251,128,192,190,92,68,127]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"Viewers_Alfa_Romeo"},"role":1,"attributes":[{"name":"role","value":"private","notBefore":"","notAfter":""},{"name":"username","value":"Viewers_Alfa_Romeo","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[49,53,54,54,52,52,54,53,54,54,48,51,50,49,53,55,52,53,53,49,53,49,50,49,55,55,56,55,49,51,57,56,48,53,52,56,48,48,54,57,57,55,48,48,52,50,56,55,57,51,53,52,48,55,56,56,53,53,51,56,50,49,56,53,56,56,53,56,54,55,52,52,51,51,48,55,55]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[51,56,55,53,55,50,55,50,50,48,57,56,51,49,53,54,55,51,55,49,57,57,54,53,57,52,53,54,50,52,52,51,48,57,48,57,52,49,56,50,54,49,51,57,57,52,48,53,53,53,53,54,51,56,52,52,48,49,53,52,52,51,53,49,56,57,57,56,54,48,50,51,50,49,55,51]},"offset":0,"markedOffset":-1,"limit":76,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=ALTKwIGRWmDD
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Joe_Payne","enrollmentSecret":"QySzfaPlAoNv"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Joe_Payne","enrollmentSecret":"QySzfaPlAoNv"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004c7403cd385515c44b6177c524b7cb8797d2a0664b3f6ced2fa970b342fd9277f4e0acccc53b155f46a65d8e67125018080b30b464f7b2490105af1176c40062c"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Joe_Payne"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[81,121,83,122,102,97,80,108,65,111,78,118]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,199,64,60,211,133,81,92,68,182,23,124,82,75,124,184,121,125,42,6,100,179,246,206,210,250,151,11,52,47,217,39,127,78,10,204,204,83,177,85,244,106,101,216,230,113,37,1,128,128,179,11,70,79,123,36,144,16,90,241,23,108,64,6,44]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,226,77,42,123,240,17,104,33,228,115,83,213,192,87,127,132,26,20,22,148,191,156,150,55,189,189,165,132,53,10,67,59,100,37,255,121,178,128,150,224,142,50,13,201,79,33,230,232,65,175,141,132,62,105,83,57,0,7,229,171,174,11,6,191]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+connected
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"Cray_Bros_London_Ltd"},"role":1,"attributes":[{"name":"role","value":"scrap_merchant","notBefore":"","notAfter":""},{"name":"username","value":"Cray_Bros_London_Ltd","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[49,48,57,55,56,49,48,50,57,56,57,49,55,51,54,54,54,51,52,56,53,54,52,51,53,54,57,52,55,55,54,57,49,51,55,56,56,56,50,55,56,51,57,53,49,48,51,48,52,57,50,55,49,56,57,56,51,55,51,48,53,53,54,56,57,48,48,52,49,56,48,55,54,57,52,53,51,49]},"offset":0,"markedOffset":-1,"limit":78,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[53,56,56,50,52,54,48,48,57,57,51,56,50,54,50,56,50,50,49,50,57,52,50,50,55,55,53,50,54,53,54,54,51,49,54,53,50,49,52,54,51,49,49,55,50,56,49,51,49,50,52,57,48,55,54,48,52,55,56,52,54,56,52,54,49,54,57,56,55,53,52,49,52,53,50,51,52]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=XGDQrxNNFfGU
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Every_Car_Leasing","enrollmentSecret":"tRZIwWTqlpxc"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Every_Car_Leasing","enrollmentSecret":"tRZIwWTqlpxc"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004210ef3edb864ee0c250ba52eb2f22e9b39402b2e21ab25d2863980dedf6ecc063810a8bd96676f5dbd3b08d9d69968ad2759e0fabf115e961e6134a956892404"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Every_Car_Leasing"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[116,82,90,73,119,87,84,113,108,112,120,99]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,33,14,243,237,184,100,238,12,37,11,165,46,178,242,46,155,57,64,43,46,33,171,37,210,134,57,128,222,223,110,204,6,56,16,168,189,150,103,111,93,189,59,8,217,214,153,104,173,39,89,224,250,191,17,94,150,30,97,52,169,86,137,36,4]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,156,3,197,106,122,176,144,231,43,1,41,248,174,93,202,208,36,7,88,98,172,161,152,248,135,172,58,158,133,225,207,85,187,221,65,0,70,137,20,22,45,54,194,57,224,74,115,85,85,195,30,150,8,121,238,218,234,177,218,130,249,251,185,159]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc register {"id":{"id":"Regionwide_Vehicle_Contracts"},"role":1,"attributes":[{"name":"role","value":"lease_company","notBefore":"","notAfter":""},{"name":"username","value":"Regionwide_Vehicle_Contracts","notBefore":"","notAfter":""}],"affiliation":"institution_a","registrar":{"id":{"id":"WebAppAdmin"},"roles":[],"delegateRoles":[]},"sig":{"type":0,"r":{"buffer":{"type":"Buffer","data":[52,54,57,54,49,53,51,52,57,53,54,56,52,56,49,48,55,48,49,56,55,54,56,48,48,55,49,56,48,53,52,50,56,53,49,51,54,56,50,48,55,52,57,50,50,57,57,49,51,53,49,53,48,57,55,57,48,57,50,54,54,54,48,55,53,57,54,50,51,56,50,56,51,48,56,50,49]},"offset":0,"markedOffset":-1,"limit":77,"littleEndian":false,"noAssert":false},"s":{"buffer":{"type":"Buffer","data":[49,49,49,57,49,57,53,53,55,48,49,51,49,53,54,51,52,49,49,48,51,51,56,57,55,56,54,51,50,53,54,48,57,56,49,50,56,51,56,53,52,48,53,54,52,49,50,57,50,52,54,56,48,56,54,54,48,48,52,56,51,48,49,54,56,48,57,49,51,48,50,55,52,52,55,52,51,48]},"offset":0,"markedOffset":-1,"limit":78,"littleEndian":false,"noAssert":false}}}: err=null, token=[object Object]
+Tue, 14 Mar 2017 13:13:35 GMT hfc memberServices.register err=null, secret=FSkeEaHFDHrz
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Andrew_Hurt","enrollmentSecret":"ThVhlkRpAqmb"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Andrew_Hurt","enrollmentSecret":"ThVhlkRpAqmb"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d030107034200046bd3ccd22555318391ecf342bd8ab293fe2f3438f7ca9082a806eb972c43c5ddfe5b13c84949b62cd0fc6e28d62032a239c6057a355302a653c754252bcef6f8"
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497215,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Andrew_Hurt"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[84,104,86,104,108,107,82,112,65,113,109,98]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,107,211,204,210,37,85,49,131,145,236,243,66,189,138,178,147,254,47,52,56,247,202,144,130,168,6,235,151,44,67,197,221,254,91,19,200,73,73,182,44,208,252,110,40,214,32,50,162,57,198,5,122,53,83,2,166,83,199,84,37,43,206,246,248]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,3,106,28,130,48,222,73,165,83,131,79,221,48,22,111,175,237,232,232,31,85,116,239,145,147,152,9,205,203,99,202,66,110,133,9,19,113,255,72,207,116,158,32,181,145,185,96,145,63,94,69,149,170,202,217,150,83,248,24,34,115,75,147,102]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:35 GMT hfc Enrolling [req={"enrollmentID":"Anthony_O_Dowd","enrollmentSecret":"fDSVUuDBuXtt"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Anthony_O_Dowd","enrollmentSecret":"fDSVUuDBuXtt"}]
+Tue, 14 Mar 2017 13:13:35 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004b99752a306e591131e87aa609b5a97cc99ec920f9bcb593b726a0067d2ad7028158bdca045c7378fe6f58c26b0e7b0f1301880c4b1022c89a07151a3b55eb0e3"
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497216,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Anthony_O_Dowd"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[102,68,83,86,85,117,68,66,117,88,116,116]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,185,151,82,163,6,229,145,19,30,135,170,96,155,90,151,204,153,236,146,15,155,203,89,59,114,106,0,103,210,173,112,40,21,139,220,160,69,199,55,143,230,245,140,38,176,231,176,241,48,24,128,196,177,2,44,137,160,113,81,163,181,94,176,227]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,169,92,4,217,8,94,56,133,198,134,123,156,149,207,105,190,138,42,213,241,117,255,187,98,117,219,116,118,17,156,32,135,205,141,3,12,243,96,188,111,188,127,189,99,132,154,188,45,52,77,8,240,230,5,71,116,252,172,153,37,29,26,120,171]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:36 GMT hfc Enrolling [req={"enrollmentID":"Aston_Scrap_Centre","enrollmentSecret":"bMdKzpmlZOLZ"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Aston_Scrap_Centre","enrollmentSecret":"bMdKzpmlZOLZ"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004db6932d8568de3b035b2d11b1b45ab28f2b8b6e8d2da05306862bd7fe718cdf0dbb86401b0ea2e33d7932c7305b664a6fbd472ed9466f2a6a82d036398494d11"
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497216,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Aston_Scrap_Centre"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[98,77,100,75,122,112,109,108,90,79,76,90]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,219,105,50,216,86,141,227,176,53,178,209,27,27,69,171,40,242,184,182,232,210,218,5,48,104,98,189,127,231,24,205,240,219,184,100,1,176,234,46,51,215,147,44,115,5,182,100,166,251,212,114,237,148,102,242,166,168,45,3,99,152,73,77,17]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,249,253,94,20,78,168,83,110,206,179,250,81,25,114,184,108,124,89,6,201,232,36,191,217,156,149,239,52,79,237,127,171,42,205,14,17,74,95,230,206,50,183,25,16,71,84,96,191,160,130,21,242,130,182,213,62,111,107,73,91,2,52,77,128]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:36 GMT hfc Enrolling [req={"enrollmentID":"LeaseCan","enrollmentSecret":"BVJLpKeZJXUp"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"LeaseCan","enrollmentSecret":"BVJLpKeZJXUp"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d030107034200044f53511feb94619f4f09b020c8aaa1aa459f4487c938f1d965158e7387997f4889100df2046f397d90fad6de18b79097c8b99aef4408769ca848ec41e263af5a"
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497216,"high":0,"unsigned":false},"nanos":0},"id":{"id":"LeaseCan"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[66,86,74,76,112,75,101,90,74,88,85,112]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,79,83,81,31,235,148,97,159,79,9,176,32,200,170,161,170,69,159,68,135,201,56,241,217,101,21,142,115,135,153,127,72,137,16,13,242,4,111,57,125,144,250,214,222,24,183,144,151,200,185,154,239,68,8,118,156,168,72,236,65,226,99,175,90]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,180,82,77,157,229,171,86,231,53,147,137,30,25,127,227,61,57,232,65,37,250,191,134,198,161,207,16,232,213,237,203,59,89,51,40,37,221,210,186,143,205,184,166,191,99,182,190,21,36,17,127,52,10,115,212,191,132,131,219,89,134,172,57,152]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:36 GMT hfc Enrolling [req={"enrollmentID":"Viewers_Alfa_Romeo","enrollmentSecret":"ALTKwIGRWmDD"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Viewers_Alfa_Romeo","enrollmentSecret":"ALTKwIGRWmDD"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004d7892e19f136ea3404d5e1d0c75fc5860fe9f7ed49aae01166ac92b1bca33008792633a6e1fbdf82eb2b3e97eac09d0ea8cfe40f161805f22eaef3f77fc0b33a"
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497216,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Viewers_Alfa_Romeo"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[65,76,84,75,119,73,71,82,87,109,68,68]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,215,137,46,25,241,54,234,52,4,213,225,208,199,95,197,134,15,233,247,237,73,170,224,17,102,172,146,177,188,163,48,8,121,38,51,166,225,251,223,130,235,43,62,151,234,192,157,14,168,207,228,15,22,24,5,242,46,174,243,247,127,192,179,58]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,21,21,213,68,208,78,222,100,10,177,5,151,199,87,48,159,77,22,170,51,90,28,223,219,91,254,228,8,50,223,87,211,68,173,6,230,226,59,55,0,237,93,228,19,145,74,99,121,75,175,97,63,137,254,240,131,215,140,211,206,101,249,26,144]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:36 GMT hfc Enrolling [req={"enrollmentID":"Cray_Bros_London_Ltd","enrollmentSecret":"XGDQrxNNFfGU"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Cray_Bros_London_Ltd","enrollmentSecret":"XGDQrxNNFfGU"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d0301070342000431f716242f456e37c6d8aea743f1e272ea96f475b9ff291080c601908722d3bd918140bed8071fec6f64b7eca617728e345c6516be0064a02db34f69a5e364f8"
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497216,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Cray_Bros_London_Ltd"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[88,71,68,81,114,120,78,78,70,102,71,85]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,49,247,22,36,47,69,110,55,198,216,174,167,67,241,226,114,234,150,244,117,185,255,41,16,128,198,1,144,135,34,211,189,145,129,64,190,216,7,31,236,111,100,183,236,166,23,114,142,52,92,101,22,190,0,100,160,45,179,79,105,165,227,100,248]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,59,61,60,22,153,82,168,121,116,160,1,161,176,186,13,222,44,182,50,24,63,248,68,164,93,116,159,143,196,244,82,182,128,12,177,23,125,62,94,120,77,164,58,241,106,153,89,7,201,59,119,157,18,241,107,252,148,105,71,181,238,16,11,179]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:36 GMT hfc Enrolling [req={"enrollmentID":"Regionwide_Vehicle_Contracts","enrollmentSecret":"FSkeEaHFDHrz"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [{"enrollmentID":"Regionwide_Vehicle_Contracts","enrollmentSecret":"FSkeEaHFDHrz"}]
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating keys...done!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Generating request! "3059301306072a8648ce3d020106082a8648ce3d03010703420004a98a8283b4048e0dcc7648e1bc7bd43b1c13f5ef17cc7cf40b20a2fd7b960120f590379da74443802b9d61d8787c4da24ceddf6e39a99b12eefceb1f5b52631a"
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Adding signing key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] Assding encryption key!
+Tue, 14 Mar 2017 13:13:36 GMT hfc [MemberServicesImpl.enroll] [Contact ECA] {"ts":{"seconds":{"low":1489497216,"high":0,"unsigned":false},"nanos":0},"id":{"id":"Regionwide_Vehicle_Contracts"},"tok":{"tok":{"buffer":{"type":"Buffer","data":[70,83,107,101,69,97,72,70,68,72,114,122]},"offset":0,"markedOffset":-1,"limit":12,"littleEndian":false,"noAssert":false}},"sign":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,169,138,130,131,180,4,142,13,204,118,72,225,188,123,212,59,28,19,245,239,23,204,124,244,11,32,162,253,123,150,1,32,245,144,55,157,167,68,67,128,43,157,97,216,120,124,77,162,76,237,223,110,57,169,155,18,238,252,235,31,91,82,99,26]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"enc":{"type":0,"key":{"buffer":{"type":"Buffer","data":[48,89,48,19,6,7,42,134,72,206,61,2,1,6,8,42,134,72,206,61,3,1,7,3,66,0,4,157,159,43,38,182,16,100,94,70,1,86,192,23,136,163,186,191,240,156,132,27,52,67,46,101,162,143,124,116,154,39,101,252,77,94,113,227,2,99,255,121,169,197,33,73,115,113,53,195,180,145,5,79,232,10,18,117,190,14,218,125,171,166,142]},"offset":0,"markedOffset":-1,"limit":91,"littleEndian":false,"noAssert":false}},"sig":null} 
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"a1b3e4b66dac09b521a5106591bcfe7e335ad69c5a9277207c226cb2a77487a4","cert":"308201b73082015ca003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a3046310b300906035504061302555331143012060355040a130b48797065726c65646765723121301f06035504030c18536372617049745f554b5c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004e4cb2288d9a40b6c28fc07b9ac6f5407747e0614c90b0fb4c135d49c74e2f8f93aecb41082a2d35e0ee6a685b81bd434787acc17a4c8e340ab2bc4884630935ea350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d04030303490030460221009c0523ec92f7451c4dc3ffdde73965beb6de5c44dcfedd78f1b462d1fab470b00221008e485429e24f9b42361d794b4c9b2eabacf62f8438971d25f7e279be6bf943da","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user ScrapIt_UK
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"56a9f3a61a4c7309f83110914e54d2291d173fcfd41e14faa417485a617e87c5","cert":"308201b130820158a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a3042310b300906035504061302555331143012060355040a130b48797065726c6564676572311d301b06035504030c14546f796f74615c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004bc98854e2c8f4306410ebe5eca9fed1c277a949b21f639af321adfc2bffc328574e298d9ce0d1da40415d3771e8b6327a0123f01405a641def0beb2fd023b115a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d04030303470030440220092718a2e7a5f20d6ed2da8c34aea70f69de71f66d516e78c3b3e14cdb51c6b402203d9fca84ca4f95c25a9a11fe3afd44bfdfc4faf82eb1b1f3202711eb578fcdfa","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Toyota
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"05c4f87c3b70ccc5ba4b9c14b83feb4b765b3fa091256061edb6d3715fe7164f","cert":"308201b43082015aa003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a3044310b300906035504061302555331143012060355040a130b48797065726c6564676572311f301d06035504030c164c6561736543616e5c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d030107034200044f53511feb94619f4f09b020c8aaa1aa459f4487c938f1d965158e7387997f4889100df2046f397d90fad6de18b79097c8b99aef4408769ca848ec41e263af5aa350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d040303034800304502201c6121122e00634ca918d1ecdcdcdd52e9b3816e01fae1d99453fb437eee70e7022100b28e3101af3b79a3d1dc2e244046abe18099c29b6b1bd8372700dd1a978f2260","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user LeaseCan
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"a6a812f3b657f9dbbca78c50435a034b6e769277be46065f625245f1447c3087","cert":"308201ba30820160a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a304a310b300906035504061302555331143012060355040a130b48797065726c65646765723125302306035504030c1c416e74686f6e795f4f5f446f77645c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004b99752a306e591131e87aa609b5a97cc99ec920f9bcb593b726a0067d2ad7028158bdca045c7378fe6f58c26b0e7b0f1301880c4b1022c89a07151a3b55eb0e3a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d04030303480030450221008cb11657b43d8c59137a10b1b712e052ad5ac1c743922e2a8a010e8310d1ffe802207cc138cc9d93639c18f72561d5c1aa0f191aeb083ddad5af11301bc0cad27c7b","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Anthony_O_Dowd
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"0242bf35349931977623c10888a3b3e018ec0bf097caf28da0a441dfb5a9dc46","cert":"308201b53082015ca003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a3046310b300906035504061302555331143012060355040a130b48797065726c65646765723121301f06035504030c18416c66615f526f6d656f5c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d0301070342000486e13ff10f84c1991fe56f49cb168d702dfe8c277578381d83cf2a06f5f291f06ef776fb6a2ef88df71bf79d8b1c3dca05818673c56dedd673217601d60e0bf2a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d040303034700304402203a2fd579f71ebbc09bb56d2fe0f1abbc825fd40478b8b864c82ed6ce77041aab02207ec5c862c98f1419bbcc74710debe9ba631f4365c97b75a723a80477fcd26797","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Alfa_Romeo
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"5f4cd0234ab91baf3450a5cafcd0f56cafec477e667acac204ab80c50f3fcc09","cert":"308201b030820156a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a3040310b300906035504061302555331143012060355040a130b48797065726c6564676572311b301906035504030c1244564c415c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d030107034200046b9c202eb5f310373d05193086c0cb66f733f377456eee218ca96292780f55fc6b7c1a786ec949a6d68184ac04b2ab26b7ae002c7cb0ea5c75db475c9dbf78aaa350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d0403030348003045022052a5496bd9badc23be9717089d750f478253d65714ed7826908d765bc93ded6e02210084b28791047afe4dfd89dae00777582797160e9e98bf40b9acb9dfbf00516d3a","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user DVLA
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"7a30e8e34f4dcdd104586e8e2e814714d0c2e8000820d060c5f79ebd2b64c525","cert":"308201be30820163a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a304d310b300906035504061302555331143012060355040a130b48797065726c65646765723128302606035504030c1f45766572795f4361725f4c656173696e675c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004210ef3edb864ee0c250ba52eb2f22e9b39402b2e21ab25d2863980dedf6ecc063810a8bd96676f5dbd3b08d9d69968ad2759e0fabf115e961e6134a956892404a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d0403030349003046022100af72b4f50284b5dfb89317143ecd2e449441470fd87a1b185960596099261945022100a2c8042b6982e3e630182586db4c006d4665a7732a58d79279ee1dbec8a7caa4","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"1c054e09ba8138599e9d2b9a1cb11c0ef145fbdd8c6d3dfad54849bb5b1e9c5a","cert":"308201b53082015ba003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a3045310b300906035504061302555331143012060355040a130b48797065726c65646765723120301e06035504030c174d696c6573636170655c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004c85201f815c71c8f6e73e7db3b094bed1889d5394737f11c6cac7f6385058195882f4888e363ab095208b87d2eb21a49912f463d323bcaf6776b12b8ba4116cda350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d0403030348003045022013d7fbad4f1617638114964c125466d14ccab97858556c98ed266a794ac7496c022100e01777f34fff98ca00eb9069dda278b55ab60d3cb78f7a6a416f18505c41197d","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"bb1bdb1d13f51bd97aae8247f5e4f0121c661a51f564db08a89a709aac4f9d22","cert":"308201b83082015da003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233385a170d3137303631323133313233385a3047310b300906035504061302555331143012060355040a130b48797065726c65646765723122302006035504030c19416e647265775f487572745c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d030107034200046bd3ccd22555318391ecf342bd8ab293fe2f3438f7ca9082a806eb972c43c5ddfe5b13c84949b62cd0fc6e28d62032a239c6057a355302a653c754252bcef6f8a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d0403030349003046022100f26a36030c5c1f56a1ea68a6f762a8536c97c1ecc2be571ff932f22f932536040221009be42380d467c5e0bbce3761522890ef8693826175282815b99a1920f8f96122","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"f246e1b27b15710dcf8e60b42c6723b9056324cbda5d2a4bdbadc807fa46f15f","cert":"308201c83082016ea003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233385a170d3137303631323133313233385a3058310b300906035504061302555331143012060355040a130b48797065726c65646765723133303106035504030c2a526567696f6e776964655f56656869636c655f436f6e7472616374735c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004a98a8283b4048e0dcc7648e1bc7bd43b1c13f5ef17cc7cf40b20a2fd7b960120f590379da74443802b9d61d8787c4da24ceddf6e39a99b12eefceb1f5b52631aa350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d0403030348003045022100d4305bd9763fcb0bcf00aa55e2b256b990dba19305d61aab75ba7cedc5e4c6ab022001cb1d5a19ce57420c79138182ad2ccbf98a5283ec41241eb749e9d3b5b9a1e1","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Every_Car_Leasing
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Milescape
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Andrew_Hurt
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Regionwide_Vehicle_Contracts
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"5f99c0b388e7cca8fba75c5454f034dc72bb7a9e8fb55d437677d74b4aee8f2d","cert":"308201bf30820164a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233385a170d3137303631323133313233385a304e310b300906035504061302555331143012060355040a130b48797065726c65646765723129302706035504030c204173746f6e5f53637261705f43656e7472655c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004db6932d8568de3b035b2d11b1b45ab28f2b8b6e8d2da05306862bd7fe718cdf0dbb86401b0ea2e33d7932c7305b664a6fbd472ed9466f2a6a82d036398494d11a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d04030303490030460221009b96d492e99d26f2e33b55f4dcd9d92d822e1a49e01d08922781f4b7c72848f8022100a07a521ff0e8f9165c2fb12a6a620d0004e2e108fd56e699c4623d68c77a1490","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Aston_Scrap_Centre
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"b01e37a7bf59c94b0899af03ddb28c668c15fc8903c625cf4b8c487e0250eb88","cert":"308201bd30820163a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a304d310b300906035504061302555331143012060355040a130b48797065726c65646765723128302606035504030c1f4a61677561725f4c616e645f526f7665725c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d0301070342000410e6efff45f0288cc79bdada716b126bdf13538a2d341dfaaf203738aa7676f3608a070b00caa8a81a2a763c21546897bed0adf739bd4d548d9eff4a4de4e430a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d040303034800304502201d94934100cf828d02ef0166016898355a33b1787188bc869ad458440482207f0221009e72bf5a0f001da98950c73feceef288bd87028027e0882b82e2b34bbbdb6375","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"dab18cec7ca78fa0c4e8e4f8aa8875471318b7811dc9413f9267b52af6d8b23c","cert":"308201be30820164a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233365a170d3137303631323133313233365a304e310b300906035504061302555331143012060355040a130b48797065726c65646765723129302706035504030c20566965776572735f416c66615f526f6d656f5c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004d7892e19f136ea3404d5e1d0c75fc5860fe9f7ed49aae01166ac92b1bca33008792633a6e1fbdf82eb2b3e97eac09d0ea8cfe40f161805f22eaef3f77fc0b33aa350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d0403030348003045022100ed5decf6152be3aacc49fb519bc5b521c7b65f0d6345da48dd624a6a0d59c48902207dff03ccd4a9849422ed2f1d65c73867c4ea5a7a2b665f306d2137f75ebb7ea9","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"448523f938f4aab012484229d6eeae41c0519ce5be53a2214a31b7f790e8efd9","cert":"308201bc30820161a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233385a170d3137303631323133313233385a304b310b300906035504061302555331143012060355040a130b48797065726c65646765723126302406035504030c1d426565636876616c655f47726f75705c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004cf1227616c448029f04c8f9127507b98f31cd9256b4eb2174dafe5642d50ed4bda92098c5408dfad17b2e5054530bc7bfee48bd5de894606873a1930c912429fa350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d0403030349003046022100c06f87699441af26f422f70323e96e461d4cdc91dec97309279fc53856edcfac022100a7edd827debc15e3b4308c9935c80908f894dca0e2913895d7903cebd12036b1","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Jaguar_Land_Rover
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Viewers_Alfa_Romeo
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Beechvale_Group
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"7be20e251cec257b4146eabcd7b3f1d75d7b0a2c823ab6fa9d6b10e8d8af6ac3","cert":"308201b43082015ba003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233385a170d3137303631323133313233385a3045310b300906035504061302555331143012060355040a130b48797065726c65646765723120301e06035504030c174a6f655f5061796e655c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d03010703420004c7403cd385515c44b6177c524b7cb8797d2a0664b3f6ced2fa970b342fd9277f4e0acccc53b155f46a65d8e67125018080b30b464f7b2490105af1176c40062ca350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d0403030347003044022022bd54408b0c7aeb557c14da99f2e7a86304fec85676bf7afbba92b01f109249022046329190e76768fb6a64b1c3905e91ae9658790dc23cf5543ee84f434f1d1bf5","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Joe_Payne
+
+Tue, 14 Mar 2017 13:13:38 GMT hfc [MemberServicesImpl.enroll] eCertCreateResp : [%j][object Object]
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] err=null, enrollment={"key":"3a0ea82117cb393c37a707412e3146f7bd581866b59754ca7cbf4922aa81627f","cert":"308201bf30820166a003020102020101300a06082a8648ce3d0403033031310b300906035504061302555331143012060355040a130b48797065726c6564676572310c300a06035504031303656361301e170d3137303331343133313233385a170d3137303631323133313233385a3050310b300906035504061302555331143012060355040a130b48797065726c6564676572312b302906035504030c22437261795f42726f735f4c6f6e646f6e5f4c74645c696e737469747574696f6e5f613059301306072a8648ce3d020106082a8648ce3d0301070342000431f716242f456e37c6d8aea743f1e272ea96f475b9ff291080c601908722d3bd918140bed8071fec6f64b7eca617728e345c6516be0064a02db34f69a5e364f8a350304e300e0603551d0f0101ff040403020780300c0603551d130101ff04023000300d0603551d0e0406040401020304300f0603551d2304083006800401020304300e06065103040506070101ff040131300a06082a8648ce3d040303034700304402201f08f0ed17613aac72557823d0b7a5f1f596c1c4b6001612a9b6446312c7827702203202bddfe2e4e318d48868efae9356c5eede7666b5a2f3ed3f4d9586c16b71cd","chainKey":"2d2d2d2d2d424547494e204543445341205055424c4943204b45592d2d2d2d2d0a4d466b77457759484b6f5a497a6a3043415159494b6f5a497a6a304441516344516741456f776278596647746e7a505a7069423361484c416732646d304e444d0a424d6e7964306b776b73443131657470493131583871784662746f764270676f506c7a4e523379467430363950616e2b626c4b426550536545773d3d0a2d2d2d2d2d454e44204543445341205055424c4943204b45592d2d2d2d2d0a"}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [memberServices.enroll] Unmarshalling chainKey
+INFO	Startup	Registrar enroll worked with user Cray_Bros_London_Ltd
+
+INFO	Startup	All users registered
+
+INFO	Startup	Checking if chaincode is deployed
+
+INFO	Chaincode error may appear here - Ignore, chaincode has been pinged	
+
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:13:38 GMT hfc Member.query
+Tue, 14 Mar 2017 13:13:38 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:13:38 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:13:38 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:13:38 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:13:38 GMT hfc Member.getNextTCert: key=[],username,role, creating new getter
+Tue, 14 Mar 2017 13:13:38 GMT hfc shouldGetTCerts: yes, we have no tcerts
+Tue, 14 Mar 2017 13:13:41 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:13:41 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:13:41 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:13:41 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:13:41 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:13:41 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:13:41 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:13:41 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:13:41 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:13:41 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:13:41 GMT hfc reg txid cd54d18a-0f0d-4a82-9b69-4f152892e1ba
+Tue, 14 Mar 2017 13:13:41 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:13:41 GMT hfc peer.sendTransaction: received {"status":"FAILURE","msg":{"type":"Buffer","data":[69,114,114,111,114,58,70,97,105,108,101,100,32,116,111,32,108,97,117,110,99,104,32,99,104,97,105,110,99,111,100,101,32,115,112,101,99,40,67,111,117,108,100,32,110,111,116,32,103,101,116,32,100,101,112,108,111,121,109,101,110,116,32,116,114,97,110,115,97,99,116,105,111,110,32,102,111,114,32,100,49,97,98,52,54,56,51,56,55,102,101,53,101,49,100,98,52,56,97,57,55,52,97,100,99,98,101,101,55,100,50,56,100,56,52,100,52,56,101,100,54,102,57,100,50,52,56,54,55,102,55,51,56,100,54,49,55,51,101,97,97,99,52,32,45,32,76,101,100,103,101,114,69,114,114,111,114,32,45,32,82,101,115,111,117,114,99,101,78,111,116,70,111,117,110,100,58,32,108,101,100,103,101,114,58,32,114,101,115,111,117,114,99,101,32,110,111,116,32,102,111,117,110,100,41]}}
+[Error: Error:Failed to launch chaincode spec(Could not get deployment transaction for d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4 - LedgerError - ResourceNotFound: ledger: resource not found)]
+Tue, 14 Mar 2017 13:13:41 GMT hfc Member.deploy
+Tue, 14 Mar 2017 13:13:41 GMT hfc TransactionContext.deploy
+Tue, 14 Mar 2017 13:13:41 GMT hfc Received deploy request: {"fcn":"Init","args":[],"chaincodePath":"vehicle_code","certificatePath":"/certs/peer/cert.pem"}
+Tue, 14 Mar 2017 13:13:41 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:13:41 GMT hfc Member.getNextTCert: key=null
+Tue, 14 Mar 2017 13:13:41 GMT hfc Member.getNextTCert: key=null, creating new getter
+Tue, 14 Mar 2017 13:13:41 GMT hfc shouldGetTCerts: yes, we have no tcerts
+Tue, 14 Mar 2017 13:13:42 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [RangeError: byte length of Uint16Array should be a multiple of 2]
+Tue, 14 Mar 2017 13:13:44 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:13:44 GMT hfc newBuildOrDeployTransaction
+Tue, 14 Mar 2017 13:13:44 GMT hfc newNetModeTransaction
+Tue, 14 Mar 2017 13:13:44 GMT hfc $GOPATH: /workspace/Fabric/demo/car-lease-demo/Chaincode
+Tue, 14 Mar 2017 13:13:44 GMT hfc projDir: /workspace/Fabric/demo/car-lease-demo/Chaincode/src/vehicle_code
+Tue, 14 Mar 2017 13:13:44 GMT hfc GenerateParameterHash...
+Tue, 14 Mar 2017 13:13:44 GMT hfc path: vehicle_code
+Tue, 14 Mar 2017 13:13:44 GMT hfc func: Init
+Tue, 14 Mar 2017 13:13:44 GMT hfc args: 
+Tue, 14 Mar 2017 13:13:44 GMT hfc str: vehicle_codeInit
+Tue, 14 Mar 2017 13:13:44 GMT hfc strHash: ece55dfc9d8058fe91d68544e073cd2477decff1d1b73247f2eebd71e1e2dde0
+Tue, 14 Mar 2017 13:13:45 GMT hfc hash: d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4
+Tue, 14 Mar 2017 13:13:45 GMT hfc type of request.certificatePath: string
+Tue, 14 Mar 2017 13:13:45 GMT hfc request.certificatePath: /certs/peer/cert.pem
+Tue, 14 Mar 2017 13:13:45 GMT hfc Adding COPY certificate.pem command
+Tue, 14 Mar 2017 13:13:45 GMT hfc Created Dockerfile at [/workspace/Fabric/demo/car-lease-demo/Chaincode/src/vehicle_code/Dockerfile]
+Tue, 14 Mar 2017 13:13:45 GMT hfc GenerateTarGz
+Tue, 14 Mar 2017 13:13:48 GMT hfc Created deployment archive at [/tmp/deployment-package.tar.gz]
+Tue, 14 Mar 2017 13:13:48 GMT hfc chaincodeID: {"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:13:48 GMT hfc chaincodeSpec: {"type":1,"chaincodeID":{"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"},"ctorMsg":{"args":[{"buffer":{"type":"Buffer","data":[73,110,105,116]},"offset":0,"markedOffset":-1,"limit":4,"littleEndian":false,"noAssert":false}]},"timeout":0,"secureContext":"","confidentialityLevel":0,"metadata":{"buffer":{"type":"Buffer","data":[]},"offset":0,"markedOffset":-1,"limit":0,"littleEndian":false,"noAssert":false},"attributes":[]}
+Tue, 14 Mar 2017 13:13:48 GMT hfc Read in deployment archive from [/tmp/deployment-package.tar.gz]
+Tue, 14 Mar 2017 13:13:48 GMT hfc Set confidentiality level to PUBLIC
+Tue, 14 Mar 2017 13:13:48 GMT hfc Temporary archive deleted successfully ---> /tmp/deployment-package.tar.gz
+Tue, 14 Mar 2017 13:13:48 GMT hfc File deleted successfully ---> /workspace/Fabric/demo/car-lease-demo/Chaincode/src/vehicle_code/Dockerfile
+Tue, 14 Mar 2017 13:13:48 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:13:48 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:13:48 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:13:48 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:13:48 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:13:48 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:13:48 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:13:48 GMT hfc reg txid d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4
+Tue, 14 Mar 2017 13:13:48 GMT hfc waiting 30 seconds before emitting complete event
+Tue, 14 Mar 2017 13:13:48 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:13:49 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[100,49,97,98,52,54,56,51,56,55,102,101,53,101,49,100,98,52,56,97,57,55,52,97,100,99,98,101,101,55,100,50,56,100,56,52,100,52,56,101,100,54,102,57,100,50,52,56,54,55,102,55,51,56,100,54,49,55,51,101,97,97,99,52]}}
+Tue, 14 Mar 2017 13:13:49 GMT hfc EventDeploySubmitted event: {"uuid":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Attempted to deploy chaincode
+Tue, 14 Mar 2017 13:14:18 GMT hfc timeout uuid= d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4
+INFO	Chaincode deployed with chaincodeID d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4	
+
+INFO	Startup	Chaincode successfully deployed
+
+connected
+ENTER	GET blockchain/blocks	INPUT: ""
+EXIT	GET blockchain/blocks	OUTPUT: {"height":2,"currentBlockHash":"NqCmZcxInfx4+bRoPb4/3ibpSmxdewrvZO4iXIXV9CYTiKV7S/EWfW5oqbK1WAWxoShL1vM1++d03Y/WMGZBWg=="}
+ENTER	GET blockchain/blocks/1	INPUT: {}
+EXIT	GET blockchain/blocks/1	OUTPUT: ""
+ENTER	GET blockchain/blocks/0	INPUT: {}
+EXIT	GET blockchain/blocks/0	OUTPUT: ""
+connected
+ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/participants/regulators	INPUT: {}
+EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"check_unique_v5c","args":["ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:32 GMT hfc Member.query
+Tue, 14 Mar 2017 13:14:32 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:14:32 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"check_unique_v5c","args":["ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:32 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:14:32 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:14:32 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:14:32 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"check_unique_v5c","args":["ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:14:32 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:14:32 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:14:32 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:14:32 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:14:32 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:14:32 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:14:32 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:14:32 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:14:32 GMT hfc reg txid 0db7f834-f079-417b-8cb2-47fc5cfd1d77
+Tue, 14 Mar 2017 13:14:32 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:14:32 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[116,114,117,101]}}
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"create_vehicle","args":["ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:32 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:14:32 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:14:32 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"create_vehicle","args":["ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:32 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:14:32 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:14:32 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:14:32 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"create_vehicle","args":["ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:14:32 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:14:32 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:14:32 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:14:32 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:14:32 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:14:32 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:14:32 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:14:32 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:14:32 GMT hfc reg txid 7a516b8e-a4f6-403a-80ef-3015807d5799
+Tue, 14 Mar 2017 13:14:32 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:14:32 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:14:32 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[55,97,53,49,54,98,56,101,45,97,52,102,54,45,52,48,51,97,45,56,48,101,102,45,51,48,49,53,56,48,55,100,53,55,57,57]}}
+Tue, 14 Mar 2017 13:14:37 GMT hfc timeout uuid= 7a516b8e-a4f6-403a-80ef-3015807d5799
+INFO	POST blockchain/assets/vehicles	Created vehicle
+
+ENTER	GET blockchain/participants/regulators	INPUT: {}
+EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/assets/vehicles	INPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:40 GMT hfc Member.query
+Tue, 14 Mar 2017 13:14:40 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:14:40 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:40 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:14:40 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:14:40 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:14:40 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:14:40 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:14:40 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:14:40 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:14:40 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:14:40 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:14:40 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:14:40 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:14:40 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:14:40 GMT hfc reg txid ee26d3b1-467c-42ae-8ee0-db2dd5aa7b87
+Tue, 14 Mar 2017 13:14:40 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:14:40 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[91,123,34,109,97,107,101,34,58,34,85,78,68,69,70,73,78,69,68,34,44,34,109,111,100,101,108,34,58,34,85,78,68,69,70,73,78,69,68,34,44,34,114,101,103,34,58,34,85,78,68,69,70,73,78,69,68,34,44,34,86,73,78,34,58,48,44,34,111,119,110,101,114,34,58,34,68,86,76,65,34,44,34,115,99,114,97,112,112,101,100,34,58,102,97,108,115,101,44,34,115,116,97,116,117,115,34,58,48,44,34,99,111,108,111,117,114,34,58,34,85,78,68,69,70,73,78,69,68,34,44,34,118,53,99,73,68,34,58,34,79,78,52,55,55,50,52,54,54,34,44,34,108,101,97,115,101,67,111,110,116,114,97,99,116,73,68,34,58,34,85,78,68,69,70,73,78,69,68,34,125,93]}}
+[ { make: 'UNDEFINED',
+    model: 'UNDEFINED',
+    reg: 'UNDEFINED',
+    VIN: 0,
+    owner: 'DVLA',
+    scrapped: false,
+    status: 0,
+    colour: 'UNDEFINED',
+    v5cID: 'ON4772466',
+    leaseContractID: 'UNDEFINED' } ]
+INFO	GET blockchain/assets/vehicles	{"make":"UNDEFINED","model":"UNDEFINED","reg":"UNDEFINED","VIN":0,"owner":"DVLA","scrapped":false,"status":0,"colour":"UNDEFINED","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+
+EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"authority_to_manufacturer","value":"Alfa_Romeo","v5cID":"ON4772466"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"authority_to_manufacturer","args":["Alfa_Romeo","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:46 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:14:46 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:14:46 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"authority_to_manufacturer","args":["Alfa_Romeo","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:46 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:14:46 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:14:46 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:14:46 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"authority_to_manufacturer","args":["Alfa_Romeo","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:14:46 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:14:46 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:14:46 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:14:46 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:14:46 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:14:46 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:14:46 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:14:46 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:14:46 GMT hfc reg txid cd0a2e86-5683-4de5-a517-6931558e9c8d
+Tue, 14 Mar 2017 13:14:46 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:14:46 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:14:46 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[99,100,48,97,50,101,56,54,45,53,54,56,51,45,52,100,101,53,45,97,53,49,55,45,54,57,51,49,53,53,56,101,57,99,56,100]}}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:48 GMT hfc Member.query
+Tue, 14 Mar 2017 13:14:48 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:14:48 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:48 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:14:48 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:14:48 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:14:48 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:14:48 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:14:48 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:14:48 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:14:48 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:14:48 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:14:48 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:14:48 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:14:48 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:14:48 GMT hfc reg txid 4193c782-3e5e-44cb-88ed-b708d7292a14
+Tue, 14 Mar 2017 13:14:48 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:14:49 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[72,101,108,108,111,44,32,119,111,114,108,100,33]}}
+Tue, 14 Mar 2017 13:14:51 GMT hfc timeout uuid= cd0a2e86-5683-4de5-a517-6931558e9c8d
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx cd0a2e86-5683-4de5-a517-6931558e9c8d complete"
+ENTER	GET blockchain/participants/regulators	INPUT: {}
+EXIT	GET blockchain/participants/regulators	OUTPUT: {"result":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}]}
+connected
+ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/assets/vehicles	INPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:56 GMT hfc Member.query
+Tue, 14 Mar 2017 13:14:56 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:14:56 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:14:56 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:14:56 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:14:56 GMT hfc Member.getNextTCert: key=[],username,role, creating new getter
+Tue, 14 Mar 2017 13:14:56 GMT hfc shouldGetTCerts: yes, we have no tcerts
+ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+Tue, 14 Mar 2017 13:14:57 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [RangeError: byte length of Uint32Array should be a multiple of 4]
+Tue, 14 Mar 2017 13:14:59 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:14:59 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:14:59 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:14:59 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:14:59 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:14:59 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:14:59 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:14:59 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:14:59 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:14:59 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:14:59 GMT hfc reg txid 3a48a544-9e50-4d8a-8c55-704197aea9fb
+Tue, 14 Mar 2017 13:14:59 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:14:59 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[91,123,34,109,97,107,101,34,58,34,85,78,68,69,70,73,78,69,68,34,44,34,109,111,100,101,108,34,58,34,85,78,68,69,70,73,78,69,68,34,44,34,114,101,103,34,58,34,85,78,68,69,70,73,78,69,68,34,44,34,86,73,78,34,58,48,44,34,111,119,110,101,114,34,58,34,65,108,102,97,95,82,111,109,101,111,34,44,34,115,99,114,97,112,112,101,100,34,58,102,97,108,115,101,44,34,115,116,97,116,117,115,34,58,49,44,34,99,111,108,111,117,114,34,58,34,85,78,68,69,70,73,78,69,68,34,44,34,118,53,99,73,68,34,58,34,79,78,52,55,55,50,52,54,54,34,44,34,108,101,97,115,101,67,111,110,116,114,97,99,116,73,68,34,58,34,85,78,68,69,70,73,78,69,68,34,125,93]}}
+[ { make: 'UNDEFINED',
+    model: 'UNDEFINED',
+    reg: 'UNDEFINED',
+    VIN: 0,
+    owner: 'Alfa_Romeo',
+    scrapped: false,
+    status: 1,
+    colour: 'UNDEFINED',
+    v5cID: 'ON4772466',
+    leaseContractID: 'UNDEFINED' } ]
+INFO	GET blockchain/assets/vehicles	{"make":"UNDEFINED","model":"UNDEFINED","reg":"UNDEFINED","VIN":0,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"UNDEFINED","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+
+EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+ENTER	PUT blockchain/assets/vehicles/ON4772466/VIN	INPUT: {"value":"123456789012345"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/VIN	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_vin","args":["123456789012345","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:16 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:15:16 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:15:16 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_vin","args":["123456789012345","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:16 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:16 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:16 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:16 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_vin","args":["123456789012345","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:16 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:16 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:16 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:16 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:16 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:16 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:16 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:16 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:16 GMT hfc reg txid 953dd422-2902-4594-8e4e-b5062942f134
+Tue, 14 Mar 2017 13:15:16 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:15:16 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:15:16 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[57,53,51,100,100,52,50,50,45,50,57,48,50,45,52,53,57,52,45,56,101,52,101,45,98,53,48,54,50,57,52,50,102,49,51,52]}}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:19 GMT hfc Member.query
+Tue, 14 Mar 2017 13:15:19 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:15:19 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:19 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:19 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:19 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:19 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:19 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:19 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:19 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:19 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:19 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:19 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:19 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:19 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:19 GMT hfc reg txid 03931958-ff86-4973-bff3-6ca838f16354
+Tue, 14 Mar 2017 13:15:19 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:15:19 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[72,101,108,108,111,44,32,119,111,114,108,100,33]}}
+Tue, 14 Mar 2017 13:15:21 GMT hfc timeout uuid= 953dd422-2902-4594-8e4e-b5062942f134
+INFO	PUT blockchain/assets/vehicles/ON4772466/VIN	Updating VIN value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/VIN	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/VIN	OUTPUT: "Tx 953dd422-2902-4594-8e4e-b5062942f134 complete"
+ENTER	PUT blockchain/assets/vehicles/ON4772466/make	INPUT: {"value":"mak"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/make	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_make","args":["mak","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:22 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:15:22 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:15:22 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_make","args":["mak","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:22 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:22 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:22 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:22 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_make","args":["mak","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:22 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:22 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:22 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:22 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:22 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:22 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:22 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:22 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:22 GMT hfc reg txid 75c510ac-2a10-4dec-8291-c70c58b04cac
+Tue, 14 Mar 2017 13:15:22 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:15:22 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:15:22 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[55,53,99,53,49,48,97,99,45,50,97,49,48,45,52,100,101,99,45,56,50,57,49,45,99,55,48,99,53,56,98,48,52,99,97,99]}}
+Tue, 14 Mar 2017 13:15:27 GMT hfc timeout uuid= 75c510ac-2a10-4dec-8291-c70c58b04cac
+INFO	PUT blockchain/assets/vehicles/ON4772466/make	Updating make value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/make	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/make	OUTPUT: "Tx 75c510ac-2a10-4dec-8291-c70c58b04cac complete"
+ENTER	PUT blockchain/assets/vehicles/ON4772466/model	INPUT: {"value":"mo"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/model	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_model","args":["mo","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:27 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:15:27 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:15:27 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_model","args":["mo","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:27 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:27 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:27 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:27 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_model","args":["mo","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:27 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:27 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:27 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:27 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:27 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:27 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:27 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:27 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:27 GMT hfc reg txid 66777282-693d-45af-b226-f1f8877cc84c
+Tue, 14 Mar 2017 13:15:27 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:15:27 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:15:27 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[54,54,55,55,55,50,56,50,45,54,57,51,100,45,52,53,97,102,45,98,50,50,54,45,102,49,102,56,56,55,55,99,99,56,52,99]}}
+Tue, 14 Mar 2017 13:15:32 GMT hfc timeout uuid= 66777282-693d-45af-b226-f1f8877cc84c
+INFO	PUT blockchain/assets/vehicles/ON4772466/model	Updating model value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/model	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/model	OUTPUT: "Tx 66777282-693d-45af-b226-f1f8877cc84c complete"
+ENTER	PUT blockchain/assets/vehicles/ON4772466/colour	INPUT: {"value":"red"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/colour	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_colour","args":["red","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:33 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:15:33 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:15:33 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_colour","args":["red","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:33 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:33 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:33 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:33 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_colour","args":["red","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:33 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:33 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:33 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:33 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:33 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:33 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:33 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:33 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:33 GMT hfc reg txid e4bebe40-1702-4387-971b-99bd4a04f4cc
+Tue, 14 Mar 2017 13:15:33 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:15:33 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:15:33 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[101,52,98,101,98,101,52,48,45,49,55,48,50,45,52,51,56,55,45,57,55,49,98,45,57,57,98,100,52,97,48,52,102,52,99,99]}}
+Tue, 14 Mar 2017 13:15:38 GMT hfc timeout uuid= e4bebe40-1702-4387-971b-99bd4a04f4cc
+INFO	PUT blockchain/assets/vehicles/ON4772466/colour	Updating colour value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/colour	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/colour	OUTPUT: "Tx e4bebe40-1702-4387-971b-99bd4a04f4cc complete"
+ENTER	PUT blockchain/assets/vehicles/ON4772466/reg	INPUT: {"value":"REG"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/reg	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_reg","args":["REG","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:39 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:15:39 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:15:39 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_reg","args":["REG","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:39 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:39 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:39 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:39 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"update_reg","args":["REG","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:39 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:39 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:39 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:39 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:39 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:39 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:39 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:39 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:39 GMT hfc reg txid b2ac4c6c-3e49-4ec8-bd56-d429af5e2764
+Tue, 14 Mar 2017 13:15:39 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:15:39 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:15:39 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[98,50,97,99,52,99,54,99,45,51,101,52,57,45,52,101,99,56,45,98,100,53,54,45,100,52,50,57,97,102,53,101,50,55,54,52]}}
+Tue, 14 Mar 2017 13:15:44 GMT hfc timeout uuid= b2ac4c6c-3e49-4ec8-bd56-d429af5e2764
+INFO	PUT blockchain/assets/vehicles/ON4772466/reg	Updating reg value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/reg	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/reg	OUTPUT: "Tx b2ac4c6c-3e49-4ec8-bd56-d429af5e2764 complete"
+ENTER	GET blockchain/assets/vehicles	INPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:48 GMT hfc Member.query
+Tue, 14 Mar 2017 13:15:48 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:15:48 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:48 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:48 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:48 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:48 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:48 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:48 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:48 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:48 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:48 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:48 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:48 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:48 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:48 GMT hfc reg txid 7509e662-da1a-4b20-bcc6-8854364df35d
+Tue, 14 Mar 2017 13:15:48 GMT hfc peer.sendTransaction
+ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+Tue, 14 Mar 2017 13:15:48 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[91,123,34,109,97,107,101,34,58,34,109,97,107,34,44,34,109,111,100,101,108,34,58,34,109,111,34,44,34,114,101,103,34,58,34,82,69,71,34,44,34,86,73,78,34,58,49,50,51,52,53,54,55,56,57,48,49,50,51,52,53,44,34,111,119,110,101,114,34,58,34,65,108,102,97,95,82,111,109,101,111,34,44,34,115,99,114,97,112,112,101,100,34,58,102,97,108,115,101,44,34,115,116,97,116,117,115,34,58,49,44,34,99,111,108,111,117,114,34,58,34,114,101,100,34,44,34,118,53,99,73,68,34,58,34,79,78,52,55,55,50,52,54,54,34,44,34,108,101,97,115,101,67,111,110,116,114,97,99,116,73,68,34,58,34,85,78,68,69,70,73,78,69,68,34,125,93]}}
+[ { make: 'mak',
+    model: 'mo',
+    reg: 'REG',
+    VIN: 123456789012345,
+    owner: 'Alfa_Romeo',
+    scrapped: false,
+    status: 1,
+    colour: 'red',
+    v5cID: 'ON4772466',
+    leaseContractID: 'UNDEFINED' } ]
+INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+
+EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:49 GMT hfc Member.query
+Tue, 14 Mar 2017 13:15:49 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:15:49 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:49 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:49 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:49 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:49 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:49 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:49 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:49 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:49 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:49 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:49 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:49 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:49 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:49 GMT hfc reg txid baa9adcd-7dd3-454d-82b3-4b53385097b8
+Tue, 14 Mar 2017 13:15:49 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:15:49 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[72,101,108,108,111,44,32,119,111,114,108,100,33]}}
+connected
+ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/assets/vehicles	INPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:54 GMT hfc Member.query
+Tue, 14 Mar 2017 13:15:54 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:15:54 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:15:54 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:15:54 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:15:54 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:15:54 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:15:54 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:15:54 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:15:54 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:15:54 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:15:54 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:15:54 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:15:54 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:15:54 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:15:54 GMT hfc reg txid 61ef6393-8d5b-4877-a2e4-ca32e14731df
+Tue, 14 Mar 2017 13:15:54 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:15:54 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[91,123,34,109,97,107,101,34,58,34,109,97,107,34,44,34,109,111,100,101,108,34,58,34,109,111,34,44,34,114,101,103,34,58,34,82,69,71,34,44,34,86,73,78,34,58,49,50,51,52,53,54,55,56,57,48,49,50,51,52,53,44,34,111,119,110,101,114,34,58,34,65,108,102,97,95,82,111,109,101,111,34,44,34,115,99,114,97,112,112,101,100,34,58,102,97,108,115,101,44,34,115,116,97,116,117,115,34,58,49,44,34,99,111,108,111,117,114,34,58,34,114,101,100,34,44,34,118,53,99,73,68,34,58,34,79,78,52,55,55,50,52,54,54,34,44,34,108,101,97,115,101,67,111,110,116,114,97,99,116,73,68,34,58,34,85,78,68,69,70,73,78,69,68,34,125,93]}}
+[ { make: 'mak',
+    model: 'mo',
+    reg: 'REG',
+    VIN: 123456789012345,
+    owner: 'Alfa_Romeo',
+    scrapped: false,
+    status: 1,
+    colour: 'red',
+    v5cID: 'ON4772466',
+    leaseContractID: 'UNDEFINED' } ]
+INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Alfa_Romeo","scrapped":false,"status":1,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+
+EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+ENTER	GET blockchain/participants/dealerships	INPUT: {}
+EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"manufacturers","account":"Alfa Romeo"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"manufacturer_to_private","value":"Beechvale_Group","v5cID":"ON4772466"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"manufacturer_to_private","args":["Beechvale_Group","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:01 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:16:01 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:16:01 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"manufacturer_to_private","args":["Beechvale_Group","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:01 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:16:01 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:16:01 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:16:01 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"manufacturer_to_private","args":["Beechvale_Group","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:16:01 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:16:01 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:16:01 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:16:01 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:16:01 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:16:01 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:16:01 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:16:01 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:16:01 GMT hfc reg txid 0978723e-14a1-4612-9347-b5354c444e2d
+Tue, 14 Mar 2017 13:16:01 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:16:01 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:16:01 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[48,57,55,56,55,50,51,101,45,49,52,97,49,45,52,54,49,50,45,57,51,52,55,45,98,53,51,53,52,99,52,52,52,101,50,100]}}
+Tue, 14 Mar 2017 13:16:06 GMT hfc timeout uuid= 0978723e-14a1-4612-9347-b5354c444e2d
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx 0978723e-14a1-4612-9347-b5354c444e2d complete"
+ENTER	GET blockchain/participants/manufacturers	INPUT: {}
+EXIT	GET blockchain/participants/manufacturers	OUTPUT: {"result":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}]}
+connected
+ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/participants/dealerships	INPUT: {}
+EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/assets/vehicles	INPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:12 GMT hfc Member.query
+Tue, 14 Mar 2017 13:16:12 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:16:12 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:12 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:16:12 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:16:12 GMT hfc Member.getNextTCert: key=[],username,role, creating new getter
+Tue, 14 Mar 2017 13:16:12 GMT hfc shouldGetTCerts: yes, we have no tcerts
+Tue, 14 Mar 2017 13:16:13 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [RangeError: byte length of Uint32Array should be a multiple of 4]
+Tue, 14 Mar 2017 13:16:14 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [RangeError: byte length of Uint16Array should be a multiple of 2]
+Tue, 14 Mar 2017 13:16:15 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:16:15 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:16:15 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:16:15 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:16:15 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:16:15 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:16:15 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:16:15 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:16:15 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:16:15 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:16:15 GMT hfc reg txid d48507fb-a76e-458d-80bd-a4fafa0ba0e3
+Tue, 14 Mar 2017 13:16:15 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:16:15 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[91,123,34,109,97,107,101,34,58,34,109,97,107,34,44,34,109,111,100,101,108,34,58,34,109,111,34,44,34,114,101,103,34,58,34,82,69,71,34,44,34,86,73,78,34,58,49,50,51,52,53,54,55,56,57,48,49,50,51,52,53,44,34,111,119,110,101,114,34,58,34,66,101,101,99,104,118,97,108,101,95,71,114,111,117,112,34,44,34,115,99,114,97,112,112,101,100,34,58,102,97,108,115,101,44,34,115,116,97,116,117,115,34,58,50,44,34,99,111,108,111,117,114,34,58,34,114,101,100,34,44,34,118,53,99,73,68,34,58,34,79,78,52,55,55,50,52,54,54,34,44,34,108,101,97,115,101,67,111,110,116,114,97,99,116,73,68,34,58,34,85,78,68,69,70,73,78,69,68,34,125,93]}}
+[ { make: 'mak',
+    model: 'mo',
+    reg: 'REG',
+    VIN: 123456789012345,
+    owner: 'Beechvale_Group',
+    scrapped: false,
+    status: 2,
+    colour: 'red',
+    v5cID: 'ON4772466',
+    leaseContractID: 'UNDEFINED' } ]
+INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Beechvale_Group","scrapped":false,"status":2,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+
+EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:19 GMT hfc Member.query
+Tue, 14 Mar 2017 13:16:19 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:16:19 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:19 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:16:19 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:16:19 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:16:19 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:16:19 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:16:19 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:16:19 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:16:19 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:16:19 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:16:19 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:16:19 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:16:19 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:16:19 GMT hfc reg txid 435d94d7-4dfc-4d9c-a912-403d5c6fec44
+Tue, 14 Mar 2017 13:16:19 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:16:19 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[72,101,108,108,111,44,32,119,111,114,108,100,33]}}
+ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"private_to_lease_company","value":"LeaseCan","v5cID":"ON4772466"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"private_to_lease_company","args":["LeaseCan","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:20 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:16:20 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:16:20 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"private_to_lease_company","args":["LeaseCan","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:20 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:16:20 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:16:20 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:16:20 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"private_to_lease_company","args":["LeaseCan","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:16:20 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:16:20 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:16:20 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:16:20 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:16:20 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:16:20 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:16:20 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:16:20 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:16:20 GMT hfc reg txid 94af7a2c-6419-451c-92f6-c9d05d98f1e7
+Tue, 14 Mar 2017 13:16:20 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:16:20 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:16:20 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[57,52,97,102,55,97,50,99,45,54,52,49,57,45,52,53,49,99,45,57,50,102,54,45,99,57,100,48,53,100,57,56,102,49,101,55]}}
+Tue, 14 Mar 2017 13:16:25 GMT hfc timeout uuid= 94af7a2c-6419-451c-92f6-c9d05d98f1e7
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx 94af7a2c-6419-451c-92f6-c9d05d98f1e7 complete"
+ENTER	GET blockchain/participants/dealerships	INPUT: {}
+EXIT	GET blockchain/participants/dealerships	OUTPUT: {"result":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}]}
+connected
+ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/assets/vehicles	INPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:31 GMT hfc Member.query
+Tue, 14 Mar 2017 13:16:31 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:16:31 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:31 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:16:31 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:16:31 GMT hfc Member.getNextTCert: key=[],username,role, creating new getter
+Tue, 14 Mar 2017 13:16:31 GMT hfc shouldGetTCerts: yes, we have no tcerts
+Tue, 14 Mar 2017 13:16:34 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:16:34 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:16:34 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:16:34 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:16:34 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:16:34 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:16:34 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:16:34 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:16:34 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:16:34 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:16:34 GMT hfc reg txid 7bedcbf9-0d83-479f-b183-c3935b218342
+Tue, 14 Mar 2017 13:16:34 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:16:34 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[91,123,34,109,97,107,101,34,58,34,109,97,107,34,44,34,109,111,100,101,108,34,58,34,109,111,34,44,34,114,101,103,34,58,34,82,69,71,34,44,34,86,73,78,34,58,49,50,51,52,53,54,55,56,57,48,49,50,51,52,53,44,34,111,119,110,101,114,34,58,34,76,101,97,115,101,67,97,110,34,44,34,115,99,114,97,112,112,101,100,34,58,102,97,108,115,101,44,34,115,116,97,116,117,115,34,58,50,44,34,99,111,108,111,117,114,34,58,34,114,101,100,34,44,34,118,53,99,73,68,34,58,34,79,78,52,55,55,50,52,54,54,34,44,34,108,101,97,115,101,67,111,110,116,114,97,99,116,73,68,34,58,34,85,78,68,69,70,73,78,69,68,34,125,93]}}
+[ { make: 'mak',
+    model: 'mo',
+    reg: 'REG',
+    VIN: 123456789012345,
+    owner: 'LeaseCan',
+    scrapped: false,
+    status: 2,
+    colour: 'red',
+    v5cID: 'ON4772466',
+    leaseContractID: 'UNDEFINED' } ]
+INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"LeaseCan","scrapped":false,"status":2,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+
+EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+ENTER	GET blockchain/participants/leasees	INPUT: {}
+EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"lease_companies","account":"LeaseCan"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"lease_company_to_private","value":"Joe_Payne","v5cID":"ON4772466"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"lease_company_to_private","args":["Joe_Payne","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:39 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:16:39 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:16:39 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"lease_company_to_private","args":["Joe_Payne","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:39 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:16:39 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:16:39 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:16:39 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"lease_company_to_private","args":["Joe_Payne","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:16:39 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:16:39 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:16:39 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:16:39 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:16:39 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:16:39 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:16:39 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:16:39 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:16:39 GMT hfc reg txid 4ca77f3f-1014-4599-9136-4f78a37926a9
+Tue, 14 Mar 2017 13:16:39 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:16:39 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:16:39 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[52,99,97,55,55,102,51,102,45,49,48,49,52,45,52,53,57,57,45,57,49,51,54,45,52,102,55,56,97,51,55,57,50,54,97,57]}}
+Tue, 14 Mar 2017 13:16:44 GMT hfc timeout uuid= 4ca77f3f-1014-4599-9136-4f78a37926a9
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx 4ca77f3f-1014-4599-9136-4f78a37926a9 complete"
+ENTER	GET blockchain/participants/lease_companies	INPUT: {}
+EXIT	GET blockchain/participants/lease_companies	OUTPUT: {"result":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}]}
+connected
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:49 GMT hfc Member.query
+Tue, 14 Mar 2017 13:16:49 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:16:49 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:49 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:16:49 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:16:49 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:16:49 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:16:49 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:16:49 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:16:49 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:16:49 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:16:49 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:16:49 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:16:49 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:16:49 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:16:49 GMT hfc reg txid fb55ae9f-214f-448c-bfc8-cc07afcf3cd3
+Tue, 14 Mar 2017 13:16:49 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:16:49 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[72,101,108,108,111,44,32,119,111,114,108,100,33]}}
+ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/participants/leasees	INPUT: {}
+EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/assets/vehicles	INPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:55 GMT hfc Member.query
+Tue, 14 Mar 2017 13:16:55 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:16:55 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:16:55 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:16:55 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:16:55 GMT hfc Member.getNextTCert: key=[],username,role, creating new getter
+Tue, 14 Mar 2017 13:16:55 GMT hfc shouldGetTCerts: yes, we have no tcerts
+Tue, 14 Mar 2017 13:16:56 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [RangeError: byte length of Uint16Array should be a multiple of 2]
+Tue, 14 Mar 2017 13:16:58 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [RangeError: byte length of Uint32Array should be a multiple of 4]
+Tue, 14 Mar 2017 13:16:58 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [RangeError: byte length of Uint32Array should be a multiple of 4]
+Tue, 14 Mar 2017 13:16:58 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:16:58 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:16:58 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:16:58 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:16:58 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:16:58 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:16:58 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:16:58 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:16:58 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:16:58 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:16:58 GMT hfc reg txid b5197fb9-d8d2-4d2c-8be2-612a7166462e
+Tue, 14 Mar 2017 13:16:58 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:16:58 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[91,123,34,109,97,107,101,34,58,34,109,97,107,34,44,34,109,111,100,101,108,34,58,34,109,111,34,44,34,114,101,103,34,58,34,82,69,71,34,44,34,86,73,78,34,58,49,50,51,52,53,54,55,56,57,48,49,50,51,52,53,44,34,111,119,110,101,114,34,58,34,74,111,101,95,80,97,121,110,101,34,44,34,115,99,114,97,112,112,101,100,34,58,102,97,108,115,101,44,34,115,116,97,116,117,115,34,58,50,44,34,99,111,108,111,117,114,34,58,34,114,101,100,34,44,34,118,53,99,73,68,34,58,34,79,78,52,55,55,50,52,54,54,34,44,34,108,101,97,115,101,67,111,110,116,114,97,99,116,73,68,34,58,34,85,78,68,69,70,73,78,69,68,34,125,93]}}
+[ { make: 'mak',
+    model: 'mo',
+    reg: 'REG',
+    VIN: 123456789012345,
+    owner: 'Joe_Payne',
+    scrapped: false,
+    status: 2,
+    colour: 'red',
+    v5cID: 'ON4772466',
+    leaseContractID: 'UNDEFINED' } ]
+INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Joe_Payne","scrapped":false,"status":2,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+
+EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"leasees","account":"Joe Payne"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	PUT blockchain/assets/vehicles/ON4772466/owner	INPUT: {"function_name":"private_to_scrap_merchant","value":"Cray_Bros_London_Ltd","v5cID":"ON4772466"}
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Formatting request
+
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"private_to_scrap_merchant","args":["Cray_Bros_London_Ltd","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:03 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:17:03 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:17:03 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"private_to_scrap_merchant","args":["Cray_Bros_London_Ltd","ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:03 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:17:03 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:17:03 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:17:03 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"private_to_scrap_merchant","args":["Cray_Bros_London_Ltd","ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:17:03 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:17:03 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:17:03 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:17:03 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:17:03 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:17:03 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:17:03 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:17:03 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:17:03 GMT hfc reg txid f984d0e8-4274-45f3-bb7f-d1b416507efa
+Tue, 14 Mar 2017 13:17:03 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:17:03 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:17:03 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[102,57,56,52,100,48,101,56,45,52,50,55,52,45,52,53,102,51,45,98,98,55,102,45,100,49,98,52,49,54,53,48,55,101,102,97]}}
+Tue, 14 Mar 2017 13:17:08 GMT hfc timeout uuid= f984d0e8-4274-45f3-bb7f-d1b416507efa
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Updating owner value
+
+INFO	PUT blockchain/assets/vehicles/ON4772466/owner	Achieving Consensus
+
+EXIT	PUT blockchain/assets/vehicles/ON4772466/owner	OUTPUT: "Tx f984d0e8-4274-45f3-bb7f-d1b416507efa complete"
+ENTER	GET blockchain/participants/leasees	INPUT: {}
+EXIT	GET blockchain/participants/leasees	OUTPUT: {"result":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}]}
+connected
+ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/assets/vehicles	INPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:14 GMT hfc Member.query
+Tue, 14 Mar 2017 13:17:14 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:17:14 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:14 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:17:14 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:17:14 GMT hfc Member.getNextTCert: key=[],username,role, creating new getter
+Tue, 14 Mar 2017 13:17:14 GMT hfc shouldGetTCerts: yes, we have no tcerts
+Tue, 14 Mar 2017 13:17:15 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [Error: Wrong input string for convertion]
+Tue, 14 Mar 2017 13:17:17 GMT hfc Warning: problem parsing certificate bytes; retrying ...  [Error: Wrong input string for convertion]
+Tue, 14 Mar 2017 13:17:17 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:17:17 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"get_vehicles","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:17:17 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:17:17 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:17:17 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:17:17 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:17:17 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:17:17 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:17:17 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:17:17 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:17:17 GMT hfc reg txid a92233d0-4248-428b-bf35-d89b7519d150
+Tue, 14 Mar 2017 13:17:17 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:17:17 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[91,123,34,109,97,107,101,34,58,34,109,97,107,34,44,34,109,111,100,101,108,34,58,34,109,111,34,44,34,114,101,103,34,58,34,82,69,71,34,44,34,86,73,78,34,58,49,50,51,52,53,54,55,56,57,48,49,50,51,52,53,44,34,111,119,110,101,114,34,58,34,67,114,97,121,95,66,114,111,115,95,76,111,110,100,111,110,95,76,116,100,34,44,34,115,99,114,97,112,112,101,100,34,58,102,97,108,115,101,44,34,115,116,97,116,117,115,34,58,52,44,34,99,111,108,111,117,114,34,58,34,114,101,100,34,44,34,118,53,99,73,68,34,58,34,79,78,52,55,55,50,52,54,54,34,44,34,108,101,97,115,101,67,111,110,116,114,97,99,116,73,68,34,58,34,85,78,68,69,70,73,78,69,68,34,125,93]}}
+[ { make: 'mak',
+    model: 'mo',
+    reg: 'REG',
+    VIN: 123456789012345,
+    owner: 'Cray_Bros_London_Ltd',
+    scrapped: false,
+    status: 4,
+    colour: 'red',
+    v5cID: 'ON4772466',
+    leaseContractID: 'UNDEFINED' } ]
+INFO	GET blockchain/assets/vehicles	{"make":"mak","model":"mo","reg":"REG","VIN":123456789012345,"owner":"Cray_Bros_London_Ltd","scrapped":false,"status":4,"colour":"red","v5cID":"ON4772466","leaseContractID":"UNDEFINED"}
+
+EXIT	GET blockchain/assets/vehicles	OUTPUT: {}
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:19 GMT hfc Member.query
+Tue, 14 Mar 2017 13:17:19 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:17:19 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:19 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:17:19 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:17:19 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:17:19 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:17:19 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:17:19 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:17:19 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:17:19 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:17:19 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:17:19 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:17:19 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:17:19 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:17:19 GMT hfc reg txid 7be2904b-6001-47f8-8eb0-0f42b5d4c325
+Tue, 14 Mar 2017 13:17:19 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:17:19 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[72,101,108,108,111,44,32,119,111,114,108,100,33]}}
+ENTER	POST admin/identity	INPUT: {"participantType":"scrap_merchants","account":"Cray Bros (London) Ltd"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	DELETE blockchain/assets/vehicles/vehicle/ON4772466/scrap	INPUT: {}
+[#] Invoke:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"scrap_vehicle","args":["ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:21 GMT hfc Member.invoke
+Tue, 14 Mar 2017 13:17:21 GMT hfc TransactionContext.invoke
+Tue, 14 Mar 2017 13:17:21 GMT hfc Received invoke request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"scrap_vehicle","args":["ON4772466"],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:21 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:17:21 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:17:21 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:17:21 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"scrap_vehicle","args":["ON4772466"],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:17:21 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:17:21 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:17:21 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:17:21 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:17:21 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:17:21 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:17:21 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:17:21 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:17:21 GMT hfc reg txid b768e705-9581-4932-8a46-27b0a22311d4
+Tue, 14 Mar 2017 13:17:21 GMT hfc waiting 5 seconds before emitting complete event
+Tue, 14 Mar 2017 13:17:21 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:17:21 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[98,55,54,56,101,55,48,53,45,57,53,56,49,45,52,57,51,50,45,56,97,52,54,45,50,55,98,48,97,50,50,51,49,49,100,52]}}
+Tue, 14 Mar 2017 13:17:26 GMT hfc timeout uuid= b768e705-9581-4932-8a46-27b0a22311d4
+INFO	DELETE blockchain/assets/vehicles/vehicle/ON4772466/scrap	Achieving consensus
+
+EXIT	DELETE blockchain/assets/vehicles/vehicle/ON4772466/scrap	OUTPUT: {"message":"Scrap updated"}
+ENTER	GET blockchain/participants/scrap_merchants	INPUT: {}
+EXIT	GET blockchain/participants/scrap_merchants	OUTPUT: {"result":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}
+connected
+ENTER	POST admin/identity	INPUT: {"participantType":"regulators","account":"DVLA"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/participants/	INPUT: {}
+EXIT	GET blockchain/participants/	OUTPUT: {"result":{"regulators":[{"name":"DVLA","identity":"DVLA","password":"IUZCYDngtwjW","address_line_1":"The Richard Ley Development Centre","address_line_2":"Upper Forest Way","address_line_3":"Swansea Vale","address_line_4":"Swansea","postcode":"SA7 0AN"}],"manufacturers":[{"name":"Alfa Romeo","identity":"Alfa_Romeo","password":"fGMMQqWEPxVy","address_line_1":"25 St James's Street","address_line_2":"London","address_line_3":"United Kingdom","postcode":"SW1A 1HA"},{"name":"Toyota","identity":"Toyota","password":"hTpPFxiOwWgS","address_line_1":"Burnaston","address_line_2":"Derby","address_line_3":"United Kingdom","postcode":"DE1 9TA"},{"name":"Jaguar Land Rover","identity":"Jaguar_Land_Rover","password":"nNRyjPKrSpUb","address_line_1":"Abbey Road","address_line_2":"Coventry","address_line_3":"United Kingdom","postcode":"CV3 4LF"}],"dealerships":[{"name":"Beechvale Group","identity":"Beechvale_Group","password":"TvNWKDgWTrfH","address_line_1":"84 Hull Road","address_line_2":"Derby","postcode":"DE75 4PJ"},{"name":"Milescape","identity":"Milescape","password":"cGJslZqjNjPK","address_line_1":"Imperial Yard","address_line_2":"Derby","postcode":"DE94 8HY"},{"name":"Viewers Alfa Romeo","identity":"Viewers_Alfa_Romeo","password":"VWjFucyEIzTn","address_line_1":"25 Lower Lens Street","address_line_2":"Penylan","address_line_3":"Cardiff","address_line_4":"South Glamorgan","postcode":"CF28 9LC"}],"lease_companies":[{"name":"LeaseCan","identity":"LeaseCan","password":"mRbbQTpZfVVa","address_line_1":"64 Zoo Lane","address_line_2":"Slough","address_line_3":"Berkshire","postcode":"SL82 4AB"},{"name":"Every Car Leasing","identity":"Every_Car_Leasing","password":"KakjewJfwBSq","address_line_1":"9 Main Road","address_line_2":"Mobberly","address_line_3":"Cheshire","postcode":"WA18 7KJ"},{"name":"Regionwide Vehicle Contracts","identity":"Regionwide_Vehicle_Contracts","password":"plqOUyoFTZyK","address_line_1":"Unit 9","address_line_2":"Malcom Christie Way","address_line_3":"Riggot Fields","address_line_4":"Manchester","postcode":"M21 15QY"}],"leasees":[{"name":"Joe Payne","identity":"Joe_Payne","password":"BKwnxTfJGNyK","address_line_1":"84 Byron Road","address_line_2":"Eastleigh","postcode":"SO50 8JR"},{"name":"Andrew Hurt","identity":"Andrew_Hurt","password":"tkGIRxBywwMk","address_line_1":"16 West Street","address_line_2":"Eastleigh","postcode":"SO50 9CL"},{"name":"Anthony O'Dowd","identity":"Anthony_O_Dowd","password":"MrcAgjpBwhmI","address_line_1":"34 Main Road","address_line_2":"Winchester","postcode":"SO50 3QV"}],"scrap_merchants":[{"name":"Cray Bros (London) Ltd","identity":"Cray_Bros_London_Ltd","password":"BTaWHtHrCZry","address_line_1":"26 Electric Eel Avenue","address_line_2":"Twickenham","address_line_3":"Greater London","postcode":"SE51 9DR"},{"name":"Aston Scrap Centre","identity":"Aston_Scrap_Centre","password":"AzdeAZuGtlUT","address_line_1":"11 Willow Park Way","address_line_2":"Aston on Trent","address_line_3":"Derby","postcode":"DE72 2DG"},{"name":"ScrapIt! UK","identity":"ScrapIt_UK","password":"WDYJcenyScyC","address_line_1":"25 Lincoln Road","address_line_2":"Winchester","postcode":"SO29 9BL"}]}}
+ENTER	GET blockchain/transactions	INPUT: {}
+INFO	GET blockchain/transactions	Retrieved height: 14
+
+EXIT	GET blockchain/transactions	OUTPUT: "result"
+ENTER	POST admin/identity	INPUT: {"participantType":"dealerships","account":"Beechvale Group"}
+INFO	POST admin/identity	Calling /registrar endpoint
+
+EXIT	POST admin/identity	OUTPUT: {"message":"Successfully logged user in"}
+ENTER	GET blockchain/transactions	INPUT: {}
+INFO	GET blockchain/transactions	Retrieved height: 14
+
+INFO	GET blockchain/transactions	Evaluating transactions
+
+EXIT	GET blockchain/transactions	OUTPUT: {"transactions":[{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\nw\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a/\n\u0018private_to_lease_company\n\bLeaseCan\n\tON4772466","txid":"94af7a2c-6419-451c-92f6-c9d05d98f1e7","timestamp":{"seconds":1489497380},"nonce":"3rsw8RNjDE++T12Ldhw8NeqdNISegOT/","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"39DF3285499F483782B1AD848062DF3E","notBefore":"2017-03-14T13:15:12.000Z","notAfter":"2017-06-12T13:15:12.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"2B:28:2F:46:E9:60:2C:8B:C8:E3:E4:7D:01:10:B8:35:E7:80:C8:83","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Beechvale_Group","1.2.3.4.5.6.11":"private","1.2.3.4.5.6.7":".9....&a...............5[...9oS.`d ...,.....|..w...f...P....O...","1.2.3.4.5.6.8":"........'...\".\\.L..Wo..^L..(..I.M...a.X......<G....9......B...rA","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIQCOvzvzPXjBMgIz7Enr8dRqRoYsq9nZz84rSAGZ/JWXPwIgSSUZxjGftrviZHV4XGW5sqt/n6W4F27FFWyWP4lTAUI=","caller":"Beechvale_Group","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\n}\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a5\n\u0017manufacturer_to_private\n\u000fBeechvale_Group\n\tON4772466","txid":"0978723e-14a1-4612-9347-b5354c444e2d","timestamp":{"seconds":1489497361},"nonce":"n/fmI4I4AyRLYxNEbnA/jJfp6maTSoF/","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"CCF21C5355094223990508AFE8CE8EB7","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"39:DB:E9:17:5C:2F:5F:A2:16:65:2B:B7:3B:6E:3C:FA:50:11:6F:F4","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":".F.0.H....Le)......&TA..L2+.oG..@......~.O.&...XI..Mh<.+...yG..`","1.2.3.4.5.6.8":"%Y.1...0..=.HrwY..S.L.nm..J.>....d..^.i....{...6.Z....>m......,.","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEQCIEMDF5GZuv7t0UHYO760BjbfJ5Bt15teLwVEjg3MhMHCAiA7EjJ4PWmyRBf1Bz8ZOPGhJ5uI9oFL8ZbcCPSqp+UVwg==","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\nd\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001c\n\nupdate_reg\n\u0003REG\n\tON4772466","txid":"b2ac4c6c-3e49-4ec8-bd56-d429af5e2764","timestamp":{"seconds":1489497339},"nonce":"l6TlIYf1e3an+Cs1JJV2usptyIacBttm","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"BB8B1708E9A441FCB2F6D29C811DD5D2","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"4B:D9:3A:13:34:F0:1A:99:72:62:A3:FC:56:98:B0:D0:57:B1:25:D0","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":".EGh.Y%.kw..J^./b9...ET........1.bM.MG...Q.y..\"...d.9../........","1.2.3.4.5.6.8":".E.4.....:+..\\ny.,.P.}....O;:..5.fk..v;..eI'3..3..,..].......B..","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIGseEe8g+lHz15O/5jYTdroPNp+XLmv4UHQfiIZ5N7vSAiEAnt3ofvYr3/v3eVB4c/61IJd7s6maeQx6WU/+J5tjlHw=","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\ng\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001f\n\rupdate_colour\n\u0003red\n\tON4772466","txid":"e4bebe40-1702-4387-971b-99bd4a04f4cc","timestamp":{"seconds":1489497333},"nonce":"AdrnbUjdQnIzwdXVzjk82YeYxD4ogz4S","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"EC9CF6AFBFDD430082393ABC46D83D77","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"24:67:A0:42:96:92:91:15:BD:FC:63:E6:E3:31:58:74:C7:7D:0C:C1","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":"z...z.......n.!............U.2...8p[...,....gC...~.G.({.........","1.2.3.4.5.6.8":"-....L)..9.f..E..*..u....<...F.9......mG.).t..v2..v..&:..&.....8","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIQC4h/32DNsRApaW3pAuzEWUmlGG13kFKO1tdHjThFSN5wIgLMbPlE5EmVR9iQI+7q7+dbyUq9eHIylLi4SlY8o9JwM=","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\ne\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001d\n\fupdate_model\n\u0002mo\n\tON4772466","txid":"66777282-693d-45af-b226-f1f8877cc84c","timestamp":{"seconds":1489497327},"nonce":"HkGqr9E3PG5Ho3WouY2IiaOgYxM5q5wi","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"27DB2CCB510B40EFAF4574162789A880","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"72:E1:FF:BE:83:4F:12:21:2D:FA:99:9D:F9:4E:DA:E7:EC:91:DF:54","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":"S0uf.O..P....M...MK*j....8&+cy......8OA!..D.Q..z.m.M..-.....7*.1","1.2.3.4.5.6.8":"s..,r..:...F....2.o...W.3.F..q..\\?..,.[.G....~..*,..M..Y.K.&\r.._","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEQCIBaEmE6XEVyomyOw9D11HV5W8QRSbJK0r34TBQ1/J/CZAiBV63SscWxcwBmpF3BUzuUB95rrWcLUvW3NcnTOKAHnlg==","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\ne\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001d\n\u000bupdate_make\n\u0003mak\n\tON4772466","txid":"75c510ac-2a10-4dec-8291-c70c58b04cac","timestamp":{"seconds":1489497322},"nonce":"JLyUjAPTgQuhj9fh3+TdzyQqrG2DQAw1","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"34365246C23C4D23AB12923DF754AC3E","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"DF:6B:FB:11:AE:36:3C:73:B7:93:8D:75:5A:01:0E:AD:5E:DB:E9:3C","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":"Md.\\.........kFN.pA%..x.....K..T..%...jOK......y........+|W.BV.Y","1.2.3.4.5.6.8":".`m.bs......|.....+.9...aG.%..x...e...-..-{I7.....,x.v?...K.q...","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCICOmzjthbbtj+NTtZZrMk2Is8FVCnXbX5Eh7lGILpjQgAiEAwx8nU6PAX25nEtjyH9mSMTnROxQrxokMnnKHXSAQLAw=","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\np\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a(\n\nupdate_vin\n\u000f123456789012345\n\tON4772466","txid":"953dd422-2902-4594-8e4e-b5062942f134","timestamp":{"seconds":1489497316},"nonce":"t/YJ3SLLrc5JiHs5kEVK7Cbk48paz2cR","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"63D796465C0B4D689F618135949A9321","notBefore":"2017-03-14T13:13:56.000Z","notAfter":"2017-06-12T13:13:56.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"B8:C6:37:8B:06:71:C7:86:77:45:39:E3:7B:E0:4D:52:68:6D:F7:3E","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"Alfa_Romeo","1.2.3.4.5.6.11":"manufacturer","1.2.3.4.5.6.7":"`2............!..LS...t.........!...Fh....+...C......B.ec0..3...","1.2.3.4.5.6.8":"..\r.>..O..A.n..Xn..0.B&%...u..[D..).......G.}^f{..|h..y.....dF..","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIQC/puk7Sr5ZgkOZj2W3+OOR9ePOFy1bQD5fu0YdP4+7OQIgNAgnVoOE4A/2MCwSvdBKNCVMtaHG5r3UbB3OmI1lcFM=","caller":"Alfa_Romeo","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\nz\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a2\n\u0019authority_to_manufacturer\n\nAlfa_Romeo\n\tON4772466","txid":"cd0a2e86-5683-4de5-a517-6931558e9c8d","timestamp":{"seconds":1489497286},"nonce":"2fAcqnrxcZv+bbTiBDsoatf5TTc+yAD/","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"4D1D22820F644EDF9028C9C444E815A3","notBefore":"2017-03-14T13:12:38.000Z","notAfter":"2017-06-12T13:12:38.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"D7:BC:A9:C1:5B:9B:5B:55:69:1C:DD:07:B3:73:0D:A2:CE:DE:BB:91","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"DVLA","1.2.3.4.5.6.11":"regulator","1.2.3.4.5.6.7":"[...c..kv...?.aC.o.....M.y.............L...y....k.K.:CA..DU...!k","1.2.3.4.5.6.8":"....%$v...F.... ..JAjF.Y....8kt|....\"+..4.rP....^....m.nb.d.T.g.","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEYCIQCsv/xJTo3popzfuNlruX9cV+zCv4/eqF1Dvwa0DAU0fwIhANrZwUUZOz3wTUuj3JsOXncv7u6/rSH/BGWMZrjZqkXX","caller":"DVLA","failed":false},{"type":2,"chaincodeID":"EkBkMWFiNDY4Mzg3ZmU1ZTFkYjQ4YTk3NGFkY2JlZTdkMjhkODRkNDhlZDZmOWQyNDg2N2Y3MzhkNjE3M2VhYWM0","payload":"\nc\b\u0001\u0012B\u0012@d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4\u001a\u001b\n\u000ecreate_vehicle\n\tON4772466","txid":"7a516b8e-a4f6-403a-80ef-3015807d5799","timestamp":{"seconds":1489497272},"nonce":"KBQChR2gIC40w1Ai0y6Mj5abpiAavdvy","cert":{"version":2,"subject":{"countryName":"US","organizationName":"Hyperledger","commonName":"Transaction Certificate"},"issuer":{"countryName":"US","organizationName":"Hyperledger","commonName":"tca"},"serial":"C8B69B6B2C39400CB6963CCE387CE03D","notBefore":"2017-03-14T13:12:38.000Z","notAfter":"2017-06-12T13:12:38.000Z","subjectHash":"21371687","signatureAlgorithm":"ecdsa-with-SHA384","fingerPrint":"B6:DD:4D:33:6B:B3:50:1D:5D:1A:3A:35:9E:15:AA:81:84:39:51:A1","publicKey":{"algorithm":"id-ecPublicKey"},"altNames":[],"extensions":{"keyUsage":"Digital Signature","basicConstraints":"CA:FALSE","subjectKeyIdentifier":"01:02:03:04","authorityKeyIdentifier":"keyid:01:02:03:04","1.2.3.4.5.6.10":"DVLA","1.2.3.4.5.6.11":"regulator","1.2.3.4.5.6.7":"..9g...g.....`UH.EQ.*..P..f...p.....FQ......c.p.WfRi.@.m....s1..","1.2.3.4.5.6.8":"Y.X..n\\..>.D.b?/.S.k.5..RrQ....P..|...eG.S.\n....4.8[.Z8.k.)bg)`.","1.2.3.4.5.6.9":"00HEADusername->1#role->2#"}},"signature":"MEUCIDCjB71URyv0Q6Srm1xzzfBMqrcptNLtrO3E+n0iDFFAAiEAgR6oP1RFIhEJnKpnDpj+v3evXO9zdkg6vayX4P0cJZU=","caller":"DVLA","failed":false}]}
+connected
+ENTER	GET blockchain/blocks	INPUT: ""
+EXIT	GET blockchain/blocks	OUTPUT: {"height":14,"currentBlockHash":"ovAgaKdxd9uHpASyAj6P8mH63Nk+J1x2xON5pcFZN0V30HROfAd0mkJtUcaPpf3+2/sHknLWxnsMmbsv050KJA=="}
+ENTER	GET blockchain/blocks/13	INPUT: {}
+EXIT	GET blockchain/blocks/13	OUTPUT: ""
+ENTER	GET blockchain/blocks/12	INPUT: {}
+EXIT	GET blockchain/blocks/12	OUTPUT: ""
+ENTER	GET blockchain/blocks/11	INPUT: {}
+EXIT	GET blockchain/blocks/11	OUTPUT: ""
+ENTER	GET blockchain/blocks/10	INPUT: {}
+EXIT	GET blockchain/blocks/10	OUTPUT: ""
+ENTER	GET blockchain/blocks/9	INPUT: {}
+EXIT	GET blockchain/blocks/9	OUTPUT: ""
+ENTER	GET blockchain/blocks/8	INPUT: {}
+EXIT	GET blockchain/blocks/8	OUTPUT: ""
+ENTER	GET blockchain/blocks/7	INPUT: {}
+EXIT	GET blockchain/blocks/7	OUTPUT: ""
+ENTER	GET blockchain/blocks/6	INPUT: {}
+EXIT	GET blockchain/blocks/6	OUTPUT: ""
+ENTER	GET blockchain/blocks/5	INPUT: {}
+EXIT	GET blockchain/blocks/5	OUTPUT: ""
+ENTER	GET blockchain/blocks/4	INPUT: {}
+EXIT	GET blockchain/blocks/4	OUTPUT: ""
+ENTER	GET blockchain/blocks/3	INPUT: {}
+EXIT	GET blockchain/blocks/3	OUTPUT: ""
+ENTER	GET blockchain/blocks/2	INPUT: {}
+EXIT	GET blockchain/blocks/2	OUTPUT: ""
+ENTER	GET blockchain/blocks/1	INPUT: {}
+EXIT	GET blockchain/blocks/1	OUTPUT: ""
+ENTER	GET blockchain/blocks/0	INPUT: {}
+EXIT	GET blockchain/blocks/0	OUTPUT: ""
+[#] Query:  {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:49 GMT hfc Member.query
+Tue, 14 Mar 2017 13:17:49 GMT hfc TransactionContext.query
+Tue, 14 Mar 2017 13:17:49 GMT hfc Received query request: {"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}
+Tue, 14 Mar 2017 13:17:49 GMT hfc [TransactionContext] No TCert cached. Retrieving one.
+Tue, 14 Mar 2017 13:17:49 GMT hfc Member.getNextTCert: key=[],username,role
+Tue, 14 Mar 2017 13:17:49 GMT hfc Got a TCert successfully, continue...
+Tue, 14 Mar 2017 13:17:49 GMT hfc newInvokeOrQueryTransaction: request={"chaincodeID":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4","fcn":"ping","args":[],"attrs":["username","role"]}, chaincodeID={"path":"","name":"d1ab468387fe5e1db48a974adcbee7d28d84d48ed6f9d24867f738d6173eaac4"}
+Tue, 14 Mar 2017 13:17:49 GMT hfc Set confidentiality on
+Tue, 14 Mar 2017 13:17:49 GMT hfc Calling TransactionContext.execute
+Tue, 14 Mar 2017 13:17:49 GMT hfc Executing transaction
+Tue, 14 Mar 2017 13:17:49 GMT hfc [TransactionContext] TCert already cached.
+Tue, 14 Mar 2017 13:17:49 GMT hfc Process Confidentiality...
+Tue, 14 Mar 2017 13:17:49 GMT hfc Sign transaction...
+Tue, 14 Mar 2017 13:17:49 GMT hfc Send transaction...
+Tue, 14 Mar 2017 13:17:49 GMT hfc Confidentiality:  0
+Tue, 14 Mar 2017 13:17:49 GMT hfc reg txid 134ab609-a491-4cc5-84c9-95fd803062b9
+Tue, 14 Mar 2017 13:17:49 GMT hfc peer.sendTransaction
+Tue, 14 Mar 2017 13:17:49 GMT hfc peer.sendTransaction: received {"status":"SUCCESS","msg":{"type":"Buffer","data":[72,101,108,108,111,44,32,119,111,114,108,100,33]}}
+ENTER	GET blockchain/blocks	INPUT: ""
+EXIT	GET blockchain/blocks	OUTPUT: {"height":14,"currentBlockHash":"ovAgaKdxd9uHpASyAj6P8mH63Nk+J1x2xON5pcFZN0V30HROfAd0mkJtUcaPpf3+2/sHknLWxnsMmbsv050KJA=="}
