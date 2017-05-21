@@ -3,7 +3,7 @@
 const Util = require('./util.js');
 const hfc = require('hfc');
 
-class Vehicle {
+class MedicalRecord {
 
     constructor(usersToSecurityContext) {
         this.usersToSecurityContext = usersToSecurityContext;
@@ -12,11 +12,11 @@ class Vehicle {
 
     create(userId) {
         let securityContext = this.usersToSecurityContext[userId];
-        let v5cID = Vehicle.newV5cID();
+        let v5cID = MedicalRecord.newV5cID();
 
         return this.doesV5cIDExist(userId, v5cID)
         .then(function() {
-            return Util.invokeChaincode(securityContext, 'create_vehicle', [ v5cID ])
+            return Util.invokeChaincode(securityContext, 'create_MedicalRecord', [ v5cID ])
             .then(function() {
                 return v5cID;
             });
@@ -51,4 +51,4 @@ class Vehicle {
     }
 }
 
-module.exports = Vehicle;
+module.exports = MedicalRecord;

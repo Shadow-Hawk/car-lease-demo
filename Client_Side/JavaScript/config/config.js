@@ -112,7 +112,7 @@ config.participants.users.lease_companies[1].type = 'Lease Company';
 config.participants.users.lease_companies[1].user = 'Larry';
 
 config.participants.users.lease_companies[2] = {};
-config.participants.users.lease_companies[2].company = 'Regionwide Vehicle Contracts';
+config.participants.users.lease_companies[2].company = 'Regionwide MedicalRecord Contracts';
 config.participants.users.lease_companies[2].type = 'Lease Company';
 config.participants.users.lease_companies[2].user = 'Luke';
 

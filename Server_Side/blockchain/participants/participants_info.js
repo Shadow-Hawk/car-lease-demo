@@ -90,8 +90,8 @@ let participants_info = {
             'postcode': 'WA18 7KJ'
         },
         {
-            'name': 'Regionwide Vehicle Contracts',
-            'identity': 'Regionwide_Vehicle_Contracts',
+            'name': 'Regionwide MedicalRecord Contracts',
+            'identity': 'Regionwide_MedicalRecord_Contracts',
             'password': 'plqOUyoFTZyK',
             'address_line_1': 'Unit 9',
             'address_line_2': 'Malcom Christie Way',

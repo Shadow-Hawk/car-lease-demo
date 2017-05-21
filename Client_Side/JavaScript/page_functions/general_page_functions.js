@@ -172,7 +172,7 @@ function errTrans(numErrs, numSucc)
 {
     $('#failHd span').html('Transfer Failed');
     $('#failTransfer').show();
-    $('#failTxt').html('Completed with some errors: <br /><br />'+numErrs+' vehicles failed.<br />'+numSucc+' vehicles were successful');
+    $('#failTxt').html('Completed with some errors: <br /><br />'+numErrs+' MedicalRecords failed.<br />'+numSucc+' MedicalRecords were successful');
     $('#loader').hide();
     $('#loaderMessages').html('');
 }
@@ -181,7 +181,7 @@ function errScrap(numErrs, numSucc)
 {
     $('#failHd span').html('Scrappage Failed');
     $('#failTransfer').show();
-    $('#failTxt').html('Completed with some errors: <br /><br />'+numErrs+' vehicles failed.<br />'+numSucc+' vehicles were successful');
+    $('#failTxt').html('Completed with some errors: <br /><br />'+numErrs+' MedicalRecords failed.<br />'+numSucc+' MedicalRecords were successful');
     $('#loader').hide();
     $('#loaderMessages').html('');
 }

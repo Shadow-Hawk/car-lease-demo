@@ -12,7 +12,7 @@ let securityContext;
 function get_all_cars(req, res, next, usersToSecurityContext)
 {
 
-    tracing.create('ENTER', 'GET blockchain/assets/vehicles', {});
+    tracing.create('ENTER', 'GET blockchain/assets/MedicalRecords', {});
 
     if(typeof req.cookies.user !== 'undefined')
     {
@@ -22,15 +22,15 @@ function get_all_cars(req, res, next, usersToSecurityContext)
     user_id = req.session.identity;
     securityContext = usersToSecurityContext[user_id];
 
-    return Util.queryChaincode(securityContext, 'get_vehicles', [])
+    return Util.queryChaincode(securityContext, 'get_MedicalRecords', [])
     .then(function(data) {
         let cars = JSON.parse(data.toString());
         console.log(cars);
         cars.forEach(function(car) {
-            tracing.create('INFO', 'GET blockchain/assets/vehicles', JSON.stringify(car));
+            tracing.create('INFO', 'GET blockchain/assets/MedicalRecords', JSON.stringify(car));
             res.write(JSON.stringify(car)+'&&');
         });
-        tracing.create('EXIT', 'GET blockchain/assets/vehicles', {});
+        tracing.create('EXIT', 'GET blockchain/assets/MedicalRecords', {});
         res.end('');
     })
     .catch(function(err) {
@@ -38,7 +38,7 @@ function get_all_cars(req, res, next, usersToSecurityContext)
         let error = {};
         error.error = true;
         error.message = err;
-        tracing.create('ERROR', 'GET blockchain/assets/vehicles', err);
+        tracing.create('ERROR', 'GET blockchain/assets/MedicalRecords', err);
         res.end(JSON.stringify(error));
     });
 }

@@ -9,7 +9,7 @@ let securityContext;
 
 function read(req,res,next,usersToSecurityContext,property) {
     let v5cID = req.params.v5cID;
-    tracing.create('ENTER', 'GET blockchain/assets/vehicles/vehicle/'+v5cID+'/' + property, {});
+    tracing.create('ENTER', 'GET blockchain/assets/MedicalRecords/MedicalRecord/'+v5cID+'/' + property, {});
 
     if(typeof req.cookies.user !== 'undefined')
     {
@@ -20,12 +20,12 @@ function read(req,res,next,usersToSecurityContext,property) {
     securityContext = usersToSecurityContext[user_id];
     user = securityContext.getEnrolledMember();
 
-    return Util.queryChaincode(securityContext, 'get_vehicle_details', [ v5cID ]).
+    return Util.queryChaincode(securityContext, 'get_MedicalRecord_details', [ v5cID ]).
     then(function(data) {
-        let vehicle = JSON.parse(data.toString());
+        let MedicalRecord = JSON.parse(data.toString());
         let result = {};
-        result.message = vehicle[property];
-        tracing.create('EXIT', 'GET blockchain/assets/vehicles/vehicle/'+v5cID+'/' + property, result);
+        result.message = MedicalRecord[property];
+        tracing.create('EXIT', 'GET blockchain/assets/MedicalRecords/MedicalRecord/'+v5cID+'/' + property, result);
         res.send(result);
     })
     .catch(function(err) {
@@ -34,7 +34,7 @@ function read(req,res,next,usersToSecurityContext,property) {
         error.message = err;
         error.v5cID = v5cID;
         error.error = true;
-        tracing.create('ERROR', 'GET blockchain/assets/vehicles/vehicle/'+v5cID+'/' + property, error);
+        tracing.create('ERROR', 'GET blockchain/assets/MedicalRecords/MedicalRecord/'+v5cID+'/' + property, error);
         res.send(error);
     });
 }

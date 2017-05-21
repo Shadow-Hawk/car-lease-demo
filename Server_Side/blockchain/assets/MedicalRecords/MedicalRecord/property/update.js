@@ -2,15 +2,15 @@
 let tracing = require(__dirname+'/../../../../../tools/traces/trace.js');
 let map_ID = require(__dirname+'/../../../../../tools/map_ID/map_ID.js');
 let Util = require(__dirname+'/../../../../../tools/utils/util');
-let Vehicle = require(__dirname+'/../../../../../tools/utils/vehicle');
+let MedicalRecord = require(__dirname+'/../../../../../tools/utils/MedicalRecord');
 
 let user_id;
 
-let vehicleData;
+let MedicalRecordData;
 
 let update = function(req, res, next, usersToSecurityContext, property)
 {
-    vehicleData = new Vehicle(usersToSecurityContext);
+    MedicalRecordData = new MedicalRecord(usersToSecurityContext);
 
     let newValue = req.body.value;
     let functionName = req.body.function_name;
@@ -24,22 +24,22 @@ let update = function(req, res, next, usersToSecurityContext, property)
     }
     user_id = req.session.identity;
 
-    tracing.create('ENTER', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, req.body);
+    tracing.create('ENTER', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, req.body);
 
-    tracing.create('INFO', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, 'Formatting request');
+    tracing.create('INFO', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, 'Formatting request');
     res.write('{"message":"Formatting request"}&&');
 
-    return vehicleData.updateAttribute(user_id, functionName, newValue, v5cID)
+    return MedicalRecordData.updateAttribute(user_id, functionName, newValue, v5cID)
     .then(function(data) {
-        tracing.create('ENTER SUCCESS', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property);
+        tracing.create('ENTER SUCCESS', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property);
 
-        tracing.create('INFO', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, 'Updating '+property+' value');
+        tracing.create('INFO', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, 'Updating '+property+' value');
         res.write('{"message":"Updating owner value"}&&');
-        tracing.create('INFO', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, 'Achieving Consensus');
+        tracing.create('INFO', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, 'Achieving Consensus');
         res.write('{"message":"Achieving Consensus"}&&');
         let result = {};
         result.message = property + ' updated';
-        tracing.create('EXIT', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, data);
+        tracing.create('EXIT', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, data);
         res.end(JSON.stringify(result));
     })
     .catch(function(err) {
@@ -47,21 +47,21 @@ let update = function(req, res, next, usersToSecurityContext, property)
         let error = {};
         error.error  = true;
         error.message = err;
-        tracing.create('ERROR', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, JSON.parse(err));
+        tracing.create('ERROR', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, JSON.parse(err));
         res.end(JSON.stringify(err));
     });
 
     // return Util.invokeChaincode(securityContext, functionName, [ newValue, v5cID ])
     //     .then(function(data) {
-    //         tracing.create('ENTER SUCCESS', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property);
+    //         tracing.create('ENTER SUCCESS', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property);
     //
-    //         tracing.create('INFO', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, 'Updating '+property+' value');
+    //         tracing.create('INFO', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, 'Updating '+property+' value');
     //         res.write('{"message":"Updating owner value"}&&');
-    //         tracing.create('INFO', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, 'Achieving Consensus');
+    //         tracing.create('INFO', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, 'Achieving Consensus');
     //         res.write('{"message":"Achieving Consensus"}&&');
     //         let result = {};
     //         result.message = property + ' updated';
-    //         tracing.create('EXIT', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, data);
+    //         tracing.create('EXIT', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, data);
     //         res.end(JSON.stringify(result));
     //     })
     //     .catch(function(err) {
@@ -69,7 +69,7 @@ let update = function(req, res, next, usersToSecurityContext, property)
     //         let error = {};
     //         error.error  = true;
     //         error.message = err;
-    //         tracing.create('ERROR', 'PUT blockchain/assets/vehicles/'+v5cID+'/' + property, JSON.parse(err));
+    //         tracing.create('ERROR', 'PUT blockchain/assets/MedicalRecords/'+v5cID+'/' + property, JSON.parse(err));
     //         res.end(JSON.stringify(err));
     //     });
 };

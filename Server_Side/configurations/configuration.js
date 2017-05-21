@@ -168,10 +168,10 @@ config.users = [
         affiliation: 'institution_a'
     },
     {
-        enrollmentID: 'Regionwide_Vehicle_Contracts',
+        enrollmentID: 'Regionwide_MedicalRecord_Contracts',
         attributes: [
             {name: 'role', value: 'lease_company'},
-            {name: 'username', value: 'Regionwide_Vehicle_Contracts'}
+            {name: 'username', value: 'Regionwide_MedicalRecord_Contracts'}
         ],
         registrar: {},
         roles: [],

@@ -1,4 +1,4 @@
-var vehiclesFile = require(__dirname+'/vehicles/vehicles.js');
-var vehicles = {};
-vehicles.create = vehiclesFile.create;
-exports.vehicles = vehicles;
+var MedicalRecordsFile = require(__dirname+'/MedicalRecords/MedicalRecords.js');
+var MedicalRecords = {};
+MedicalRecords.create = MedicalRecordsFile.create;
+exports.MedicalRecords = MedicalRecords;

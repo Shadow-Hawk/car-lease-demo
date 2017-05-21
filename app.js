@@ -31,8 +31,8 @@ let blocks             = require(__dirname+'/Server_Side/blockchain/blocks/block
 let block             = require(__dirname+'/Server_Side/blockchain/blocks/block/block.js');
 let participants     = require(__dirname+'/Server_Side/blockchain/participants/participants.js');
 let identity          = require(__dirname+'/Server_Side/admin/identity/identity.js');
-let vehicles         = require(__dirname+'/Server_Side/blockchain/assets/vehicles/vehicles.js');
-let vehicle          = require(__dirname+'/Server_Side/blockchain/assets/vehicles/vehicle/vehicle.js');
+let MedicalRecords         = require(__dirname+'/Server_Side/blockchain/assets/MedicalRecords/MedicalRecords.js');
+let MedicalRecord          = require(__dirname+'/Server_Side/blockchain/assets/MedicalRecords/MedicalRecord/MedicalRecord.js');
 let demo              = require(__dirname+'/Server_Side/admin/demo/demo.js');
 let chaincode          = require(__dirname+'/Server_Side/blockchain/chaincode/chaincode.js');
 let transactions     = require(__dirname+'/Server_Side/blockchain/transactions/transactions.js');
@@ -88,8 +88,8 @@ app.get('/admin/demo', function(req, res, next)
 //-----------------------------------------------------------------------------------------------
 //    Blockchain - chaincode
 //-----------------------------------------------------------------------------------------------
-app.post('/blockchain/chaincode/vehicles', function(req, res,next){
-    chaincode.vehicles.create(req, res,next,usersToSecurityContext);
+app.post('/blockchain/chaincode/MedicalRecords', function(req, res,next){
+    chaincode.MedicalRecords.create(req, res,next,usersToSecurityContext);
 });
 
 //-----------------------------------------------------------------------------------------------
@@ -104,118 +104,118 @@ app.get('/blockchain/blocks/:blockNum(\\d+)', function(req, res, next){
 });
 
 //-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles
+//    Blockchain - Assets - MedicalRecords
 //-----------------------------------------------------------------------------------------------
-app.post('/blockchain/assets/vehicles' , function(req,res,next)
+app.post('/blockchain/assets/MedicalRecords' , function(req,res,next)
 {
-    vehicles.create(req,res,next,usersToSecurityContext);
+    MedicalRecords.create(req,res,next,usersToSecurityContext);
 });
 
-app.get('/blockchain/assets/vehicles' , function(req,res, next)
+app.get('/blockchain/assets/MedicalRecords' , function(req,res, next)
 {
-    vehicles.read(req,res,next,usersToSecurityContext);
-});
-
-//-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles - Vehicle
-//-----------------------------------------------------------------------------------------------
-
-app.get('/blockchain/assets/vehicles/:v5cID' , function(req,res,next)
-{
-    vehicle.read(req,res,next,usersToSecurityContext);
+    MedicalRecords.read(req,res,next,usersToSecurityContext);
 });
 
 //-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles - Vehicle - Owner
+//    Blockchain - Assets - MedicalRecords - MedicalRecord
 //-----------------------------------------------------------------------------------------------
-app.get('/blockchain/assets/vehicles/:v5cID/owner' , function(req,res,next)
-{
-    vehicle.owner.read(req,res,next,usersToSecurityContext);
-});
 
-app.put('/blockchain/assets/vehicles/:v5cID/owner' , function(req,res,next)
+app.get('/blockchain/assets/MedicalRecords/:v5cID' , function(req,res,next)
 {
-    vehicle.owner.update(req,res,next,usersToSecurityContext);
+    MedicalRecord.read(req,res,next,usersToSecurityContext);
 });
 
 //-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles - Vehicle - VIN
+//    Blockchain - Assets - MedicalRecords - MedicalRecord - Owner
 //-----------------------------------------------------------------------------------------------
-app.get('/blockchain/assets/vehicles/:v5cID/VIN' , function(req,res,next)
+app.get('/blockchain/assets/MedicalRecords/:v5cID/owner' , function(req,res,next)
 {
-    vehicle.VIN.read(req,res,next,usersToSecurityContext);
+    MedicalRecord.owner.read(req,res,next,usersToSecurityContext);
 });
 
-app.put('/blockchain/assets/vehicles/:v5cID/VIN' , function(req,res,next)
+app.put('/blockchain/assets/MedicalRecords/:v5cID/owner' , function(req,res,next)
 {
-    vehicle.VIN.update(req,res,next,usersToSecurityContext);
-});
-
-//-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles - Vehicle - Colour
-//-----------------------------------------------------------------------------------------------
-app.get('/blockchain/assets/vehicles/:v5cID/colour' , function(req,res,next)
-{
-    vehicle.colour.read(req,res,next,usersToSecurityContext);
-});
-
-app.put('/blockchain/assets/vehicles/:v5cID/colour' , function(req,res,next)
-{
-    vehicle.colour.update(req,res,next,usersToSecurityContext);
-});
-
-
-//-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles - Vehicle - Make
-//-----------------------------------------------------------------------------------------------
-app.get('/blockchain/assets/vehicles/:v5cID/make' , function(req,res,next)
-{
-    vehicle.make.read(req,res,next,usersToSecurityContext);
-});
-
-app.put('/blockchain/assets/vehicles/:v5cID/make' , function(req,res,next)
-{
-    vehicle.make.update(req,res,next,usersToSecurityContext);
+    MedicalRecord.owner.update(req,res,next,usersToSecurityContext);
 });
 
 //-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles - Vehicle - Model
+//    Blockchain - Assets - MedicalRecords - MedicalRecord - VIN
 //-----------------------------------------------------------------------------------------------
-app.get('/blockchain/assets/vehicles/:v5cID/model' , function(req,res,next)
+app.get('/blockchain/assets/MedicalRecords/:v5cID/VIN' , function(req,res,next)
 {
-    vehicle.model.read(req,res,next,usersToSecurityContext);
+    MedicalRecord.VIN.read(req,res,next,usersToSecurityContext);
 });
 
-app.put('/blockchain/assets/vehicles/:v5cID/model' , function(req,res,next)
+app.put('/blockchain/assets/MedicalRecords/:v5cID/VIN' , function(req,res,next)
 {
-    vehicle.model.update(req,res,next,usersToSecurityContext);
-});
-
-//-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles - Vehicle - Reg
-//-----------------------------------------------------------------------------------------------
-app.get('/blockchain/assets/vehicles/:v5cID/reg' , function(req,res,next)
-{
-    vehicle.reg.read(req,res,next,usersToSecurityContext);
-});
-
-app.put('/blockchain/assets/vehicles/:v5cID/reg' , function(req,res,next)
-{
-
-    vehicle.reg.update(req,res,next,usersToSecurityContext);
+    MedicalRecord.VIN.update(req,res,next,usersToSecurityContext);
 });
 
 //-----------------------------------------------------------------------------------------------
-//    Blockchain - Assets - Vehicles - Vehicle - Scrapped
+//    Blockchain - Assets - MedicalRecords - MedicalRecord - Colour
 //-----------------------------------------------------------------------------------------------
-app.delete('/blockchain/assets/vehicles/:v5cID' , function(req,res,next)
+app.get('/blockchain/assets/MedicalRecords/:v5cID/colour' , function(req,res,next)
 {
-    vehicle.delete(req,res,next,usersToSecurityContext);
+    MedicalRecord.colour.read(req,res,next,usersToSecurityContext);
 });
 
-app.get('/blockchain/assets/vehicles/:v5cID/scrap' , function(req,res,next)
+app.put('/blockchain/assets/MedicalRecords/:v5cID/colour' , function(req,res,next)
 {
-    vehicle.scrapped.read(req,res,next,usersToSecurityContext);
+    MedicalRecord.colour.update(req,res,next,usersToSecurityContext);
+});
+
+
+//-----------------------------------------------------------------------------------------------
+//    Blockchain - Assets - MedicalRecords - MedicalRecord - Make
+//-----------------------------------------------------------------------------------------------
+app.get('/blockchain/assets/MedicalRecords/:v5cID/make' , function(req,res,next)
+{
+    MedicalRecord.make.read(req,res,next,usersToSecurityContext);
+});
+
+app.put('/blockchain/assets/MedicalRecords/:v5cID/make' , function(req,res,next)
+{
+    MedicalRecord.make.update(req,res,next,usersToSecurityContext);
+});
+
+//-----------------------------------------------------------------------------------------------
+//    Blockchain - Assets - MedicalRecords - MedicalRecord - Model
+//-----------------------------------------------------------------------------------------------
+app.get('/blockchain/assets/MedicalRecords/:v5cID/model' , function(req,res,next)
+{
+    MedicalRecord.model.read(req,res,next,usersToSecurityContext);
+});
+
+app.put('/blockchain/assets/MedicalRecords/:v5cID/model' , function(req,res,next)
+{
+    MedicalRecord.model.update(req,res,next,usersToSecurityContext);
+});
+
+//-----------------------------------------------------------------------------------------------
+//    Blockchain - Assets - MedicalRecords - MedicalRecord - Reg
+//-----------------------------------------------------------------------------------------------
+app.get('/blockchain/assets/MedicalRecords/:v5cID/reg' , function(req,res,next)
+{
+    MedicalRecord.reg.read(req,res,next,usersToSecurityContext);
+});
+
+app.put('/blockchain/assets/MedicalRecords/:v5cID/reg' , function(req,res,next)
+{
+
+    MedicalRecord.reg.update(req,res,next,usersToSecurityContext);
+});
+
+//-----------------------------------------------------------------------------------------------
+//    Blockchain - Assets - MedicalRecords - MedicalRecord - Scrapped
+//-----------------------------------------------------------------------------------------------
+app.delete('/blockchain/assets/MedicalRecords/:v5cID' , function(req,res,next)
+{
+    MedicalRecord.delete(req,res,next,usersToSecurityContext);
+});
+
+app.get('/blockchain/assets/MedicalRecords/:v5cID/scrap' , function(req,res,next)
+{
+    MedicalRecord.scrapped.read(req,res,next,usersToSecurityContext);
 });
 
 //-----------------------------------------------------------------------------------------------
@@ -330,7 +330,7 @@ chain.setKeyValStore(hfc.newFileKeyValStore(configFile.config.key_store_location
 //Retrieve the certificate if grpcs is being used
 if(configFile.config.hfcProtocol === 'grpcs'){
     // chain.setECDSAModeForGRPC(true);
-    pem = fs.readFileSync(__dirname+'/Chaincode/src/vehicle_code/'+configFile.config.certificate_file_name, 'utf8');
+    pem = fs.readFileSync(__dirname+'/Chaincode/src/MedicalRecord_code/'+configFile.config.certificate_file_name, 'utf8');
 }
 
 

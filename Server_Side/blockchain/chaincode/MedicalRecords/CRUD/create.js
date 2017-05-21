@@ -7,13 +7,13 @@
 // let crypto = require('crypto');
 //
 // /*
-// Used to manually deploy vehicle chaincode.
+// Used to manually deploy MedicalRecord chaincode.
 // Not used for Bluemix demo which instead uses "\Server_Side\configurations\startup\CRUD\create.js" to automatically deploy chaincode.
 // */
 // function deploy(req, res)
 // {
 //
-//     tracing.create('ENTER', 'POST blockchain/chaincode/vehicles', {});
+//     tracing.create('ENTER', 'POST blockchain/chaincode/MedicalRecords', {});
 //
 //     let api_url = configFile.config.api_ip + '://' + configFile.config.api_ip+':'+configFile.config.api_port_internal;
 //
@@ -28,7 +28,7 @@
 // 						  'params': {
 // 						    'type': 1,
 // 						    'chaincodeID': {
-// 						      'path': configFile.config.vehicle
+// 						      'path': configFile.config.MedicalRecord
 // 						    },
 // 						    'ctorMsg': {
 // 						      'function': 'init',
@@ -54,7 +54,7 @@
 // 		{
 //
 //             setTimeout(function() {
-//                 tracing.create('INFO', 'POST blockchain/chaincode/vehicles', 'Chaincode deployed. Writing to config.');
+//                 tracing.create('INFO', 'POST blockchain/chaincode/MedicalRecords', 'Chaincode deployed. Writing to config.');
 //                 update_config(body.result.message, res);
 //             }, 60000);
 //         }
@@ -69,7 +69,7 @@
 //     });
 // }
 //
-// function update_config(name, res) //Updates config.vehicle_name (ID of Chaincode) depending on chaincode provided
+// function update_config(name, res) //Updates config.MedicalRecord_name (ID of Chaincode) depending on chaincode provided
 // {
 //     fs.readFile(__dirname+'/../../../../configurations/configuration.js', 'utf8', function (err,data)
 // 	{
@@ -78,10 +78,10 @@
 //             return console.log(err);
 //         }
 //
-//         let toMatch = 'config.vehicle_name = \''+ configFile.config.vehicle_name+'\';';
+//         let toMatch = 'config.MedicalRecord_name = \''+ configFile.config.MedicalRecord_name+'\';';
 //         let re = new RegExp(toMatch, 'g');
 //
-//         let result = data.replace(re, 'config.vehicle_name = \''+name+'\';');
+//         let result = data.replace(re, 'config.MedicalRecord_name = \''+name+'\';');
 //
 //         fs.writeFile(__dirname+'/../../../../configurations/configuration.js', result, 'utf8', function (err)
 // 		{
@@ -91,12 +91,12 @@
 //                 let error = {};
 //                 error.message = 'Unable to write chaincode deploy name to configuration file';
 //                 error.error = true;
-//                 tracing.create('ERROR', 'POST blockchain/chaincode/vehicles', error);
+//                 tracing.create('ERROR', 'POST blockchain/chaincode/MedicalRecords', error);
 //                 res.send(error);
 //             }
 //             else
 // 			{
-//                 tracing.create('EXIT', 'POST blockchain/chaincode/vehicles', {'message':name});
+//                 tracing.create('EXIT', 'POST blockchain/chaincode/MedicalRecords', {'message':name});
 //                 res.send({'message':name});
 //             }
 //         });

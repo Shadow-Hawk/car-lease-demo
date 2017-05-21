@@ -12,7 +12,7 @@ function createAsset()
     let data = {};
     let found = [];
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/blockchain/assets/vehicles', true);
+    xhr.open('POST', '/blockchain/assets/MedicalRecords', true);
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     xhr.overrideMimeType('text/plain');
     xhr.onprogress = function () {
@@ -77,7 +77,7 @@ function createAsset()
                 $('#latestSpan').html('&nbsp;&#10004');
                 $('#loaderMessages').append('<br /><br /><span id="okTransaction" onclick="confTrans();">OK</span>');
                 $('#chooseConfHd').html('<span>Creation Complete</span>');
-                $('#confTxt').html('Created Vehicle: '+ JSON.parse(array[array.length - 1]).v5cID);
+                $('#confTxt').html('Created MedicalRecord: '+ JSON.parse(array[array.length - 1]).v5cID);
             }
         }
     };
@@ -105,7 +105,7 @@ function transferAsset()
 {
     let found = [];
     let xhr = new XMLHttpRequest();
-    xhr.open('PUT', '/blockchain/assets/vehicles/'+transferArray[transferIndex-1].v5cID+'/owner', true); //PUT (Updates)
+    xhr.open('PUT', '/blockchain/assets/MedicalRecords/'+transferArray[transferIndex-1].v5cID+'/owner', true); //PUT (Updates)
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     xhr.overrideMimeType('text/plain');
     xhr.onprogress = function () {
@@ -207,7 +207,7 @@ function scrapAsset()
     let found = [];
     let objects = [];
     let xhr = new XMLHttpRequest();
-    xhr.open('DELETE', 'blockchain/assets/vehicles/'+scrapArray[scrapIndex-1].v5cID, true); //As it refers to an v5, the path is: blockchain/assets/vehicles/vehicle/..
+    xhr.open('DELETE', 'blockchain/assets/MedicalRecords/'+scrapArray[scrapIndex-1].v5cID, true); //As it refers to an v5, the path is: blockchain/assets/MedicalRecords/MedicalRecord/..
 
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     xhr.overrideMimeType('text/plain');
@@ -357,7 +357,7 @@ function updateField()
     let found = [];
     let field = bigData[increment].field;
     let xhr = new XMLHttpRequest();
-    xhr.open('PUT', '/blockchain/assets/vehicles/'+bigData[increment].v5cID+'/'+bigData[increment].field, true);
+    xhr.open('PUT', '/blockchain/assets/MedicalRecords/'+bigData[increment].v5cID+'/'+bigData[increment].field, true);
     xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
     xhr.overrideMimeType('text/plain');
     xhr.onprogress = function () {

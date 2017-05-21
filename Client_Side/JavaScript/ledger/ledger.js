@@ -139,7 +139,7 @@ function getTransactions(){
 			for(var i = d.transactions.length-1; i >= 0 ; i--)
 			{
 				var obj = d.transactions[i];
-				if(obj.payload.indexOf("create_vehicle_log") == -1)
+				if(obj.payload.indexOf("create_MedicalRecord_log") == -1)
 				{
 					var payload = obj.payload;
 					var type = "undefined";
@@ -176,10 +176,10 @@ function getTransactions(){
 						type = "Transfer";
 						function_name = "private_to_scrap_merchant";
 					}
-					if(payload.indexOf("create_vehicle") != -1)
+					if(payload.indexOf("create_MedicalRecord") != -1)
 					{
 						type = "Create";
-						function_name = "create_vehicle";
+						function_name = "create_MedicalRecord";
 					}
 					if(payload.indexOf("update_make") != -1)
 					{
@@ -211,10 +211,10 @@ function getTransactions(){
 						function_name = "update_colour";
 						update_type = "Colour";
 					}
-					if(payload.indexOf("scrap_vehicle") != -1)
+					if(payload.indexOf("scrap_MedicalRecord") != -1)
 					{
 						type = "Scrap";
-						function_name = "scrap_vehicle";
+						function_name = "scrap_MedicalRecord";
 					}
 					var v5cID = 'undefined';
 					var timestamp = 'undefined';
@@ -245,7 +245,7 @@ function getTransactions(){
 						
 						if(carDetails.indexOf('undefined') != -1)
 						{
-							carDetails = 'Vehicle Template' 
+							carDetails = 'MedicalRecord Template' 
 						}
 			
 						$('<tr class="retrievedRw" ><td class="smlBrk"></td><td style="width:1%; white-space:nowrap" class="transRw">['+v5cID+'] </td><td class="transRw" style="width:1%; white-space:nowrap"><span class="type" >Transfer</span><span class="message">: '+caller+' &rarr; '+arguments+'</span></td><td colspan="2" class="transRw">'+carDetails+'</td><td class="transRw txtRight">'+timestamp+'</td><td class="smlBrk"></td></tr>').insertAfter('#insAft')

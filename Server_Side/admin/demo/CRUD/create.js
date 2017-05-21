@@ -1,11 +1,11 @@
 'use strict';
 
 const hfc = require('hfc');
-const Vehicle = require(__dirname+'/../../../tools/utils/vehicle');
+const MedicalRecord = require(__dirname+'/../../../tools/utils/MedicalRecord');
 
 let tracing = require(__dirname+'/../../../tools/traces/trace.js');
 let map_ID = require(__dirname+'/../../../tools/map_ID/map_ID.js');
-let initial_vehicles = require(__dirname+'/../../../blockchain/assets/vehicles/initial_vehicles.js');
+let initial_MedicalRecords = require(__dirname+'/../../../blockchain/assets/MedicalRecords/initial_MedicalRecords.js');
 let fs = require('fs');
 
 const TYPES = [
@@ -16,17 +16,17 @@ const TYPES = [
     'private_to_scrap_merchant'
 ];
 
-let vehicleData;
+let MedicalRecordData;
 let v5cIDResults;
 
 function create(req, res, next, usersToSecurityContext) {
     try {
         v5cIDResults = [];
         let chain = hfc.getChain('myChain');
-        vehicleData = new Vehicle(usersToSecurityContext);
+        MedicalRecordData = new MedicalRecord(usersToSecurityContext);
 
         let cars;
-        res.write(JSON.stringify({message:'Creating vehicles'})+'&&');
+        res.write(JSON.stringify({message:'Creating MedicalRecords'})+'&&');
         fs.writeFileSync(__dirname+'/../../../logs/demo_status.log', '{"logs": []}');
 
         tracing.create('ENTER', 'POST admin/demo', req.body);
@@ -34,7 +34,7 @@ function create(req, res, next, usersToSecurityContext) {
         let scenario = req.body.scenario;
 
         if(scenario === 'simple' || scenario === 'full') {
-            cars = initial_vehicles[scenario];
+            cars = initial_MedicalRecords[scenario];
         } else {
             let error = {};
             error.message = 'Scenario type not recognised';
@@ -46,30 +46,30 @@ function create(req, res, next, usersToSecurityContext) {
         if(cars.hasOwnProperty('cars')) {
             tracing.create('INFO', 'Demo', 'Found cars');
             cars = cars.cars;
-            updateDemoStatus({message: 'Creating vehicles'});
+            updateDemoStatus({message: 'Creating MedicalRecords'});
             // chain.getEventHub().connect();
-            return createVehicles(cars)
+            return createMedicalRecords(cars)
             .then(function() {
                 return v5cIDResults.reduce(function(prev, v5cID, index) {
                     let car = cars[index];
                     let seller = map_ID.user_to_id('DVLA');
                     let buyer = map_ID.user_to_id(car.Owners[1]);
                     return prev.then(function() {
-                        return transferVehicle(v5cID, seller, buyer, 'authority_to_manufacturer');
+                        return transferMedicalRecord(v5cID, seller, buyer, 'authority_to_manufacturer');
                     });
                 }, Promise.resolve());
             })
             .then(function() {
-                updateDemoStatus({message: 'Updating vehicles'});
+                updateDemoStatus({message: 'Updating MedicalRecords'});
                 return v5cIDResults.reduce(function(prev, v5cID, index){
                     let car = cars[index];
                     return prev.then(function() {
-                        return populateVehicle(v5cID, car);
+                        return populateMedicalRecord(v5cID, car);
                     });
                 }, Promise.resolve());
             })
             .then(function() {
-                updateDemoStatus({message: 'Transfering vehicles between owners'});
+                updateDemoStatus({message: 'Transfering MedicalRecords between owners'});
                 return v5cIDResults.reduce(function(prev, v5cID, index) {
                     let car = cars[index];
                     return prev.then(function() {
@@ -91,7 +91,7 @@ function create(req, res, next, usersToSecurityContext) {
             });
         } else {
             let error = {};
-            error.message = 'Initial vehicles not found';
+            error.message = 'Initial MedicalRecords not found';
             error.error = true;
             updateDemoStatus({message: JSON.stringify(error), error: true});
             res.end(JSON.stringify(error));
@@ -113,25 +113,25 @@ function transferBetweenOwners(v5cID, car, results) {
         let seller = map_ID.user_to_id(newCar.Owners[1]); // First after DVLA
         let buyer = map_ID.user_to_id(newCar.Owners[2]); // Second after DVLA
         functionName = TYPES[results.length + 1];
-        return transferVehicle(v5cID, seller, buyer, functionName)
+        return transferMedicalRecord(v5cID, seller, buyer, functionName)
         .then(function(result) {
-            console.log('[#] Transfer vehicle ' + v5cID + ' between ' + seller + ' -> ' + buyer);
+            console.log('[#] Transfer MedicalRecord ' + v5cID + ' between ' + seller + ' -> ' + buyer);
             results.push(result);
             newCar.Owners.shift();
             return transferBetweenOwners(v5cID, newCar, results);
         })
         .catch((err) => {
-            console.log('[X] Unable to transfer vehicle', err);
+            console.log('[X] Unable to transfer MedicalRecord', err);
         });
     } else {
         return Promise.resolve(results);
     }
 }
 
-function createVehicles(cars) {
+function createMedicalRecords(cars) {
     return cars.reduce(function(prev, car, index) {
         return prev.then(function() {
-            return createVehicle()
+            return createMedicalRecord()
             .then(function(result) {
                 v5cIDResults.push(result);
             });
@@ -139,34 +139,34 @@ function createVehicles(cars) {
     }, Promise.resolve());
 }
 
-function createVehicle() {
-    console.log('[#] Creating Vehicle');
-    return vehicleData.create('DVLA');
+function createMedicalRecord() {
+    console.log('[#] Creating MedicalRecord');
+    return MedicalRecordData.create('DVLA');
 }
 
-function populateVehicleProperty(v5cID, ownerId, propertyName, propertyValue) {
+function populateMedicalRecordProperty(v5cID, ownerId, propertyName, propertyValue) {
     let normalisedPropertyName = propertyName.toLowerCase();
-    return vehicleData.updateAttribute(ownerId, 'update_'+normalisedPropertyName, propertyValue, v5cID);
+    return MedicalRecordData.updateAttribute(ownerId, 'update_'+normalisedPropertyName, propertyValue, v5cID);
 }
 
-function populateVehicle(v5cID, car) {
-    console.log('[#] Populating Vehicle');
+function populateMedicalRecord(v5cID, car) {
+    console.log('[#] Populating MedicalRecord');
     let result = Promise.resolve();
     for(let propertyName in car) {
         let normalisedPropertyName = propertyName.toLowerCase();
         let propertyValue = car[propertyName];
         if (propertyName !== 'Owners') {
             result = result.then(function() {
-                return populateVehicleProperty(v5cID, map_ID.user_to_id(car.Owners[1]), normalisedPropertyName, propertyValue);
+                return populateMedicalRecordProperty(v5cID, map_ID.user_to_id(car.Owners[1]), normalisedPropertyName, propertyValue);
             });
         }
     }
     return result;
 }
 
-function transferVehicle(v5cID, seller, buyer, functionName) {
-    console.log('[#] Transfering Vehicle to ' + buyer);
-    return vehicleData.transfer(seller, buyer, functionName, v5cID);
+function transferMedicalRecord(v5cID, seller, buyer, functionName) {
+    console.log('[#] Transfering MedicalRecord to ' + buyer);
+    return MedicalRecordData.transfer(seller, buyer, functionName, v5cID);
 }
 
 function updateDemoStatus(status) {

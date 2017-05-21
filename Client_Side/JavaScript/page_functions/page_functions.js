@@ -60,7 +60,7 @@ $(document).ready(function(){
                 let v5cID = $(this).find('.v5cID').val();
 
                 $('#chooseConfHd').html('<span>Transaction Complete</span>');
-                $('#confTxt').html('Transaction committed to the blockchain. <br /><br />Manufacturer: '+getCookie('user')+'<br /><br />'+recDets+': '+$('.delName').html()+' (Account '+$('.accAddr').html()+')<br /><br />Vehicles: '+$('#selVhclsTbl tr').length);
+                $('#confTxt').html('Transaction committed to the blockchain. <br /><br />Manufacturer: '+getCookie('user')+'<br /><br />'+recDets+': '+$('.delName').html()+' (Account '+$('.accAddr').html()+')<br /><br />MedicalRecords: '+$('#selVhclsTbl tr').length);
 
                 let data = {}; //Data to be sent
                 data.function_name= transferName; //E.g. manufacturer_to_private
@@ -75,7 +75,7 @@ $(document).ready(function(){
 
         } else if(!($('#selVhclsTbl tr').length <= 1)) {
             $('#failTransfer').show();
-            $('#failTxt').html('You have not selected any vehicles to transfer.');
+            $('#failTxt').html('You have not selected any MedicalRecords to transfer.');
         } else {
             $('#failTransfer').show();
             $('#failTxt').html('You have not selected a recipient.');
@@ -117,7 +117,7 @@ $(document).ready(function(){
                 if(index == $('#selVhclsTbl tr').length) {
                     last = true;
                 }
-                $('#confTxt').html('Transaction committed to the blockchain. <br /><br />Scrap Merchant: '+getCookie('user')+'<br /><br />Vehicles: '+$('#selVhclsTbl tr').length);
+                $('#confTxt').html('Transaction committed to the blockchain. <br /><br />Scrap Merchant: '+getCookie('user')+'<br /><br />MedicalRecords: '+$('#selVhclsTbl tr').length);
 
                 let data = {};
                 data.v5cID = v5cAddr;
@@ -130,7 +130,7 @@ $(document).ready(function(){
 
         } else {
             $('#failTransfer').show();
-            $('#failTxt').html('You have not selected any vehicles to scrap.');
+            $('#failTxt').html('You have not selected any MedicalRecords to scrap.');
         }
     });
 

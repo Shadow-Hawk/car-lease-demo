@@ -33,7 +33,7 @@ $(document).ready(function(){
 				{
 					$(this).find('.isChk').val('false')
 					$(this).find('.chkBx').css('background-image','url("")')
-					var nwRw = $(this).html().replace('<span class="chkSpc"></span><span style="background-image: url(&quot;&quot;);" class="chkBx"></span><input class="isChk" value="false" type="hidden">', '<span onclick="removeRowFromSelectedVehicles(this)" style="float:right; margin-right:10px; cursor:pointer;"><img src="Icons/'+pgNm+'/minus.svg" width="15" /></span>')
+					var nwRw = $(this).html().replace('<span class="chkSpc"></span><span style="background-image: url(&quot;&quot;);" class="chkBx"></span><input class="isChk" value="false" type="hidden">', '<span onclick="removeRowFromSelectedMedicalRecords(this)" style="float:right; margin-right:10px; cursor:pointer;"><img src="Icons/'+pgNm+'/minus.svg" width="15" /></span>')
 					$("#selVhclsTbl").append('<tr class="selVehRw">' + nwRw + '</tr>');
 				}
 			}
@@ -44,7 +44,7 @@ $(document).ready(function(){
 	});
 })
 
-function removeRowFromSelectedVehicles(el)
+function removeRowFromSelectedMedicalRecords(el)
 {
 	$(el).parent().parent().remove();
 	$('#selVhclsTbl').parent().css('margin-top','0px');
